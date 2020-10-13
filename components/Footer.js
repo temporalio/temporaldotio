@@ -21,11 +21,15 @@ export default function Footer() {
           <form action="https://temporal.us17.list-manage.com/subscribe/post?u=2334a0f23e55fd1840613755d&amp;id=bbbbd4709f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate="novalidate" className="validate">
             <div id="mc_embed_signup_scroll" className="signup_controls">
               <div className="email_wrap">
-                <input className="bg-spaceblack w-full py-2 text-gray-500 border-b border-white" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="email" required="required" />
+                <input className="bg-spaceblack w-full py-2 text-gray-500 border-b border-white" type="email" 
+                // value=""
+                 name="EMAIL" id="mce-EMAIL" placeholder="email" required="required" />
               </div>
               <span className="cta_text" style={{ display: "none" }}>You are in the waitlist!</span>
               {/* <div className="spacer" style="display:none;"></div> */}
-              <input type="submit" value="Join the waitlist" name="waitlist" id="mc-embedded-waitlist" className="tt-button tt-button--lightblue tt-button--outline tt-button--block@xs button-email" style={{ display: "none" }} />
+              <input type="submit" 
+              // value=""
+               name="waitlist" id="mc-embedded-waitlist" className="tt-button tt-button--lightblue tt-button--outline tt-button--block@xs button-email" style={{ display: "none" }} />
             </div>
           </form>
         </div>
