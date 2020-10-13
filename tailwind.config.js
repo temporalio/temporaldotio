@@ -5,9 +5,13 @@ module.exports = {
   },
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      display: ['AeonikTRIAL', 'sans-serif'],
+      body: ['AeonikTRIAL', 'sans-serif'],
+    },
     extend: {
       colors: {
-        'accent-1': '#333',
+        'white': '#F2F2F2',
       },
     },
   },
