@@ -44,7 +44,7 @@ export default function TwoStep() {
           </div>
         </div>
       </div>
-      <div class="flex border-b border-white p-8">No More Queues</div>
+      <div className="flex border-b border-white p-8">No More Queues</div>
     </div>
   )
 }

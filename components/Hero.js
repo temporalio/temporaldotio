@@ -8,11 +8,6 @@ export default function Hero() {
     flex flex-col justify-evenly
     `}>
       <style jsx>{`
-        h1 {
-          font-size: 144px;
-          line-height: 144px;
-          letter-spacing: 4px;
-        }
         .button {
           width: 300px;
           height: 58px;
@@ -29,14 +24,14 @@ export default function Hero() {
       `}</style>
       <div className="container mx-auto">
       <Nav />
-        <h1 className="uppercase">
+        <h1 className="bigH1 uppercase">
           Build Invincible Apps
         </h1>
         <p>
         Temporal is the open source runtime for mission critical code atop unreliable, distributed services.
         </p>
-        <div class="flex justify-between">
-          <div class="flex gap-4">
+        <div className="flex justify-between">
+          <div className="flex gap-4">
             <a className="button" style={{
               background: "#B2E7EA",
               color: "#141414"
