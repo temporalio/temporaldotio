@@ -1,6 +1,10 @@
 // import Link from 'next/link'
 import Nav from './nav'
 
+function Bold({children}) {
+  return <span className="font-bold">{children}</span>
+}
+
 export default function Hero() {
   return (
     <div id="hero" className={`
@@ -13,7 +17,7 @@ export default function Hero() {
         Build Invincible Apps
         </h1>
       <p className="text-2xl md:w-700">
-        Temporal is the open source runtime for mission critical code atop unreliable, distributed services.
+        Temporal is the <Bold>open source</Bold> runtime for <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services.
       </p>
       <div className="flex flex-col sm:flex-row justify-between mb-24 items-center">
         <div className="flex flex-col sm:flex-row  gap-4">

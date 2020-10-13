@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
 const links = [
-  { href: 'https://nextjs.org/docs', label: 'Docs' },
-  { href: 'https://github.com/vercel/next.js', label: 'GitHub' },
-  { href: 'https://github.com/vercel/next.js', label: 'Jobs' },
-  { href: 'https://github.com/vercel/next.js', label: 'Support' },
+  { href: 'https://docs.temporal.io/docs/overview', label: 'Docs' },
+  { href: 'https://github.com/temporalio/temporal/', label: 'GitHub' },
+  { href: 'https://jobs.lever.co/temporal', label: 'Jobs' },
+  { href: 'https://community.temporal.io/', label: 'Community' },
 ]
 
 export default function Nav() {
