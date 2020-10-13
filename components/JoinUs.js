@@ -21,7 +21,7 @@ export default function JoinUs() {
           <a className="button mb-4" style={{
             background: "#B2E7EA",
             color: "#141414"
-          }} href="#intro">Join us</a>
+          }} href="/careers">Join us</a>
           <p>Seriously, we're hiring</p>
         </div>
       </div>

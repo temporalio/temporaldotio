@@ -61,8 +61,8 @@ export default function ExplainTemporal() {
         <a className="button" style={{
           background: "#B2E7EA",
           color: "#141414"
-        }} href="#intro">Watch 2 minute Intro</a>
-        <a className="button" href="#jobs">We're Hiring</a>
+        }} href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">More on YouTube</a>
+        <a className="button" href="https://docs.temporal.io/docs/go-run-your-first-app">Run Your First App</a>
       </div>
     </div>
   )

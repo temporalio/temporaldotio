@@ -11,20 +11,26 @@ export default function FinalQuote() {
 
 @media (min-width: 640px) { 
   blockquote {
+    /*
     font-size: 64px;
     line-height: 72px;
     width: 1032px;
+    */
   }
 }
       `}</style>
-      <blockquote className="text-6xl flex-1 px-8 pt-16 pb-64">
-        
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+      <blockquote className="text-4xl flex-1 px-8 pt-16 pb-16">
+
+        <p className="mb-4">“HashiCorp needed to build long-running, reliable, fault-tolerant tasks for the HashiCorp Cloud Platform. </p>
+
+        <p className="mb-4">Temporal’s technology satisfied all of these requirements out of the box and allowed our developers to focus on business logic. </p>
+
+        <p className="mb-4">Without Temporal’s technology, we would’ve spent a significant amount of time rebuilding Temporal and would’ve very likely done a worse job.”</p>
       </blockquote>
-      <div className="flex p-8 border-t border-spaceblack">
-        <img className="inline mr-4 rounded-full border border-spaceblack" src="lksjd" alt="todo" />
-        <span className="font-bold mr-1">Judith Black / </span>
-        <span className="font-light">CEO, Monlskdjlks</span>
+      <div className="flex items-center p-8 border-t border-spaceblack">
+        <img className="inline mr-4 w-16 h-16 rounded-full border border-spaceblack" src="/logos/photo-Mitchell.png" alt="Mitchell Hashimoto" />
+        <span className="font-bold mr-1">Mitchell Hashimoto / </span>
+        <span className="font-light">Co-founder, Hashicorp</span>
       </div>
     </div>
   )
