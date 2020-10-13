@@ -13,7 +13,7 @@ function ResponsivePlayer({ url,
         // position: 'absolute',
         // top: '0',
         // left: '15%',
-        border: '1px solid #f2f2f2'
+        border: '1px solid #E0E0E0',
       }}
       url={url}
       // loop={loop}
@@ -25,35 +25,25 @@ function ResponsivePlayer({ url,
 }
 export default function ExplainTemporal() {
   return (
-    <div className={`
+    <div id="explain-temporal" className={`
     min-h-screen 
-    border-b border-white
+    border-b border-gray5
     flex flex-col justify-evenly
+    px-8 py-16
     `}>
       <style jsx>{`
-      .playerShadow {
-        position: absolute;
-        z-index: -1;
-        margin-top: 10px;
-        margin-left: 20px;
-        width: 800px;
-        height: 500px;
-        border: 1px solid #f2f2f2;
-      }
-      .button {
-        width: 300px;
-        height: 58px;
-        left: 50px;
-        top: 857px;
-        border: 1px solid #F2F2F2;
-        box-sizing: border-box;
-        border-radius: 46px;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
 
+      @media (min-width: 640px) {
+        .playerShadow {
+          position: absolute;
+          z-index: -1;
+          margin-top: 10px;
+          margin-left: 20px;
+          width: 800px;
+          height: 500px;
+          border: 1px solid #E0E0E0;
+        }
+      }
       .wrapper {
         display: flex;
         justify-items: center;
@@ -61,15 +51,10 @@ export default function ExplainTemporal() {
         /* padding-top: 56.25%; */
         /* Player ratio: 100 / (1280 / 720) */
       }
-      h1 {
-        font-size: 64px;
-        line-height: 72px;
-        width: 700px
-      }
       `}</style>
-      <h1 className="mt-8">Watch us explain Temporal in 60 Seconds</h1>
+      <h1 className="mt-8 text-2xl">Watch us explain Temporal in 2 Minutes</h1>
       <div className="wrapper my-8 flex justify-center">
-        <ResponsivePlayer url="https://www.youtube.com/watch?v=aUUhFAupUbk" />
+        <ResponsivePlayer url="https://www.youtube.com/watch?v=bc0qUobRhsw" />
         <div className="playerShadow"></div>
       </div>
       <div className="flex gap-4 justify-center my-8">

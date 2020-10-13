@@ -2,9 +2,9 @@
 
 export default function Footer() {
   return (
-    <div className={`
+    <footer id="footer" className={`
     border-b border-white
-    flex
+    flex flex-col-reverse sm:flex-row 
     `}>
       <style jsx>{`
       `}</style>
@@ -52,6 +52,6 @@ export default function Footer() {
           <img className="absolute bottom-0 right-0 mb-8 mr-8" src="/logos/temporal-white-mark.png" alt="logo" />
         </div>
       </div>
-    </div>
+    </footer>
   )
 }

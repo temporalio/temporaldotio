@@ -36,17 +36,27 @@
   font-weight: 300;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: #141414;
   color: #F2F2F2;
   font-family: 'Aeonik', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
   background-image: url('/StarBackground.png')
 }
 
+@media (min-width: 640px) { 
+  .bigH1 {
+    font-size: 144px;
+    line-height: 144px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+}
 .bigH1 {
-  font-size: 144px;
-  line-height: 144px;
+  font-size: 64px;
+  line-height: 64px;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
@@ -54,4 +64,19 @@ body {
 .grayscale {
   mix-blend-mode: luminosity;
   opacity: 0.5;
+}
+
+
+.button {
+  width: 300px;
+  height: 58px;
+  left: 50px;
+  top: 857px;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+  border-radius: 46px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
