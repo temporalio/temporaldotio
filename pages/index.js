@@ -12,14 +12,14 @@ export default function IndexPage() {
   return (
     <div>
       <Hero />
-      <TwoStep />
+      {/* <TwoStep />
       <ExplainTemporal />
       <UseCases />
       <CaseStudies />
       <JoinUs />
       <TemporalVs />
       <FinalQuote />
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }
