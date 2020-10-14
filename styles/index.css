@@ -43,7 +43,8 @@ body {
   background: #141414;
   color: #F2F2F2;
   font-family: 'Aeonik', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-image: url('/StarBackground.png')
+  /* background-image: url('/StarBackground.png') */
+  background-image: url('/StarBackgroundMuted.svg')
 }
 
 
