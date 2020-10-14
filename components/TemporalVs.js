@@ -1,6 +1,3 @@
-// import Link from 'next/link'
-
-
 import {
   Accordion,
   AccordionItem,
@@ -66,7 +63,6 @@ export default function TemporalVs() {
     </div>
   )
 }
-
 
 function AccItem({ header, children, uuid }) {
   return (

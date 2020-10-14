@@ -14,7 +14,7 @@ export default function Hero() {
       `}</style>
       <Nav />
       <div>
-        <h1 className="text-60 leading-60 mb-8 sm:text-144 sm:leading-144 uppercase sm:w-800">
+        <h1 className="text-60 leading-60 mb-8 sm:text-144 sm:leading-144 uppercase lg:w-800">
           Build Invincible Apps
           </h1>
         <p className="text-2xl md:w-700 mb-8">

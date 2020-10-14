@@ -1,96 +1,88 @@
 // import Link from 'next/link'
 import React from 'react'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
-function Circle({selected}) {
-  return <div className={"rounded-full w-4 h-4 border border-spaceblack inline-block mr-2 " + (selected ? "bg-spaceblack" : "")}></div>
-}
 
 export default function UseCases() {
-  const [index, setIndex] = React.useState(0)
+  // const [index, setIndex] = React.useState(0)
   return (
     <div id="use-cases" className={`
     border-b border-spaceblack
      bg-gray5
-    flex flex-col pt-16 pb-32
+    flex flex-col pt-16
     `}>
       <h1 className="container pl-4 mb-16 md:pl-16 text-60 leading-60 sm:text-144 sm:leading-144 uppercase text-spaceblack">Use Cases</h1>
-      {/* <div>
-      <div>
-
-      <button>Distributed Cron</button>
-      </div>
-      </div> */}
-
-      <Tabs className="container md:pl-16 border-t border-b sm:border border-spaceblack bg-gray5 text-spaceblack flex flex-col sm:flex-row "
-        onSelect={idx => setIndex(idx)}
-      >
-        <TabList className="sm:border-r border-spaceblack sm:w-64">
-          <Tab className="px-4 py-8 flex items-center border-b border-spaceblack" selectedClassName="bg-white"><Circle selected={index === 0}/>
-            Microservice Orchestration
-          </Tab>
-          <Tab className="px-4 py-8 flex items-center border-b border-spaceblack" selectedClassName="bg-white"><Circle selected={index === 1} /> 
-          Financial Transactions</Tab>
-          <Tab className="px-4 py-8 flex items-center border-b border-spaceblack" selectedClassName="bg-white"><Circle selected={index === 2} /> 
-          Resource Provisioning</Tab>
-          <Tab className="px-4 py-8 flex items-center " selectedClassName="bg-white"><Circle selected={index === 3} /> 
-          Monitoring</Tab>
-        </TabList>
-        <div className="relative flex-1">
-          <TabPanel className="sm:absolute w-full h-full" selectedClassName="p-4 bg-white">
-            <h2>
-            Temporal is a perfect fit for microservice orchestration scenarios. It guarantees that workflow code eventually completes, has built-in support for exponential activity retries, and simplifies the coding of the compensation logic with native Saga pattern support.
-
-You can define retries, rollbacks, or even a human intervention step in the case of failure. Workflows are defined in general-purpose programming languages that bring the ultimate flexibility especially when compared to text-based DSL engines.
-
-Temporal provides full visibility into each workflow's state. Contrast this with ad-hoc orchestration based on queues where getting a current status of each request is virtually impossible.
-
-            </h2>
-          </TabPanel>
-          <TabPanel className="sm:absolute w-full h-full" selectedClassName="p-4 bg-white">
-            <h2>TODO: COPY FOR FINANCIAL TRANSACTIONS</h2>
-          </TabPanel>
-          <TabPanel className="sm:absolute w-full h-full" selectedClassName="p-4 bg-white">
-            <h2>
-              
-Provisioning resources depends on a series of potentially long-running operations with many possibilities for intermittent failures. While existing deployment tools support simple operations, many scenarios may still require a custom provisioning flow:
-    - Automatic infrastructure provisioning for a new customer in multi-tenant environments.
-    - Particularly large deployments when tens or even hundreds of thousands of resources should be configured.
-    - Provisioning of custom resources that are not supported by off-the-shelf tools.
-    - Complex configuration logic that is determined at deployment time.
-
-    It's beneficial to have a single workflow engine to manage all the various tasks: spinning up the cluster, long term monitoring, managing upgrades, database schema migrations, automated staged rollout of new features.
-
-    Some provisioning operations may take dozens of minutes or even hours to complete. Ad-hoc solutions may fail in the middle and leave the system in an undefined state.
-
-Temporal workflows can express complex decision trees using a general-purpose programming language. Support for long-running operations, polling, responding to events, automatic retries are excellent building blocks for a robust provisioning flow. If a lengthy provisioning workflow fails in the middle, Temporal would handle the error and restart the flow at the right spot.
-
-    Temporal can route activity execution to a specific process or host, which is useful for many provisioning scenarios.
-
-    Many resource management operations require locking to ensure that only one mutation is executed on any given resource at a time. Temporal provides a strong guarantee of uniqueness via the operation identifier. This primitive enables the implementation of locking behavior in a fault-tolerant and scalable manner.
-
-
-            </h2>
-          </TabPanel>
-          <TabPanel className="sm:absolute w-full h-full" selectedClassName="p-4 bg-white">
-            <h2>
-            Temporal provides guaranteed execution with exactly-once semantics with automatic retries.
-
-Polling configuration can be as straightforward or sophisticated as needed:
-
-- Workflows can run on a cron schedule with a single configuration setting.
-- Alternatively, you can manually control the delays between intervals with `sleep` commands. For example, you can switch to more frequent executions in case of detected downtime.
-
-The history service provides visibility into history for periodic workflow executions.
-
-Scalability is another crucial advantage of using Temporal for periodic execution. Many use cases require periodic execution for a large number of entities. At Uber, some applications run recurring workflows for each customer. Imagine 100s of millions parallel cron jobs that don't require a separate batch processing framework.
-
-Temporal support for long-running activities and unlimited retries also makes it a great fit for monitoring use cases.
-
-            </h2>
-          </TabPanel>
-        </div>
-      </Tabs>
+      <ul className="accordion border border-spaceblack mb-32 lg:container lg:ml-16">
+        <UCaseItem header="Microservice Orchestration" defaultState>
+          <h2 className="font-bold mb-3">Temporal is a perfect fit for microservice orchestration scenarios.</h2>
+          <p className="mb-3">It guarantees that workflow code eventually completes, has built-in support for exponential activity retries, and simplifies the coding of the compensation logic with native Saga pattern support.</p>
+          <p className="mb-3">
+            You can define retries, rollbacks, or even a human intervention step in the case of failure. Workflows are defined in general-purpose programming languages that bring the ultimate flexibility especially when compared to text-based DSL engines.
+          </p>
+          <p className="mb-3">
+            Temporal provides full visibility into each workflow's state. Contrast this with ad-hoc orchestration based on queues where getting a current status of each request is virtually impossible.
+          </p>
+        </UCaseItem>
+        <UCaseItem header="Financial Transactions">
+          <p className="mb-3">TODO: Financial Transactions</p>
+        </UCaseItem>
+        <UCaseItem header="Resource Provisioning">
+          <h2 className="font-bold mb-4">Provisioning resources depends on a series of potentially long-running operations with many possibilities for intermittent failures.</h2>
+          <p className="mb-3">While existing deployment tools support simple operations, many scenarios may still require a custom provisioning flow:</p>
+          <ul className="mb-3">
+            <li className="mb-2">Automatic infrastructure provisioning for a new customer in multi-tenant environments.</li>
+            <li className="mb-2">Particularly large deployments when tens or even hundreds of thousands of resources should be configured.</li>
+            <li className="mb-2">Provisioning of custom resources that are not supported by off-the-shelf tools.</li>
+            <li className="mb-2">Complex configuration logic that is determined at deployment time.</li>
+          </ul>
+          <p className="mb-3">
+            It's beneficial to have a single workflow engine to manage all the various tasks: spinning up the cluster, long term monitoring, managing upgrades, database schema migrations, automated staged rollout of new features.
+          </p>
+          <p className="mb-3">Some provisioning operations may take dozens of minutes or even hours to complete. Ad-hoc solutions may fail in the middle and leave the system in an undefined state.</p>
+          <p className="mb-3">Temporal workflows can express complex decision trees using a general-purpose programming language. Support for long-running operations, polling, responding to events, automatic retries are excellent building blocks for a robust provisioning flow. If a lengthy provisioning workflow fails in the middle, Temporal would handle the error and restart the flow at the right spot.</p>
+          <p className="mb-3">Temporal can route activity execution to a specific process or host, which is useful for many provisioning scenarios.</p>
+          <p className="mb-3">Many resource management operations require locking to ensure that only one mutation is executed on any given resource at a time. Temporal provides a strong guarantee of uniqueness via the operation identifier. This primitive enables the implementation of locking behavior in a fault-tolerant and scalable manner.</p>
+        </UCaseItem>
+        <UCaseItem header="Monitoring">
+          <h2 className="font-bold mb-4">Temporal provides guaranteed execution with exactly-once semantics with automatic retries.</h2>
+          <p className="mb-3">Polling configuration can be as straightforward or sophisticated as needed:</p>
+          <ul className="mb-3">
+            <li className="mb-2">Workflows can run on a cron schedule with a single configuration setting.</li>
+            <li className="mb-2">Alternatively, you can manually control the delays between intervals with `sleep` commands. For example, you can switch to more frequent executions in case of detected downtime.</li>
+          </ul>
+          <p className="mb-3">The history service provides visibility into history for periodic workflow executions.</p>
+          <p className="mb-3">Scalability is another crucial advantage of using Temporal for periodic execution. Many use cases require periodic execution for a large number of entities. At Uber, some applications run recurring workflows for each customer. Imagine 100s of millions parallel cron jobs that don't require a separate batch processing framework.</p>
+          <p className="mb-3">Temporal support for long-running activities and unlimited retries also makes it a great fit for monitoring use cases.</p>
+        </UCaseItem>
+      </ul>
     </div>
+  )
+}
+
+function UCaseItem({ header, children, defaultState = false }) {
+  const [state, setState] = React.useState(defaultState)
+  return (
+    <li className="border-t border-spaceblack">
+      <div className={(state ? ' bg-gray5' : '') + ' text-spaceblack p-4 md:p-8 border-b border-spaceblack text-2xl'}>
+        <button onClick={() => setState(!state)} className="flex w-full items-center justify-between">
+          <span>{header}</span>
+          {state ?
+            // x icon
+            <svg className="w-8 sm:w-12 h-8 sm:h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+
+            :
+            // plus icon
+            <svg className="w-8 sm:w-12 h-8 sm:h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+          }
+        </button>
+      </div>
+      {state &&
+        <div className={(state ? 'bg-white ' : '') + 'text-spaceblack text-xl p-4 md:p-8'}>
+          {children}
+        </div>}
+    </li>
   )
 }

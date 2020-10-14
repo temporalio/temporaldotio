@@ -3,7 +3,7 @@
 export default function JoinUs() {
   return (
     <div id="join-us" className={`
-    border-b border-lightgray
+    border-b border-lightgray min-h-screen
     flex flex-col sm:flex-row 
     `}>
       <div className="flex-1 flex flex-col justify-between sm:border-r border-lightgray px-8 py-16">
