@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 const links = [
+  { href: 'https://docs.temporal.io/blog', label: 'Blog' },
   { href: 'https://docs.temporal.io/docs/overview', label: 'Docs' },
   { href: 'https://github.com/temporalio/temporal/', label: 'GitHub' },
   { href: '/careers', label: 'Jobs' },
