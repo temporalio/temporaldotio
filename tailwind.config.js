@@ -9,6 +9,10 @@ module.exports = {
       'light': ['Aeonik-Light'],
       'bold': ['Aeonik-Bold']
     },
+    fontSize: {
+      '60': '60px',
+      '144': '144px', 
+    },
     extend: {
       colors: {
         'white': '#F2F2F2',
@@ -20,7 +24,12 @@ module.exports = {
         'lightteal': '#C7EDEF'
       },
       width: {
-        '700': '700px'
+        '700': '700px',
+        '800': '800px',
+      },
+      lineHeight: {
+        '60': '60px',
+        '144': '144px',
       }
     },
   },

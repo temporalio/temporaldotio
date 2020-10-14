@@ -13,14 +13,16 @@ export default function Hero() {
       <style jsx>{`
       `}</style>
       <Nav />
-      <h1 className="bigH1 uppercase">
-        Build Invincible Apps
-        </h1>
-      <p className="text-2xl md:w-700">
-        Temporal is the <Bold>open source</Bold> runtime for <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services.
-      </p>
-      <div className="flex flex-col sm:flex-row justify-between mb-24 items-center">
-        <div className="flex flex-col sm:flex-row  gap-4">
+      <div>
+        <h1 className="text-60 leading-60 mb-8 sm:text-144 sm:leading-144 uppercase sm:w-800">
+          Build Invincible Apps
+          </h1>
+        <p className="text-2xl md:w-700 mb-8">
+          Temporal is the <Bold>open source</Bold> runtime for <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services.
+        </p>
+      </div>
+      <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">
+        <div className="flex flex-col sm:flex-row mb-4 gap-4">
           <a className="button" style={{
             background: "#B2E7EA",
             color: "#141414"
