@@ -76,9 +76,20 @@ function AccItem({ header, children, uuid }) {
         {({ expanded }) => (
           <>
             <AccordionItemHeading className={(expanded ? ' bg-gray5 text-spaceblack' : '') + ' p-4 border-b border-spaceblack text-2xl'}>
-              <AccordionItemButton className="flex justify-between">
+              <AccordionItemButton className="flex items-center justify-between">
                 <span>{header}</span>
-                <span>{expanded ? "❌" : "➕"}</span>
+                <span>{expanded ?
+                  // x icon
+                  <svg className="w-8 sm:w-12 h-8 sm:h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+
+                  :
+                  // plus icon
+                  <svg className="w-8 sm:w-12 h-8 sm:h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                  </svg>
+                }</span>
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel className={(expanded ? 'bg-white text-spaceblack' : '') + ' p-4'}>
@@ -91,3 +102,4 @@ function AccItem({ header, children, uuid }) {
 
   )
 }
+
