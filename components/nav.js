@@ -10,19 +10,24 @@ const links = [
 export default function Nav() {
   return (
     <nav>
+      <style jsx>{`
+      @media (min-width: 640px) {
+        img {
+          width: 225px !important;
+          height: 56px !important;
+        }
+      }
+      img {
+        width: 180px;
+        height: 45px;
+        object-fit: contain;
+      }
+      `}</style>
       <ul className="flex justify-between items-center py-4">
         <li>
           <Link href="/">
             <a href="/" className="text-blue-500 no-underline">
-              <img src="/logo-font-curve-dark.svg" alt="Temporal logo"
-                style={{
-                  width: 180,
-                  height: 45,
-                  marginLeft: '-15px',
-                  objectFit: 'cover',
-                  filter: "invert(1)",
-                }}
-              ></img>
+              <img src="/logo-with-text-white-nobg.svg" alt="Temporal logo"></img>
             </a>
           </Link>
         </li>

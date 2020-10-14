@@ -22,12 +22,12 @@ export default function Hero() {
         </p>
       </div>
       <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">
-        <div className="flex flex-col sm:flex-row mb-4 gap-4">
+        <div className="flex flex-col sm:flex-row mb-4 gap-4 sm:text-xl">
           <a className="button" style={{
             background: "#B2E7EA",
             color: "#141414"
-          }} href="https://www.youtube.com/watch?v=bc0qUobRhsw">2 Minute Intro</a>
-          <a className="button" href="/careers">We're Hiring</a>
+          }} href="#explain-temporal">2 Minute Intro</a>
+          <a className="button" href="#join-us">We're Hiring</a>
         </div>
         <a className="sm:text-xl" href="https://docs.temporal.io/docs/go-run-your-first-app" target="_blank" rel="noopener">I'm a developer, take me to code! →</a>
       </div>

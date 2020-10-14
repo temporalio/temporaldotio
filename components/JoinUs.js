@@ -13,7 +13,7 @@ export default function JoinUs() {
           Experience at the largest scale. Backing by the greatest Investors.
         </h2>
 
-        <div className=" text-center sm:text-left">
+        <div className="text-xl text-center sm:text-left">
           <a className="button mb-4" style={{
             background: "#B2E7EA",
             color: "#141414"
