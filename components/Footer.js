@@ -12,8 +12,8 @@ export default function Footer() {
         <img className="absolute bottom-0 left-0" src="/FooterMoon.png" alt="footer moon" />
         {/* leave blank for space */}
       </div>
-      <div className="flex-1 flex flex-col">
-        <div className="p-16 border-b border-gray5">
+      <div className="flex-1 flex flex-col ">
+        <div className="p-8 sm:p-16 sm:border-b border-gray5">
 
           <h2 className="text-3xl font-bold mb-4">Temporal Cloud</h2>
           <p className="w-56 mb-8">Temporal Cloud is coming soon. Sign up for waitlist and updates.</p>
@@ -33,9 +33,9 @@ export default function Footer() {
             </div>
           </form>
         </div>
-        <div className="p-16 relative flex">
+        <div className="p-8 sm:p-16 relative flex">
           <div className="mr-32">
-            <h3 className="mb-4 font-light text-gray-500">Community</h3>
+            <h3 className="mb-4 font-light text-gray-200 sm:text-gray-500">Community</h3>
             <ul>
               <li className="mb-2"><a href="https://github.com/temporalio/temporal">GitHub</a></li>
               <li className="mb-2"><a href="https://community.temporal.io/">Community</a></li>
@@ -43,7 +43,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="mb-4 font-light text-gray-500">Docs</h3>
+            <h3 className="mb-4 font-light text-gray-200 sm:text-gray-500">Docs</h3>
             {/* todo: fix these links */}
             <ul>
               <li className="mb-2"><a href="https://github.com/temporalio/temporal">Guides</a></li>
