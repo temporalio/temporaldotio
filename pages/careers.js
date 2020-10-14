@@ -10,6 +10,7 @@ export default function CareersPage() {
       <div className="ml-16">
 
       <Head>
+        <title>Temporal.io Careers</title>
         <script dangerouslySetInnerHTML={{
               __html: `window.leverJobsOptions = {accountName: 'temporal', includeCss: true};` }} 
           />

@@ -19,10 +19,6 @@ export default function Hero() {
       <p className="text-2xl md:w-700">
         Temporal is the <Bold>open source</Bold> runtime for <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services.
       </p>
-
-      <blockquote className="md:w-64 border-l-4 border-yellow-300 pl-4">
-        This is a work in progress site, please pardon our appearance while we work to launch our new site soon!
-      </blockquote>
       <div className="flex flex-col sm:flex-row justify-between mb-24 items-center">
         <div className="flex flex-col sm:flex-row  gap-4">
           <a className="button" style={{
