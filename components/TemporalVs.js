@@ -10,7 +10,7 @@ import {
 export default function TemporalVs() {
   return (
     <div id="temporal-vs" className={`
-    border-b border-white
+    container mx-auto
     text-white
     min-h-screen
     px-2 sm:px-8 py-16

@@ -3,17 +3,17 @@
 export default function Footer() {
   return (
     <footer id="footer" className={`
-    border-b border-white
-    flex flex-col-reverse sm:flex-row 
+    border-t border-lightgray
+    flex flex-col-reverse sm:flex-row mt-16
     `}>
       <style jsx>{`
       `}</style>
-      <div className="flex-1 border-r border-gray5 relative">
+      <div className="flex-1 border-r border-lightgray relative">
         <img className="absolute bottom-0 left-0" src="/FooterMoon.png" alt="footer moon" />
         {/* leave blank for space */}
       </div>
       <div className="flex-1 flex flex-col ">
-        <div className="p-8 sm:p-16 sm:border-b border-gray5">
+        <div className="p-8 sm:p-16 sm:border-b border-lightgray">
 
           <h2 className="text-3xl font-bold mb-4">Temporal Cloud</h2>
           <p className="w-56 lg:w-700 mb-8">Temporal Cloud is coming soon. Sign up for waitlist and updates.</p>
@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
           </form>
         </div>
-        <div className="p-8 sm:p-16 relative flex">
+        <div className="p-8 sm:p-16 pb-32 relative flex">
           <div className="mr-32">
             <h3 className="mb-4 font-light text-gray-200 sm:text-gray-500">Community</h3>
             <ul>

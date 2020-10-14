@@ -14,11 +14,12 @@ export default function UseCases() {
   return (
     <div id="use-cases" className={`
     border-b border-spaceblack
+    container mx-auto
      bg-gray5
     flex flex-col pt-16
     `}>
-      <h1 className="container pl-4 mb-16 md:pl-16 text-60 leading-60 sm:text-144 sm:leading-144 uppercase text-spaceblack">Use Cases</h1>
-      <ul className="accordion border-t border-b lg:border border-spaceblack mb-32 lg:container lg:ml-16">
+      <h1 className="container pl-4 mb-16 md:pl-16 text-60 leading-60 lg:text-144 lg:leading-144 uppercase text-spaceblack">Use Cases</h1>
+      <ul className="accordion border-t border-b border-spaceblack">
         <UCaseItem header="Microservice Orchestration" defaultState>
           <h2 className="font-bold mb-3">Temporal is a perfect fit for microservice orchestration scenarios.</h2>
           <p className="mb-3">It guarantees that workflow code eventually completes, has built-in support for exponential activity retries, and simplifies the coding of the compensation logic with native Saga pattern support.</p>

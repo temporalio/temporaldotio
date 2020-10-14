@@ -3,8 +3,8 @@
 export default function TwoStep() {
   return (
     <div id="two-step" className={`
-    border-b border-white
     flex flex-col justify-evenly
+    container mx-auto
     `}>
       <style jsx>{`
       @media (min-width: 640px) {

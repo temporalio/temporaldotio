@@ -6,6 +6,7 @@ export default function FinalQuote() {
     border-b border-white
   text-spaceblack
     flex flex-col bg-lightteal
+    container mx-auto
     `}>
       <style jsx>{`
       `}</style>

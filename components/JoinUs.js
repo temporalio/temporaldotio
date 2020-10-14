@@ -5,6 +5,7 @@ export default function JoinUs() {
     <div id="join-us" className={`
     border-b border-lightgray min-h-screen
     flex flex-col sm:flex-row 
+    container mx-auto
     `}>
       <div className="flex-1 flex flex-col justify-between sm:border-r border-lightgray px-8 py-16">
         <h2 className="text-4xl leading-48 sm:text-60 sm:leading-60 mb-8">

@@ -27,7 +27,7 @@ export default function ExplainTemporal() {
   return (
     <div id="explain-temporal" className={`
     min-h-screen 
-    border-b border-gray5
+    container mx-auto
     flex flex-col justify-evenly
     px-8 py-16
     `}>
