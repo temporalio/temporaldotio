@@ -20,8 +20,13 @@ module.exports = {
         'lightteal': '#C7EDEF'
       },
       width: {
+        '200': '200px',
+        '300': '300px',
         '700': '700px',
         '800': '800px',
+      },
+      height: {
+        '60': '60px'
       },
       fontSize: {
         '60': '60px',

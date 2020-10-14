@@ -14,9 +14,7 @@ export default function UseCases() {
      bg-gray5
     flex flex-col pt-16 pb-32
     `}>
-      <style jsx>{`
-      `}</style>
-      <h1 className="container pl-4 mb-16 sm:pl-16 text-60 leading-60 sm:text-144 sm:leading-144 uppercase text-spaceblack">Use Cases</h1>
+      <h1 className="container pl-4 mb-16 md:pl-16 text-60 leading-60 sm:text-144 sm:leading-144 uppercase text-spaceblack">Use Cases</h1>
       {/* <div>
       <div>
 
@@ -24,7 +22,7 @@ export default function UseCases() {
       </div>
       </div> */}
 
-      <Tabs className="container sm:ml-16 border-t border-b sm:border border-spaceblack bg-gray5 text-spaceblack flex flex-col sm:flex-row "
+      <Tabs className="container md:pl-16 border-t border-b sm:border border-spaceblack bg-gray5 text-spaceblack flex flex-col sm:flex-row "
         onSelect={idx => setIndex(idx)}
       >
         <TabList className="sm:border-r border-spaceblack sm:w-64">

@@ -9,16 +9,13 @@ export default function CaseStudies() {
     flex flex-col
     min-h-screen text-spaceblack
     `}>
-      <style jsx>{`
-
-      `}</style>
-      <div className="container pl-2 sm:pl-16">
+      <div className="container pl-2 sm:pl-8 lg:pl-16">
         <h1 className="text-60 leading-60 sm:text-144 sm:leading-144 mt-4 sm:mt-8 sm:mb-4">Case Studies</h1>
         <p className="text-xl sm:text-3xl font-light mb-4">Relied on by the companies <span className="italic">other companies</span> rely on.</p>
       </div>
       <Tabs className="border-b border-spaceblack flex flex-col flex-1">
         <div className="relative h-64 flex-1 flex flex-col justify-end  border-spaceblack border-b">
-          <TabPanel className="absolute h-full w-full p-2 sm:p-8 sm:px-16" selectedClassName="">
+          <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="">
             <Quote
               url="https://deploy-preview-129--mystifying-fermi-1bc096.netlify.app/blog/Temporal-a-central-brain-for-Box"
               img="https://media-exp1.licdn.com/dms/image/C4D03AQG6rJUkchETHg/profile-displayphoto-shrink_400_400/0?e=1608163200&v=beta&t=2j1QiqZ-N3eyYVS_9z24naXdxJrL5IAf20EgAZmk_U4"
@@ -26,14 +23,14 @@ export default function CaseStudies() {
               name="Steven Cipolla" title="Senior Staff Software Engineer, Box" />
           </TabPanel>
 
-          <TabPanel className="absolute h-full w-full p-2 sm:p-8 sm:px-16" selectedClassName="">
+          <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="">
             <Quote
               url="https://deploy-preview-129--mystifying-fermi-1bc096.netlify.app/blog/how-temporal-simplified-checkr-workflows"
               img="https://media-exp1.licdn.com/dms/image/C5603AQE9ZYjH-So7zA/profile-displayphoto-shrink_400_400/0?e=1608163200&v=beta&t=-6LtmUDo6Uh4Hgqd6qagQzlGNbxv-e55hHYEIs_GX8k"
               quote="Developer happiness has increased. Thinking about our problems in terms of workflows and activities has clarified our product and now allow us to share workflow components with different teams."
               name="Ben Jacobson" title="Staff Software Engineer, Checkr" />
           </TabPanel>
-          <TabPanel className="absolute h-full w-full p-2 sm:p-8 sm:px-16" selectedClassName="">
+          <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="">
             <CoinbaseQuote
               url="https://deploy-preview-129--mystifying-fermi-1bc096.netlify.app/blog/reliable-crypto-transactions-at-coinbase"
               img="https://pbs.twimg.com/profile_images/943640175/new_photo_400x400.jpg"
@@ -42,13 +39,13 @@ export default function CaseStudies() {
           </TabPanel>
         </div>
         <TabList className="flex bg-gray5">
-          <Tab selectedClassName="bg-purple2 nograyscale" className=" grayscale p-2 flex-1 grid place-items-center border-r border-spaceblack">
+          <Tab selectedClassName="nograyscale" className=" grayscale p-2 flex-1 grid place-items-center border-r border-spaceblack">
             <img className="h-16 w-16 sm:h-32 sm:w-32 object-cover" src="/logos/logo-Box2.png" aria-label="Box logo" alt="Box logo" />
           </Tab>
-          <Tab selectedClassName="bg-purple2 nograyscale" className=" grayscale p-2 flex-1 grid place-items-center border-r border-spaceblack">
+          <Tab selectedClassName="nograyscale" className=" grayscale p-2 flex-1 grid place-items-center border-r border-spaceblack">
             <img className="h-16 w-16 sm:h-32 sm:w-32 object-contain" src="/logos/logo-Checkr.png" aria-label="Checkr logo" alt="Checkr logo" />
           </Tab>
-          <Tab selectedClassName="bg-purple2 nograyscale" className=" grayscale p-2 flex-1 grid place-items-center ">
+          <Tab selectedClassName="nograyscale" className=" grayscale p-2 flex-1 grid place-items-center ">
             <img className="h-16 w-16 sm:h-32 sm:w-32 object-contain" src="/logos/logo-Coinbase.png" aria-label="Coinbase logo" alt="Coinbase logo" />
           </Tab>
         </TabList>
@@ -61,7 +58,7 @@ export default function CaseStudies() {
 function Quote({ quote, name, url, title, img }) {
   return (
     <div className="">
-      <blockquote className="mb-8 text-2xl leading-tight sm:text-3xl sm:leading-3xl sm:w-800 flex-1">
+      <blockquote className="mb-8 text-2xl leading-tight sm:text-3xl sm:leading-3xl lg:w-800 flex-1">
         “{quote}”
         <ExternalLink url={url} />
       </blockquote>
@@ -80,7 +77,7 @@ function Quote({ quote, name, url, title, img }) {
 function CoinbaseQuote({ quote, name, url, title, img }) {
   return (
     <div className="relative">
-      <blockquote className="text-xl leading-tight sm:text-3xl sm:leading-2xl sm:w-800 flex-1">
+      <blockquote className="text-xl leading-tight sm:text-3xl sm:leading-2xl lg:w-800 flex-1">
         “{quote}”
         <ExternalLink url={url} />
       </blockquote>

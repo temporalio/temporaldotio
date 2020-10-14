@@ -33,7 +33,7 @@ export default function ExplainTemporal() {
     `}>
       <style jsx>{`
 
-      @media (min-width: 640px) {
+      @media (min-width: 1024px) {
         .playerShadow {
           position: absolute;
           z-index: -1;
@@ -58,11 +58,11 @@ export default function ExplainTemporal() {
         <div className="playerShadow"></div>
       </div>
       <div className="flex flex-col sm:flex-row gap-4 justify-center my-8">
-        <a className="button" style={{
+        <a className="button w-300 h-60" style={{
           background: "#B2E7EA",
           color: "#141414"
         }} href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">More on YouTube</a>
-        <a className="button" href="https://docs.temporal.io/docs/go-run-your-first-app">Run Your First App</a>
+        <a className="button  w-300 h-60" href="https://docs.temporal.io/docs/go-run-your-first-app">Run Your First App</a>
       </div>
     </div>
   )

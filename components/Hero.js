@@ -8,7 +8,7 @@ function Bold({children}) {
 export default function Hero() {
   return (
     <div id="hero" className={`
-    min-h-screen container mx-auto flex flex-col justify-between p-4 sm:p-0
+    min-h-screen container mx-auto flex flex-col justify-between p-4 sm:p-4
     `}>
       <style jsx>{`
       `}</style>
@@ -22,14 +22,14 @@ export default function Hero() {
         </p>
       </div>
       <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">
-        <div className="flex flex-col sm:flex-row mb-4 gap-4 sm:text-xl">
-          <a className="button" style={{
+        <div className="flex flex-col sm:flex-row mb-4 gap-4 lg:text-xl">
+          <a className="button w-300 h-60 md:w-200 lg:w-300" style={{
             background: "#B2E7EA",
             color: "#141414"
           }} href="#explain-temporal">2 Minute Intro</a>
-          <a className="button" href="#join-us">We're Hiring</a>
+          <a className="button  w-300 h-60 md:w-200 lg:w-300" href="#join-us">We're Hiring</a>
         </div>
-        <a className="sm:text-xl" href="https://docs.temporal.io/docs/go-run-your-first-app" target="_blank" rel="noopener">I'm a developer, take me to code! →</a>
+        <a className="lg:text-xl" href="https://docs.temporal.io/docs/go-run-your-first-app" target="_blank" rel="noopener">I'm a developer, take me to code! →</a>
       </div>
     </div>
   )

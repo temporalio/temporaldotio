@@ -21,7 +21,7 @@ export default function TemporalVs() {
       <style jsx>{`
       `}</style>
 
-      <h1 className=" text-60 leading-60 sm:text-144 sm:leading-144 uppercase mb-4 sm:mb-16">Temporal Vs.</h1>
+      <h1 className=" text-60 leading-60 lg:text-144 lg:leading-144 uppercase mb-4 lg:mb-16">Temporal Vs.</h1>
       <h2 className="font-light italic text-md sm:text-2xl mb-4">What's the difference between Temporal and...</h2>
       <Accordion
         allowMultipleExpanded={false}

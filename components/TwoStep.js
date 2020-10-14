@@ -7,9 +7,6 @@ export default function TwoStep() {
     flex flex-col justify-evenly
     `}>
       <style jsx>{`
-      .step {
-        font-size: 64px;
-      }
       @media (min-width: 640px) {
         .step {
           font-size: 288px;
@@ -21,7 +18,7 @@ export default function TwoStep() {
       `}</style>
       <div className="flex flex-col sm:flex-row border-t border-b border-white">
         <div className="flex flex-1 sm:border-r border-b sm:border-b-0 border-white p-16">
-          <span className="step mr-16 hidden sm:block">1</span>
+          <span className="text-3xl md:text-60 mr-16 hidden sm:block">1</span>
           <div className="flex flex-col">
             <span className="mb-8"><span className="font-bold sm:hidden">Step 1: </span>Write workflow functions in your favorite languages.</span>
             <div className="grid grid-cols-2 gap-4">
@@ -33,7 +30,7 @@ export default function TwoStep() {
           </div>
         </div>
         <div className="flex flex-1 p-16">
-          <span className="step mr-16 hidden sm:block">2</span>
+          <span className="text-3xl md:text-60  mr-16 hidden sm:block">2</span>
           <div className="flex flex-col">
             <span className="mb-8"><span className="font-bold sm:hidden">Step 2: </span>Temporal handles all the reliability boilerplate!</span>
             <div className="grid grid-cols-3 gap-4">
@@ -50,13 +47,13 @@ export default function TwoStep() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row border-b border-white p-8 sm:text-xl">
+      <div className="flex flex-col lg:flex-row border-b border-white p-8 lg:text-xl">
       <span className="flex-1 flex justify-center">No More Queues</span>
-      <span  className="hidden sm:block"> • </span>
+      <span  className="hidden lg:block"> • </span>
        <span className="flex-1 flex justify-center">No More Cronjobs</span>
-      <span  className="hidden sm:block"> • </span>
+      <span  className="hidden lg:block"> • </span>
        <span className="flex-1 flex justify-center">No More Ad-Hoc Retry Logic</span>
-      <span  className="hidden sm:block"> • </span>
+      <span  className="hidden lg:block"> • </span>
        <span className="flex-1 flex justify-center">No More JSON "Programming"</span>
       </div>
     </div>

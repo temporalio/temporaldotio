@@ -12,7 +12,7 @@ export default function JoinUs() {
         </h2>
         <div>
           <div className="inline-flex flex-col items-center">
-            <a className="text-2xl button mb-4" style={{
+            <a className="text-2xl button  w-300 h-60 mb-4" style={{
               background: "#B2E7EA",
               color: "#141414"
             }} href="/careers">Join us</a>
@@ -37,13 +37,13 @@ export default function JoinUs() {
         </div>
         <div className="flex-1 flex">
           <div className="flex-1 flex items-center justify-center border-lightgray border-r">
-            <img className="my-2 sm:my-8 h-24 w-24 sm:h-32 sm:w-32 object-contain" src="/logos/logo-amplify.png" alt="vc"></img>
+            <img className="my-2 lg:my-8 h-24 w-24 lg:h-32 lg:w-32 object-contain" src="/logos/logo-amplify.png" alt="vc"></img>
           </div>
           <div className="flex-1 flex items-center justify-center border-lightgray border-r">
-            <img className="my-2 sm:my-8 h-24 w-24 sm:h-32 sm:w-32 object-contain" src="/logos/logo-sequoia.png" alt="vc"></img>
+            <img className="my-2 lg:my-8 h-24 w-24 lg:h-32 lg:w-32 object-contain" src="/logos/logo-sequoia.png" alt="vc"></img>
           </div>
           <div className="flex-1 flex items-center justify-center">
-            <img style={{ filter: "brightness(1.5)" }} className="my-2 sm:my-8 h-24 w-24 sm:h-32 sm:w-32 object-contain" src="/logos/logo-madrona.png" alt="vc"></img>
+            <img style={{ filter: "brightness(1.5)" }} className="my-2 lg:my-8 h-24 w-24 lg:h-32 lg:w-32 object-contain" src="/logos/logo-madrona.png" alt="vc"></img>
           </div>
 
         </div>
