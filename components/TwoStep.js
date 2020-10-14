@@ -21,9 +21,9 @@ export default function TwoStep() {
       `}</style>
       <div className="flex flex-col sm:flex-row border-t border-b border-white">
         <div className="flex flex-1 sm:border-r border-b sm:border-b-0 border-white p-16">
-          <span className="step mr-16">1</span>
+          <span className="step mr-16 hidden sm:block">1</span>
           <div className="flex flex-col">
-            <span className="mb-8">Write workflow functions in your favorite languages.</span>
+            <span className="mb-8"><span className="font-bold sm:hidden">Step 1: </span>Write workflow functions in your favorite languages.</span>
             <div className="grid grid-cols-2 gap-4">
               <img aria-label="go SDK" className="w-16 h-16 object-contain" src="/logos/logo-go.png" alt="logo" />
               <img aria-label="java SDK" className="w-16 h-16 object-contain" src="/logos/logo-java.png" alt="logo" />
@@ -33,9 +33,9 @@ export default function TwoStep() {
           </div>
         </div>
         <div className="flex flex-1 p-16">
-          <span className="step mr-16">2</span>
+          <span className="step mr-16 hidden sm:block">2</span>
           <div className="flex flex-col">
-            <span className="mb-8">Temporal handles all the reliability boilerplate!</span>
+            <span className="mb-8"><span className="font-bold sm:hidden">Step 2: </span>Temporal handles all the reliability boilerplate!</span>
             <div className="grid grid-cols-3 gap-4">
               <div>Routing</div>
               <div>Sharding</div>
@@ -50,7 +50,7 @@ export default function TwoStep() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row border-b border-white p-8">
+      <div className="flex flex-col sm:flex-row border-b border-white p-8 sm:text-xl">
       <span className="flex-1 flex justify-center">No More Queues</span>
       <span  className="hidden sm:block"> • </span>
        <span className="flex-1 flex justify-center">No More Cronjobs</span>
