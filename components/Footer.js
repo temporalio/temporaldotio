@@ -23,7 +23,7 @@ export default function Footer() {
               <div className="email_wrap">
                 <input className="bg-spaceblack w-full py-2 text-gray-500 border-b border-white" type="email" 
                 // value=""
-                 name="EMAIL" id="mce-EMAIL" placeholder="email" required="required" />
+                 name="EMAIL" id="mce-EMAIL" placeholder="Your email" required="required" />
               </div>
               <span className="cta_text" style={{ display: "none" }}>You are in the waitlist!</span>
               {/* <div className="spacer" style="display:none;"></div> */}
