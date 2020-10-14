@@ -52,12 +52,12 @@ export default function ExplainTemporal() {
         /* Player ratio: 100 / (1280 / 720) */
       }
       `}</style>
-      <h1 className="mt-8 text-2xl">Watch us explain Temporal in 2 Minutes</h1>
+      <h1 className="sm:w-700 sm:mb-4 text-4xl sm:text-60 leading-48 sm:leading-72">Watch us explain Temporal in 2 Minutes</h1>
       <div className="wrapper my-8 flex justify-center">
         <ResponsivePlayer url="https://www.youtube.com/watch?v=bc0qUobRhsw" />
         <div className="playerShadow"></div>
       </div>
-      <div className="flex gap-4 justify-center my-8">
+      <div className="flex flex-col sm:flex-row gap-4 justify-center my-8">
         <a className="button" style={{
           background: "#B2E7EA",
           color: "#141414"

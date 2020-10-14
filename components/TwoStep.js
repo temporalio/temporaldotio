@@ -50,10 +50,13 @@ export default function TwoStep() {
           </div>
         </div>
       </div>
-      <div className="flex border-b border-white p-8">
+      <div className="flex flex-col sm:flex-row border-b border-white p-8">
       <span className="flex-1 flex justify-center">No More Queues</span>
+      <span  className="hidden sm:block"> • </span>
        <span className="flex-1 flex justify-center">No More Cronjobs</span>
+      <span  className="hidden sm:block"> • </span>
        <span className="flex-1 flex justify-center">No More Ad-Hoc Retry Logic</span>
+      <span  className="hidden sm:block"> • </span>
        <span className="flex-1 flex justify-center">No More JSON State Machines</span>
       </div>
     </div>

@@ -13,22 +13,22 @@ export default function CaseStudies() {
 
       `}</style>
       <div className="container sm:ml-16">
-        <h1 className="bigH1 my-16">Case Studies</h1>
-        <p className="text-3xl font-light">Relied on by the companies other companies rely on.</p>
+        <h1 className="text-60 leading-60 sm:text-144 sm:leading-144 my-8 sm:mt-16 sm:mb-4">Case Studies</h1>
+        <p className="text-xl sm:text-3xl font-light">Relied on by the companies other companies rely on.</p>
       </div>
       <Tabs className="border-b border-spaceblack flex flex-col flex-1">
         <div className="relative h-64 flex-1 flex flex-col justify-end  border-spaceblack border-b">
-          <TabPanel className="absolute p-16" selectedClassName="">
-            <Quote img="todo" quote="todo lskdjlskjd lwkjdlwakjd lwakjdlkawjd lkajwldkjawlkdjalwkdjalwkjdw" name="sldkj sdlkj" title="CEO, sdlkjsd" />
+          <TabPanel className="absolute h-full w-full p-4 sm:p-8 sm:px-16" selectedClassName="">
+            <Quote img="todo" quote="todo lskdjlskjd lwkjdlwakjd lwakjdlkawjd sdkj" name="sldkj sdlkj" title="CEO, sdlkjsd" />
           </TabPanel>
-          <TabPanel className="absolute p-16" selectedClassName="">
-            <Quote img="todo" quote="todo lskdjlskjd lwkjdlwakjd lwakjdlkawjd lkajwldkjawlkdjalwkdjalwkjdw" name="sldkj sdlkj" title="CEO, sdlkjsd" />
+          <TabPanel className="absolute h-full w-full p-4 sm:p-8 sm:px-16" selectedClassName="">
+            <Quote img="todo" quote="todo lskdjlskjd lwkjdlwakjd lwakjdlkawjd sdkj" name="sldkj sdlkj" title="CEO, sdlkjsd" />
           </TabPanel>
-          <TabPanel className="absolute p-16" selectedClassName="">
-            <Quote img="todo" quote="todo lskdjlskjd lwkjdlwakjd lwakjdlkawjd lkajwldkjawlkdjalwkdjalwkjdw" name="sldkj sdlkj" title="CEO, sdlkjsd" />
+          <TabPanel className="absolute h-full w-full p-4 sm:p-8 sm:px-16" selectedClassName="">
+            <Quote img="todo" quote="todo lskdjlskjd lwkjdlwakjd lwakjdlkawjd sdkj" name="sldkj sdlkj" title="CEO, sdlkjsd" />
           </TabPanel>
-          <TabPanel className="absolute p-16" selectedClassName="">
-            <Quote img="todo" quote="todo lskdjlskjd lwkjdlwakjd lwakjdlkawjd lkajwldkjawlkdjalwkdjalwkjdw" name="sldkj sdlkj" title="CEO, sdlkjsd" />
+          <TabPanel className="absolute h-full w-full p-4 sm:p-8 sm:px-16" selectedClassName="">
+            <Quote img="todo" quote="todo lskdjlskjd lwkjdlwakjd lwakjdlkawjd sdkj" name="sldkj sdlkj" title="CEO, sdlkjsd" />
           </TabPanel>
         </div>
         <TabList className="flex bg-gray5">
@@ -55,15 +55,8 @@ function Quote({ quote, name, title, img }) {
   return (
     <div className="">
       <style jsx>{`
-@media (min-width: 640px) { 
-  blockquote {
-    font-size: 64px;
-    line-height: 72px;
-    width: 1032px;
-  }
-}
       `}</style>
-      <blockquote className="sm:text-6xl flex-1">
+      <blockquote className="text-4xl leading-36 sm:text-6xl sm:leading-60 sm:w-800 flex-1">
         “{quote}”
       </blockquote>
       <div className="flex p-8">

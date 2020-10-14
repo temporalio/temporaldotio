@@ -26,7 +26,7 @@ export default function Nav() {
             </a>
           </Link>
         </li>
-        <ul className="flex justify-between items-center space-x-4">
+        <ul className="hidden md:flex justify-between items-center space-x-4">
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
               <a href={href} className="hover:text-blue-300">
