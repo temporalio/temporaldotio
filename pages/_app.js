@@ -1,9 +1,23 @@
 import '../styles/index.css'
 
 import Head from 'next/head';
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+import * as gtag from '../lib/gtag'
 
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter()
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   return (
     <div>
       <Head>
@@ -19,6 +33,22 @@ function MyApp({ Component, pageProps }) {
         <meta property="twitter:image" content="https://temporal.io/logo-font-straight-dark.svg" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@temporaltech" />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=[Tracking ID]"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '[Tracking ID]');
+              `,
+          }}
+        />
       </Head>
       <Component {...pageProps} />
     </div>
