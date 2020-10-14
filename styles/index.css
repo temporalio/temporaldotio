@@ -66,3 +66,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.lever-job-title {
+  color:  #90cdf4 !important
+}
+.lever-job-tag {
+  color: #F2F2F2 !important
+}

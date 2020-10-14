@@ -29,7 +29,7 @@ export default function Hero() {
           }} href="https://www.youtube.com/watch?v=bc0qUobRhsw">2 Minute Intro</a>
           <a className="button" href="/careers">We're Hiring</a>
         </div>
-        <a href="https://docs.temporal.io/docs/go-run-your-first-app" target="_blank" rel="noopener">I'm a developer, I want to run my first app! →</a>
+        <a className="sm:text-xl" href="https://docs.temporal.io/docs/go-run-your-first-app" target="_blank" rel="noopener">I'm a developer, take me to code! →</a>
       </div>
     </div>
   )
