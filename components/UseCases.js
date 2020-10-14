@@ -31,7 +31,18 @@ export default function UseCases() {
           </p>
         </UCaseItem>
         <UCaseItem header="Financial Transactions">
-          <p className="mb-3">TODO: Financial Transactions</p>
+          <p className="mb-3">
+            For software that interacts with money (especially someone else's), reliability and consistency is the highest priority. Traditional solutions for financial transactions almost always introduce lurking reliability issues which directly translates to lost revenue for the business. Temporal eliminates these issues by providing an inherently reliable foundation for critical financial operations.
+          </p>
+          <ul className="mb-3 list-disc ml-6 lg:w-700">
+            <li className="mb-2">Native support for the SAGA pattern which supports custom compensation and rollback logic</li>
+            <li className="mb-2">Support for long-running operations</li>
+            <li className="mb-2">Guarantees that workflow code eventually completes</li>
+            <li className="mb-2">Has built-in support for exponential activity retries</li>
+          </ul>
+          <p className="mb-3">
+            There have even been cases where switching to Temporal's technology immediately resulted in financial gains for the company because they previous solution was leaking money.
+          </p>
         </UCaseItem>
         <UCaseItem header="Resource Provisioning">
           <h2 className="font-bold mb-4">Provisioning resources depends on a series of potentially long-running operations with many possibilities for intermittent failures.</h2>
@@ -84,9 +95,9 @@ function UCaseItem({ header, children, defaultState = false }) {
           <span>{header}</span>
           {state ?
             // - icon
-            <svg className="w-8 sm:w-12 h-8 sm:h-12"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
-</svg>
+            <svg className="w-8 sm:w-12 h-8 sm:h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
+            </svg>
 
             :
             // plus icon
