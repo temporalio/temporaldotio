@@ -25,15 +25,15 @@ export default function JoinUs() {
         <div className="px-4 sm:px-8 py-4 sm:py-16 flex-1 border-b border-lightgray flex items-center">
           <img className="rounded-full w-16 my-4 mr-8 border border-lightgray" src="/logos/logo-samar.png" alt="samar abbas"></img>
           <div>
-            <div className="mb-4">Samar Abbas (CTO)</div>
-            <div>15 years at AWS and Microsoft working on Durable Task Functions</div>
+            <div className="mb-2 sm:mb-4 font-bold text-lg">Samar Abbas (CTO)</div>
+            <div>AWS, Microsoft, Uber engineering leadership veteran, created Durable Task Framework which was the basis of Azure Durable Functions. Co-created Cadence which is the predecessor to Temporal</div>
           </div>
         </div>
         <div className="px-4 sm:px-8 py-4 sm:py-16  flex-1 border-b border-lightgray flex items-center">
           <img className="rounded-full w-16 my-4 mr-8 border border-lightgray" src="/logos/logo-maxim.png" alt="Maxim Fateev"></img>
           <div>
-            <div className="mb-4">Maxim Fateev (CEO)</div>
-            <div>15 years at AWS and Uber working on AWS SWF and Uber Cadence</div>
+            <div className="mb-2 sm:mb-4 font-bold text-lg">Maxim Fateev (CEO)</div>
+            <div>AWS, Google, Uber, engineering leadership veteran, led development of SQS replicated message store and the SWF project at AWS. Co-created Cadence which is the predecessor to Temporal.</div>
           </div>
         </div>
         <div className="flex-1 flex">

@@ -35,19 +35,32 @@ export default function TemporalVs() {
           Temporal offers a battle tested framework to organize all async business logic, running it atop a single set of infrastructure at massive scale.</p>
         </AccItem>
         <AccItem uuid="Airflow" header="Airflow/Prefect">
-          <h2 className="font-bold mb-4">Most developers hand-write async flows using queues and job processors.</h2>
-          <p className="mb-3">This often requires requisitioning new infrastructure, and hand-writing often buggy, not-well-distributed and hard-to-test code with a lot of ad hoc code to review that has nothing to do with the business logic.</p>
-          <p className="mb-3">Temporal offers a battle tested framework to organize all async business logic, running it atop a single set of infrastructure at massive scale.</p>
+          <p className="mb-3">Airflow/Prefect is a DAG based data pipeline solution aimed at data scientists running at a small-medium scale. Whereas Temporal provides a code-first development environment which can be used to build data pipelines, orchestrate microservices, provision resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love.</p>
+          <p className="mb-3">While Temporal is a great option for data pipelines, we are not a data pipeline framework. Temporal enables the development of apps of all shapes, sizes and scales.</p>
+          <p className="mb-3">Temporal targets developers and all code written with Temporal runs directly instead of compiling a intermediate DAG. This gives you flexibility which is impossible to achieve with more rigid DAG based systems.</p>
         </AccItem>
-        <AccItem uuid="Camunda" header="Camunda">
-          <h2 className="font-bold mb-4">Most developers hand-write async flows using queues and job processors.</h2>
-          <p className="mb-3">This often requires requisitioning new infrastructure, and hand-writing often buggy, not-well-distributed and hard-to-test code with a lot of ad hoc code to review that has nothing to do with the business logic.</p>
-          <p className="mb-3">Temporal offers a battle tested framework to organize all async business logic, running it atop a single set of infrastructure at massive scale.</p>
+        <AccItem uuid="Zeebe" header="Zeebe">
+          <h2 className="font-bold mb-4">Zeebe is a BPMN based workflow engine for orchestrating microservices at a large scale.</h2>
+          <p className="mb-3">Temporal provides a strongly-consistent code-first development environment which can be used for orchestrating microservices, building data pipelines, provisioning resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love. </p>
+          <p className="mb-3">Temporal targets developers and all code written with Temporal runs directly instead of being translated to an intermediate representation. This gives you flexibility which is impossible to achieve with DSL approaches.</p>
         </AccItem>
         <AccItem uuid="AWS" header="AWS Step Functions">
-          <h2 className="font-bold mb-4">Most developers hand-write async flows using queues and job processors.</h2>
-          <p className="mb-3">This often requires requisitioning new infrastructure, and hand-writing often buggy, not-well-distributed and hard-to-test code with a lot of ad hoc code to review that has nothing to do with the business logic.</p>
-          <p className="mb-3">Temporal offers a battle tested framework to organize all async business logic, running it atop a single set of infrastructure at massive scale.</p>
+          <h2 className="font-bold mb-4">Step Functions is a JSON based workflow coordination solution aimed at high scale, light complexity applications. </h2>
+          <p className="mb-3">
+            Whereas Temporal provides a code-first development environment which can be used to build data pipelines, orchestrate microservices, provision resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love.
+          </p>
+          <p className="mb-3">
+            Step Functions can be a great service for non-developers or technical managers to define business logic without writing code. While Step Functions is a great service there is no open source implementation provided which puts it into a much different class compared to Temporal.
+          </p>
+          <p className="mb-3">
+            Temporal is an open source system which enables developers to test locally, deploy to their own hardware and more. Step Functions is only available as a service from AWS which puts you at the mercy of their decisions.
+          </p>
+          <p className="mb-3">
+            Temporal targets developers and all code written with Temporal runs directly instead of being translated from a DSL. This gives you flexibility which is impossible to achieve with more rigid DSL based systems.
+          </p>
+          <p className="mb-3">
+            Step Functions does not support signaling and other complex "actor" features. This drastically restricts the potential use cases for Step Functions.
+          </p>
         </AccItem>
       </Accordion>
     </div>
@@ -55,7 +68,7 @@ export default function TemporalVs() {
 }
 
 
-function AccItem({ header, children, uuid}) {
+function AccItem({ header, children, uuid }) {
   return (
     <AccordionItem uuid={uuid} className="border-b border-white">
 

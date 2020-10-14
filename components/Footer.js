@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="p-16 border-b border-gray5">
 
           <h2 className="text-3xl font-bold mb-4">Temporal Cloud</h2>
-          <p className="w-56 mb-8">Sign up for Temporal Cloud updates and early access:</p>
+          <p className="w-56 mb-8">Sign up for Temporal Cloud waitlist and updates!</p>
 
           <form action="https://temporal.us17.list-manage.com/subscribe/post?u=2334a0f23e55fd1840613755d&amp;id=bbbbd4709f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate="novalidate" className="validate">
             <div id="mc_embed_signup_scroll" className="signup_controls">

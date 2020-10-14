@@ -57,7 +57,7 @@ export default function TwoStep() {
       <span  className="hidden sm:block"> • </span>
        <span className="flex-1 flex justify-center">No More Ad-Hoc Retry Logic</span>
       <span  className="hidden sm:block"> • </span>
-       <span className="flex-1 flex justify-center">No More JSON State Machines</span>
+       <span className="flex-1 flex justify-center">No More JSON "Programming"</span>
       </div>
     </div>
   )
