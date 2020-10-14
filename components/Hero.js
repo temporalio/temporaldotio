@@ -8,30 +8,28 @@ function Bold({children}) {
 export default function Hero() {
   return (
     <div id="hero" className={`
-    min-h-screen container mx-auto flex flex-col justify-between
+    min-h-screen container mx-auto flex flex-col justify-between p-4 sm:p-4
     `}>
       <style jsx>{`
       `}</style>
       <Nav />
-      <h1 className="bigH1 uppercase">
-        Build Invincible Apps
-        </h1>
-      <p className="text-2xl md:w-700">
-        Temporal is the <Bold>open source</Bold> runtime for <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services.
-      </p>
-
-      <blockquote className="md:w-64 border-l-4 border-yellow-300 pl-4">
-        This is a work in progress site, please pardon our appearance while we work to launch our new site soon!
-      </blockquote>
-      <div className="flex flex-col sm:flex-row justify-between mb-24 items-center">
-        <div className="flex flex-col sm:flex-row  gap-4">
-          <a className="button" style={{
+      <div>
+        <h1 className="text-60 leading-60 mb-8 sm:text-144 sm:leading-144 uppercase lg:w-800">
+          Build Invincible Apps
+          </h1>
+        <p className="text-2xl md:w-700 mb-8">
+          Temporal is the <Bold>open source</Bold> platform for <Bold>mission critical</Bold> code that interacts with <Bold>unreliable, distributed</Bold> services.
+        </p>
+      </div>
+      <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">
+        <div className="flex flex-col sm:flex-row mb-4 gap-4 lg:text-xl">
+          <a className="button w-300 h-60 md:w-200 lg:w-300" style={{
             background: "#B2E7EA",
             color: "#141414"
-          }} href="https://www.youtube.com/watch?v=bc0qUobRhsw">2 Minute Intro</a>
-          <a className="button" href="/careers">We're Hiring</a>
+          }} href="#explain-temporal">2 Minute Intro</a>
+          <a className="button  w-300 h-60 md:w-200 lg:w-300" href="#join-us">We're Hiring</a>
         </div>
-        <a href="https://github.com/temporalio/temporal/" target="_blank" rel="noopener">I'm a developer, take me to code! →</a>
+        <a className="lg:text-xl" href="https://docs.temporal.io/docs/go-run-your-first-app" target="_blank" rel="noopener">I'm a developer, take me to code! →</a>
       </div>
     </div>
   )

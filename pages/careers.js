@@ -6,23 +6,30 @@ import Head from 'next/head';
 export default function CareersPage() {
   return (
     <div>
+      <style jsx>{` 
+      #lever-jobs-container {
+        color: white
+      }
+      `}</style>
       <Nav />
-      <div className="ml-16">
+      <div className="ml-4 sm:ml-16">
 
-      <Head>
-        <script dangerouslySetInnerHTML={{
-              __html: `window.leverJobsOptions = {accountName: 'temporal', includeCss: true};` }} 
+        <Head>
+          <title>Temporal.io Careers</title>
+          <script dangerouslySetInnerHTML={{
+            __html: `window.leverJobsOptions = {accountName: 'temporal', includeCss: true};`
+          }}
           />
-       <script async type='text/javascript' src='https://andreasmb.github.io/lever-jobs-embed/index.js'></script>
-      </Head>
-      <h1 className="bigH1 font-bold">Work with Temporal</h1>
-      <h2 className="text-2xl">If none of these positions are a fit, email careers@temporal.io describing your dream job.</h2>
+          <script async type='text/javascript' src='https://andreasmb.github.io/lever-jobs-embed/index.js'></script>
+        </Head>
+        <h1 className="text-3xl sm:w-800 leading-lg sm:text-4xl sm:leading-4xl font-bold mb-4">Help us deliver a new way to build scalable and reliable applications!</h1>
+        <h2 className="text-xl leading-tight">If none of these positions are a fit, email careers@temporal.io describing your dream job.</h2>
       </div>
-      <div className="container ml-16 bg-gray-300 p-8 rounded-lg my-16" >
-      <div id='lever-jobs-container'></div>
+      <div className="container p-8 rounded-lg my-16 sm:ml-16" >
+        <div id='lever-jobs-container'></div>
       </div>
       <hr />
-      <Footer/>
+      <Footer />
     </div>
   )
 }

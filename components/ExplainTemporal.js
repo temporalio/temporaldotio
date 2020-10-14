@@ -33,7 +33,7 @@ export default function ExplainTemporal() {
     `}>
       <style jsx>{`
 
-      @media (min-width: 640px) {
+      @media (min-width: 1024px) {
         .playerShadow {
           position: absolute;
           z-index: -1;
@@ -52,17 +52,17 @@ export default function ExplainTemporal() {
         /* Player ratio: 100 / (1280 / 720) */
       }
       `}</style>
-      <h1 className="mt-8 text-2xl">Watch us explain Temporal in 2 Minutes</h1>
+      <h1 className="sm:w-700 sm:mb-4 text-4xl sm:text-60 leading-48 sm:leading-72">Watch us explain Temporal in 2 Minutes</h1>
       <div className="wrapper my-8 flex justify-center">
-        <ResponsivePlayer url="https://www.youtube.com/watch?v=bc0qUobRhsw" />
+        <ResponsivePlayer url="https://www.youtube.com/watch?v=f-18XztyN6c&feature=youtu.be" />
         <div className="playerShadow"></div>
       </div>
-      <div className="flex gap-4 justify-center my-8">
-        <a className="button" style={{
+      <div className="flex flex-col sm:flex-row gap-4 justify-center my-8">
+        <a className="button w-300 h-60" style={{
           background: "#B2E7EA",
           color: "#141414"
-        }} href="#intro">Watch 2 minute Intro</a>
-        <a className="button" href="#jobs">We're Hiring</a>
+        }} href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">More on YouTube</a>
+        <a className="button  w-300 h-60" href="https://docs.temporal.io/docs/go-run-your-first-app">Run Your First App</a>
       </div>
     </div>
   )
