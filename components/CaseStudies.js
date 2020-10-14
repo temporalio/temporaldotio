@@ -25,6 +25,7 @@ export default function CaseStudies() {
               quote="One thing that the API does really well is give you this illusion of single threaded or at least local execution without having to get into the details of trying to orchestrate multiple things. It's pretty amazing."
               name="Steven Cipolla" title="Senior Staff Software Engineer, Box" />
           </TabPanel>
+
           <TabPanel className="absolute h-full w-full p-2 sm:p-8 sm:px-16" selectedClassName="">
             <Quote
               url="https://deploy-preview-129--mystifying-fermi-1bc096.netlify.app/blog/how-temporal-simplified-checkr-workflows"
@@ -41,14 +42,14 @@ export default function CaseStudies() {
           </TabPanel>
         </div>
         <TabList className="flex bg-gray5">
-          <Tab selectedClassName="bg-purple2" className="p-2 flex-1 grid place-items-center border-r border-spaceblack">
-            <img className="h-16 w-16 sm:h-32 sm:w-32 object-contain grayscale" src="/logos/logo-Box.png" aria-label="Box logo" alt="Box logo" />
+          <Tab selectedClassName="bg-purple2 nograyscale" className=" grayscale p-2 flex-1 grid place-items-center border-r border-spaceblack">
+            <img className="h-16 w-16 sm:h-32 sm:w-32 object-cover" src="/logos/logo-Box2.png" aria-label="Box logo" alt="Box logo" />
           </Tab>
-          <Tab selectedClassName="bg-purple2" className="p-2 flex-1 grid place-items-center border-r border-spaceblack">
-            <img className="h-16 w-16 sm:h-32 sm:w-32 object-contain grayscale" src="/logos/logo-Checkr.png" aria-label="Checkr logo" alt="Checkr logo" />
+          <Tab selectedClassName="bg-purple2 nograyscale" className=" grayscale p-2 flex-1 grid place-items-center border-r border-spaceblack">
+            <img className="h-16 w-16 sm:h-32 sm:w-32 object-contain" src="/logos/logo-Checkr.png" aria-label="Checkr logo" alt="Checkr logo" />
           </Tab>
-          <Tab selectedClassName="bg-purple2" className="p-2 flex-1 grid place-items-center ">
-            <img className="h-16 w-16 sm:h-32 sm:w-32 object-contain grayscale" src="/logos/logo-Coinbase.png" aria-label="Coinbase logo" alt="Coinbase logo" />
+          <Tab selectedClassName="bg-purple2 nograyscale" className=" grayscale p-2 flex-1 grid place-items-center ">
+            <img className="h-16 w-16 sm:h-32 sm:w-32 object-contain" src="/logos/logo-Coinbase.png" aria-label="Coinbase logo" alt="Coinbase logo" />
           </Tab>
         </TabList>
       </Tabs>
@@ -88,7 +89,7 @@ function CoinbaseQuote({ quote, name, url, title, img }) {
         <span className="font-bold mr-4">{name}</span>
         <span className="font-light">{title}</span>
       </div>
-      <aside className="text-yellow-900 italic text-md leading-tight sm:text-lg sm:absolute bottom-0 right-0 sm:w-48">
+      <aside className="text-yellow-900 italic text-md leading-tight sm:text-lg">
         *As of the time of writing, Coinbase is using Cadence (the Temporal predecessor) and is only evaluating a future migration to Temporal
       </aside>
     </div>

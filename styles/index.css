@@ -51,6 +51,10 @@ body {
   mix-blend-mode: luminosity;
   opacity: 0.5;
 }
+.nograyscale {
+  mix-blend-mode: normal;
+  opacity: 1;
+}
 
 
 .button {
@@ -62,7 +66,7 @@ body {
   box-sizing: border-box;
   border-radius: 46px;
   padding: 20px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
