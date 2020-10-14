@@ -46,20 +46,6 @@ body {
   background-image: url('/StarBackground.png')
 }
 
-@media (min-width: 640px) { 
-  .bigH1 {
-    font-size: 144px;
-    line-height: 144px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-  }
-}
-.bigH1 {
-  font-size: 64px;
-  line-height: 64px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
 
 .grayscale {
   mix-blend-mode: luminosity;

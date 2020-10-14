@@ -12,7 +12,7 @@ export default function CaseStudies() {
       <style jsx>{`
 
       `}</style>
-      <div className="container ml-2 sm:ml-16">
+      <div className="container pl-2 sm:pl-16">
         <h1 className="text-60 leading-60 sm:text-144 sm:leading-144 mt-4 sm:mt-8 sm:mb-4">Case Studies</h1>
         <p className="text-xl sm:text-3xl font-light mb-4">Relied on by the companies <span className="italic">other companies</span> rely on.</p>
       </div>
