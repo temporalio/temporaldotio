@@ -20,7 +20,7 @@ export default function TwoStep() {
       }
       `}</style>
       <div className="flex flex-col sm:flex-row border-t border-b border-white">
-        <div className="flex flex-1 border-r border-white p-16">
+        <div className="flex flex-1 sm:border-r border-b sm:border-b-0 border-white p-16">
           <span className="step mr-16">1</span>
           <div className="flex flex-col">
             <span className="mb-8">Write workflow functions in your favorite languages.</span>

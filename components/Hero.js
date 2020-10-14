@@ -8,7 +8,7 @@ function Bold({children}) {
 export default function Hero() {
   return (
     <div id="hero" className={`
-    min-h-screen container mx-auto flex flex-col justify-between
+    min-h-screen container mx-auto flex flex-col justify-between p-4 sm:p-0
     `}>
       <style jsx>{`
       `}</style>

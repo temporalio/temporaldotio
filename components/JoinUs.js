@@ -38,13 +38,13 @@ export default function JoinUs() {
         </div>
         <div className="flex-1 flex">
           <div className="flex-1 flex items-center justify-center border-lightgray border-r">
-            <img  style={{ filter: "grayscale(1) brightness(2)" }}  className="my-2 sm:my-8 h-24 w-24 sm:h-32 sm:w-32 object-contain" src="/logos/logo-amplify.png" alt="vc"></img>
+            <img   className="my-2 sm:my-8 h-24 w-24 sm:h-32 sm:w-32 object-contain" src="/logos/logo-amplify.png" alt="vc"></img>
           </div>
           <div className="flex-1 flex items-center justify-center border-lightgray border-r">
-            <img  style={{ filter: "grayscale(1) brightness(2)" }}  className="my-2 sm:my-8 h-24 w-24 sm:h-32 sm:w-32 object-contain" src="/logos/logo-sequoia.png" alt="vc"></img>
+            <img   className="my-2 sm:my-8 h-24 w-24 sm:h-32 sm:w-32 object-contain" src="/logos/logo-sequoia.png" alt="vc"></img>
           </div>
           <div className="flex-1 flex items-center justify-center">
-            <img style={{ filter: "grayscale(1) brightness(4)" }} className="my-2 sm:my-8 h-24 w-24 sm:h-32 sm:w-32 object-contain" src="/logos/logo-madrona.png" alt="vc"></img>
+            <img style={{ filter: "brightness(1.5)" }} className="my-2 sm:my-8 h-24 w-24 sm:h-32 sm:w-32 object-contain" src="/logos/logo-madrona.png" alt="vc"></img>
           </div>
 
         </div>

@@ -39,7 +39,7 @@ export default function UseCases() {
           Monitoring</Tab>
         </TabList>
         <div className="relative flex-1">
-          <TabPanel className="sm:absolute w-full h-full" selectedClassName="bg-white">
+          <TabPanel className="p-4 sm:absolute w-full h-full" selectedClassName="bg-white">
             <h2>
             Temporal is a perfect fit for microservice orchestration scenarios. It guarantees that workflow code eventually completes, has built-in support for exponential activity retries, and simplifies the coding of the compensation logic with native Saga pattern support.
 
@@ -49,10 +49,10 @@ Temporal provides full visibility into each workflow's state. Contrast this with
 
             </h2>
           </TabPanel>
-          <TabPanel className="sm:absolute w-full h-full" selectedClassName="bg-white">
+          <TabPanel className="p-4 sm:absolute w-full h-full" selectedClassName="bg-white">
             <h2>TODO: COPY FOR FINANCIAL TRANSACTIONS</h2>
           </TabPanel>
-          <TabPanel className="sm:absolute w-full h-full" selectedClassName="bg-white">
+          <TabPanel className="p-4 sm:absolute w-full h-full" selectedClassName="bg-white">
             <h2>
               
 Provisioning resources depends on a series of potentially long-running operations with many possibilities for intermittent failures. While existing deployment tools support simple operations, many scenarios may still require a custom provisioning flow:
@@ -74,7 +74,7 @@ Temporal workflows can express complex decision trees using a general-purpose pr
 
             </h2>
           </TabPanel>
-          <TabPanel className="sm:absolute w-full h-full" selectedClassName="bg-white">
+          <TabPanel className="p-4 sm:absolute w-full h-full" selectedClassName="bg-white">
             <h2>
             Temporal provides guaranteed execution with exactly-once semantics with automatic retries.
 
