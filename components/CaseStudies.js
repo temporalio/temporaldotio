@@ -63,7 +63,7 @@ function Quote({ quote, name, url, title, img }) {
         <ExternalLink url={url} />
       </blockquote>
       <div className="flex items-center">
-        <img className="inline mr-4 w-16 h-16 rounded-full border border-spaceblack" src={img} alt="todo" />
+        <img className="inline mr-4 w-16 h-16 rounded-full border border-spaceblack" src={img} alt={name} />
         <div className="inline-flex flex-col sm:flex-row">
           <span className="font-bold mr-4">{name}</span>
           <span className="font-light">{title}</span>
@@ -82,7 +82,7 @@ function CoinbaseQuote({ quote, name, url, title, img }) {
         <ExternalLink url={url} />
       </blockquote>
       <div className="flex items-center p-4 sm:p-8">
-        <img className="inline mr-4 w-12 h-12 rounded-full border border-spaceblack" src={img} alt="todo" />
+        <img className="inline mr-4 w-12 h-12 rounded-full border border-spaceblack" src={img} alt={name} />
         <span className="font-bold mr-4">{name}</span>
         <span className="font-light">{title}</span>
       </div>

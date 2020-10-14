@@ -19,7 +19,7 @@ export default function IndexPage() {
       <TwoStep />
       <ExplainTemporal />
       <UseCases />
-      <CaseStudies />
+      {/* <CaseStudies /> */}
       <JoinUs />
       <TemporalVs />
       <FinalQuote />

@@ -44,13 +44,12 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="mb-4 font-light text-gray-200 sm:text-gray-500">Docs</h3>
-            {/* todo: fix these links */}
             <ul>
-              <li className="mb-2"><a href="https://github.com/temporalio/temporal">Guides</a></li>
-              <li className="mb-2"><a href="https://community.temporal.io/">Tutorials</a></li>
-              <li className="mb-2"><a href="https://twitter.com/temporaltech">API</a></li>
-              <li className="mb-2"><a href="https://twitter.com/temporaltech">Quickstarts</a></li>
-              <li className="mb-2"><a href="https://twitter.com/temporaltech">REPL</a></li>
+              <li className="mb-2"><a href="https://docs.temporal.io/docs/install-temporal-server">Guides</a></li>
+              <li className="mb-2"><a href="https://docs.temporal.io/docs/go-sdk-tutorial-prerequisites">Tutorials</a></li>
+              <li className="mb-2"><a href="https://docs.temporal.io/docs/overview">API</a></li>
+              <li className="mb-2"><a href="https://docs.temporal.io/docs/go-run-your-first-app">Quickstarts</a></li>
+              {/* <li className="mb-2"><a href="https://twitter.com/temporaltech">REPL</a></li> */}
             </ul>
           </div>
           <img className="absolute bottom-0 right-0 mb-8 mr-8" src="/logos/temporal-white-mark.png" alt="logo" />
