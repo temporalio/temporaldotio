@@ -1,9 +1,9 @@
 // import Link from 'next/link'
 import Nav from './nav'
 
-function Bold({children}) {
-  return <span className="font-bold">{children}</span>
-}
+// function Bold({children}) {
+//   return <span className="font-bold">{children}</span>
+// }
 
 export default function Hero() {
   return (
@@ -16,7 +16,9 @@ export default function Hero() {
           Build Invincible Apps
           </h1>
         <p className="text-2xl md:w-700 mb-8">
-          Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale.
+          {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
+          {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
+          Temporal is the open source microservices orchestration engine for running mission critical code at any scale.
         </p>
       </div>
       <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">

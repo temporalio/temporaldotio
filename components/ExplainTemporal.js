@@ -54,7 +54,7 @@ export default function ExplainTemporal() {
         /* Player ratio: 100 / (1280 / 720) */
       }
       `}</style>
-      <h1 className="sm:mb-4 text-4xl sm:text-60 leading-48 sm:leading-72">Temporal explained in 2 minutes</h1>
+      <h1 className="sm:mb-4 text-4xl sm:text-60 leading-48 sm:leading-72">Temporal in 2 Minutes</h1>
       <div className="wrapper my-8 flex justify-center">
         <ResponsivePlayer url="https://www.youtube.com/watch?v=f-18XztyN6c&feature=youtu.be" />
         <div className="playerShadow"></div>

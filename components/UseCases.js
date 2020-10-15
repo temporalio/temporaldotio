@@ -31,8 +31,11 @@ export default function UseCases() {
           </p>
         </UCaseItem>
         <UCaseItem header="Financial Transactions">
+          <h2 className="font-bold mb-3">
+            For software that interacts with money (especially someone else's), reliability and consistency is the highest priority. 
+          </h2>
           <p className="mb-3">
-            For software that interacts with money (especially someone else's), reliability and consistency is the highest priority. Traditional solutions for financial transactions almost always introduce lurking reliability issues which directly translates to lost revenue for the business. Temporal eliminates these issues by providing an inherently reliable foundation for critical financial operations.
+          Traditional solutions for financial transactions almost always introduce lurking reliability issues which directly translates to lost revenue for the business. Temporal eliminates these issues by providing an inherently reliable foundation for critical financial operations.
           </p>
           <ul className="mb-3 list-disc ml-6 lg:w-700">
             <li className="mb-2">Native support for the SAGA pattern which supports custom compensation and rollback logic</li>

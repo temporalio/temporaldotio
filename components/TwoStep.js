@@ -37,9 +37,9 @@ export default function TwoStep() {
           </div>
         </div>
       </div>
-      <div className="flex-1 flex border-b border-white items-center p-8 lg:text-xl">
-        <span className="flex-1 flex justify-center text-2xl">No more:</span>
-        <div className="flex flex-col lg:flex-row lg:space-x-8">
+      {/* <div className="flex-1 flex border-b border-white items-center p-8 lg:text-xl">
+        <span className="flex-1 inline-flex justify-center text-2xl">No more:</span>
+        <div className="flex-1 lg:flex-auto inline-flex flex-col lg:flex-row lg:space-x-8">
           <span className="flex justify-center">Queues</span>
           <span className="hidden xl:flex items-center"> <Star /> </span>
           <span className="flex justify-center">Cronjobs</span>
@@ -48,7 +48,7 @@ export default function TwoStep() {
           <span className="hidden xl:flex items-center"> <Star /> </span>
           <span className="flex justify-center">JSON "Programming"</span>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
