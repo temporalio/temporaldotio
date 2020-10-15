@@ -11,14 +11,12 @@ export default function JoinUs() {
         <h2 className="text-4xl leading-48 sm:text-60 sm:leading-60 mb-8">
           Experience at the largest scale. Backing by the greatest Investors.
         </h2>
-        <div>
-          <div className="inline-flex flex-col items-center">
-            <a className="text-2xl button  w-300 h-60 mb-4" style={{
-              background: "#B2E7EA",
-              color: "#141414"
-            }} href="/careers">Join us</a>
-            <p className="text-lg inline">Seriously, we're hiring</p>
-          </div>
+        <div className="inline-flex flex-col items-center">
+          <a className="text-2xl button  w-300 h-60 mb-4" style={{
+            background: "#B2E7EA",
+            color: "#141414"
+          }} href="/careers">Join us</a>
+          <p className="text-lg inline">Seriously, we're hiring</p>
         </div>
       </div>
       <div className="flex flex-col flex-1 border-t border-lightgray">
@@ -38,13 +36,13 @@ export default function JoinUs() {
         </div>
         <div className="flex-1 flex">
           <div className="flex-1 flex items-center justify-center border-lightgray border-r">
-            <img className="my-2 lg:my-8 h-24 w-24 lg:h-32 lg:w-32 object-contain" src="/logos/logo-amplify.png" alt="vc"></img>
+            <img style={{ filter: "brightness(1.5) grayscale(1)" }}  className="my-2 lg:my-8 h-24 w-24 lg:h-32 lg:w-32 object-contain" src="/logos/logo-amplify.png" alt="vc"></img>
           </div>
           <div className="flex-1 flex items-center justify-center border-lightgray border-r">
-            <img className="my-2 lg:my-8 h-24 w-24 lg:h-32 lg:w-32 object-contain" src="/logos/logo-sequoia.png" alt="vc"></img>
+            <img style={{ filter: "brightness(1.5) grayscale(1)" }}  className="my-2 lg:my-8 h-24 w-24 lg:h-32 lg:w-32 object-contain" src="/logos/logo-sequoia.png" alt="vc"></img>
           </div>
           <div className="flex-1 flex items-center justify-center">
-            <img style={{ filter: "brightness(1.5)" }} className="my-2 lg:my-8 h-24 w-24 lg:h-32 lg:w-32 object-contain" src="/logos/logo-madrona.png" alt="vc"></img>
+            <img style={{ filter: "brightness(3.5) grayscale(1)" }} className="my-2 lg:my-8 h-24 w-24 lg:h-32 lg:w-32 object-contain" src="/logos/logo-madrona.png" alt="vc"></img>
           </div>
 
         </div>

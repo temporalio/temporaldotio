@@ -57,7 +57,7 @@ export default function ExplainTemporal() {
         <ResponsivePlayer url="https://www.youtube.com/watch?v=f-18XztyN6c&feature=youtu.be" />
         <div className="playerShadow"></div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center my-8">
+      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center my-8">
         <a className="button w-300 h-60" style={{
           background: "#B2E7EA",
           color: "#141414"

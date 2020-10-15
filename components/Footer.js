@@ -21,6 +21,7 @@ export default function Footer() {
           <form action="https://temporal.us17.list-manage.com/subscribe/post?u=2334a0f23e55fd1840613755d&amp;id=bbbbd4709f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate="novalidate" className="validate">
             <div id="mc_embed_signup_scroll" className="signup_controls">
               <div className="email_wrap">
+                <label htmlFor="mce-EMAIL" className="sr-only">Email:</label>
                 <input className="bg-spaceblack w-full py-2 text-gray-500 border-b border-white" type="email" 
                 // value=""
                  name="EMAIL" id="mce-EMAIL" placeholder="Your email" required="required" />

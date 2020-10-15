@@ -63,7 +63,7 @@ export default function TwoStep() {
 function LilIcons({name}) {
   return (
     <div className="flex flex-col items-center justify-center text-center">
-      <img className="h-12 w-12" src={`/icons/icon-${name.toLowerCase()}.svg`} />
+      <img alt={name} className="h-12 w-12" src={`/icons/icon-${name.toLowerCase()}.svg`} />
       <div className="w-12 text-xs">{name}</div>
     </div>
   )
