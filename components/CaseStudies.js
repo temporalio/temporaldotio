@@ -18,7 +18,7 @@ export default function CaseStudies() {
         <div className="relative h-64 flex-1 flex flex-col justify-end  border-spaceblack border-b">
           <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="">
             <Quote
-              url="https://docs.temporal.io/blog/Temporal-a-central-brain-for-Box"
+              url="https://docs.temporal.io/blog/temporal-a-central-brain-for-box/"
               img="https://media-exp1.licdn.com/dms/image/C4D03AQG6rJUkchETHg/profile-displayphoto-shrink_400_400/0?e=1608163200&v=beta&t=2j1QiqZ-N3eyYVS_9z24naXdxJrL5IAf20EgAZmk_U4"
               quote="One thing that the API does really well is give you this illusion of single threaded or at least local execution without having to get into the details of trying to orchestrate multiple things. It's pretty amazing."
               name="Steven Cipolla" title="Senior Staff Software Engineer, Box" />
@@ -26,7 +26,7 @@ export default function CaseStudies() {
 
           <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="">
             <Quote
-              url="https://docs.temporal.io/blog/how-temporal-simplified-checkr-workflows"
+              url="https://docs.temporal.io/blog/how-temporal-simplified-checkr-workflows/"
               img="https://media-exp1.licdn.com/dms/image/C5603AQE9ZYjH-So7zA/profile-displayphoto-shrink_400_400/0?e=1608163200&v=beta&t=-6LtmUDo6Uh4Hgqd6qagQzlGNbxv-e55hHYEIs_GX8k"
               quote="Developer happiness has increased. Thinking about our problems in terms of workflows and activities has clarified our product and now allow us to share workflow components with different teams."
               name="Ben Jacobson" title="Staff Software Engineer, Checkr" />
