@@ -2,7 +2,7 @@
 
 export default function FinalQuote() {
   return (
-    <div id="final-quote" className={`
+    <section id="final-quote" className={`
     border-b border-white
   text-spaceblack
     flex flex-col bg-lightteal
@@ -21,6 +21,6 @@ export default function FinalQuote() {
         <span className="font-bold mr-1">Mitchell Hashimoto / </span>
         <span className="font-light">Co-founder, Hashicorp</span>
       </div>
-    </div>
+    </section>
   )
 }

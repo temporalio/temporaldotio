@@ -9,7 +9,7 @@ import {
 
 export default function TemporalVs() {
   return (
-    <div id="temporal-vs" className={`
+    <section id="temporal-vs" className={`
     container mx-auto
     text-white
     min-h-screen
@@ -29,7 +29,8 @@ export default function TemporalVs() {
           Temporal offers a battle tested framework to organize all async business logic, running it atop a single set of infrastructure at massive scale.</p>
         </AccItem>
         <AccItem uuid="Airflow" header="DAG-based Workflow Engines">
-          <h2 className="font-bold mb-3">DAG-based Workflow Engines like Airflow/Prefect/Luigi are pipeline solutions aimed at data scientists running at a small-medium scale. Whereas Temporal provides a code-first development environment which can be used to build data pipelines, orchestrate microservices, provision resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love.</h2>
+          <h2 className="font-bold mb-3">DAG-based Workflow Engines like Airflow/Prefect/Luigi are pipeline solutions aimed at data scientists running at a small-medium scale.</h2>
+          <p className="mb-3">Whereas Temporal provides a code-first development environment which can be used to build data pipelines, orchestrate microservices, provision resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love.</p>
           <p className="mb-3">While Temporal is a great option for data pipelines, we are not a data pipeline framework. Temporal enables the development of apps of all shapes, sizes and scales.</p>
           <p className="mb-3">Temporal targets developers and all code written with Temporal runs directly instead of compiling a intermediate DAG. This gives you flexibility which is impossible to achieve with more rigid DAG based systems.</p>
         </AccItem>
@@ -57,7 +58,7 @@ export default function TemporalVs() {
           </p>
         </AccItem>
       </Accordion>
-    </div>
+    </section>
   )
 }
 

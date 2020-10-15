@@ -12,7 +12,7 @@ function ComingSoon({ children }) {
 }
 export default function TwoStep() {
   return (
-    <div id="two-step" className={`
+    <section id="two-step" className={`
     flex flex-col justify-evenly
     container mx-auto
     `}>
@@ -67,7 +67,7 @@ export default function TwoStep() {
           <span className="flex justify-center">JSON "Programming"</span>
         </div>
       </div> */}
-    </div>
+    </section>
   )
 }
 

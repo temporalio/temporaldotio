@@ -3,7 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 export default function CaseStudies() {
   return (
-    <div id="case-studies" className={`
+    <section id="case-studies" className={`
     border-b border-spaceblack
      bg-purple
     flex flex-col
@@ -50,8 +50,7 @@ export default function CaseStudies() {
           </Tab>
         </TabList>
       </Tabs>
-
-    </div>
+    </section>
   )
 }
 
@@ -95,7 +94,7 @@ function CoinbaseQuote({ quote, name, url, title, img }) {
 
 
 
-function ExternalLink({url}) {
+function ExternalLink({ url }) {
 
   return (
     <a href={url} className="text-blue-800 hover:text-blue-500">

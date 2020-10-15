@@ -2,7 +2,7 @@
 
 export default function JoinUs() {
   return (
-    <div id="join-us" className={`
+    <section id="join-us" className={`
     border-b border-lightgray min-h-screen
     flex flex-col sm:flex-row 
     container mx-auto
@@ -44,6 +44,6 @@ export default function JoinUs() {
 
         </div>
       </div>
-    </div>
+    </section>
   )
 }

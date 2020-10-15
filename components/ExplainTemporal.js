@@ -28,7 +28,7 @@ function ResponsivePlayer({ url,
 export default function ExplainTemporal() {
   const [clicked, setClicked] = React.useState(false)
   return (
-    <div id="explain-temporal" className={`
+    <section id="explain-temporal" className={`
     min-h-screen 
     container mx-auto
     flex flex-col justify-evenly
@@ -75,6 +75,6 @@ export default function ExplainTemporal() {
           </div>
           : <button className="button  w-300 h-60" onClick={() => setClicked(true)}>Run Your First App</button>}
       </div>
-    </div>
+    </section>
   )
 }

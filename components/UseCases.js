@@ -13,7 +13,7 @@ import Lightbox from 'react-image-lightbox';
 
 export default function UseCases() {
   return (
-    <div id="use-cases" className={`
+    <section id="use-cases" className={`
     border-b border-spaceblack
     container mx-auto
      bg-gray5
@@ -88,7 +88,7 @@ export default function UseCases() {
           </SimpleLink>
         </UCaseItem>
       </ul>
-    </div>
+    </section>
   )
 }
 

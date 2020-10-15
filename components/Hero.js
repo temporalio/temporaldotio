@@ -8,7 +8,7 @@ import Nav from './nav'
 export default function Hero() {
   const [clicked, setClicked] = React.useState(false)
   return (
-    <div id="hero" className={`
+    <section id="hero" className={`
     min-h-screen container mx-auto flex flex-col justify-between p-4 sm:p-4
     `}>
       <Nav />
@@ -39,6 +39,6 @@ export default function Hero() {
           <button className="lg:text-xl hover:text-temporalblue" onClick={() => setClicked(true)}>I'm a developer, take me to code! →</button>
         }
       </div>
-    </div>
+    </section>
   )
 }
