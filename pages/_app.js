@@ -21,7 +21,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <link rel="icon" type="image/png" href="/white-icon-thick-black-bigger-circle-bg.png" />
+        <link rel="icon" type="image/png" href="/temporal-icon.png" />
+        <meta name="theme-color" content="#317EFB"/>
         <meta property="title" content="Temporal.io: Build Invincible Apps" />
         <meta property="og:title" content="Temporal.io: Build Invincible Apps" />
         <meta name="description" content="Temporal is the open source platform for mission critical code that interacts with unreliable, distributed services." />
@@ -33,6 +34,16 @@ function MyApp({ Component, pageProps }) {
         <meta property="twitter:image" content="https://temporal.io/logo-font-straight-dark.svg" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@temporaltech" />
+
+        {/* resource hints */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://www.youtube.com" />
+        <link rel="preconnect" href="https://yt3.ggpht.com" />
+        <link rel="preconnect" href="https://static.doubleclick.net" />
+        <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+        <link rel="preconnect" href="https://i.ytimg.com" />
+        <link rel="preconnect" href="https://s.ytimg.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
 
         <script
           async
@@ -54,7 +65,7 @@ function MyApp({ Component, pageProps }) {
     </div>
   )
 }
-// {/* <link rel="icon" type="image/png" href="/white-icon-thick-black-bigger-circle-bg.png" /> */}
+// {/* <link rel="icon" type="image/png" href="/temporal-icon.png" /> */}
 // {/* <script dangerouslySetInnerHTML={{
 //       __html: `window.leverJobsOptions = {accountName: 'temporal', includeCss: true};` }} 
 //   />
