@@ -6,16 +6,6 @@ export default function TwoStep() {
     flex flex-col justify-evenly
     container mx-auto
     `}>
-      <style jsx>{`
-      @media (min-width: 640px) {
-        .step {
-          font-size: 288px;
-          line-height: 160px;
-          letter-spacing: 4px;
-          text-transform: uppercase;
-        }
-      }
-      `}</style>
       <div className="flex flex-col sm:flex-row border-t border-b border-white">
         <div className="flex flex-1 sm:border-r border-b sm:border-b-0 border-white p-16">
           <span className="text-3xl md:text-144 mr-16 hidden sm:block">1</span>

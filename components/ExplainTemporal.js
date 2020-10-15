@@ -58,8 +58,8 @@ export default function ExplainTemporal() {
         <ResponsivePlayer url="https://www.youtube.com/watch?v=f-18XztyN6c&feature=youtu.be" />
         <div className="playerShadow"></div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center my-8">
-        <a className="button w-300 h-60" style={{
+      <div className="flex flex-col sm:flex-row justify-center items-center my-8">
+        <a className="button w-300 h-60 sm:mr-4 mb-4" style={{
           background: "#B2E7EA",
           color: "#141414"
         }} href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">More on YouTube</a>

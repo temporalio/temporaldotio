@@ -15,34 +15,31 @@ export default function TemporalVs() {
     min-h-screen
     px-2 sm:px-8 py-16
     `}>
-      <style jsx>{`
-      `}</style>
-
       <h1 className=" text-60 leading-60 lg:text-144 lg:leading-144 uppercase mb-4 lg:mb-16">Temporal Vs.</h1>
       <h2 className="font-light italic text-md sm:text-2xl mb-4">What's the difference between Temporal and...</h2>
       <Accordion
         allowMultipleExpanded={false}
         allowZeroExpanded
-        preExpanded={['Handwritten']}
+        preExpanded={['Homegrown']}
         className="accordion border-t border-l border-r border-white mb-32 container">
-        <AccItem uuid="Handwritten" header="Handwritten">
+        <AccItem uuid="Homegrown" header="Homegrown">
           <h2 className="font-bold">Most developers hand-write async flows using queues and job processors.</h2>
           <p>This often requires requisitioning new infrastructure, and hand-writing often buggy, not-well-distributed and hard-to-test code with a lot of ad hoc code to review that has nothing to do with the business logic.
 
           Temporal offers a battle tested framework to organize all async business logic, running it atop a single set of infrastructure at massive scale.</p>
         </AccItem>
-        <AccItem uuid="Airflow" header="Airflow/Prefect">
-          <p className="mb-3">Airflow/Prefect is a DAG based data pipeline solution aimed at data scientists running at a small-medium scale. Whereas Temporal provides a code-first development environment which can be used to build data pipelines, orchestrate microservices, provision resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love.</p>
+        <AccItem uuid="Airflow" header="DAG-based Workflow Engines">
+          <p className="mb-3">DAG-based Workflow Engines like Airflow/Prefect/Luigi are pipeline solutions aimed at data scientists running at a small-medium scale. Whereas Temporal provides a code-first development environment which can be used to build data pipelines, orchestrate microservices, provision resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love.</p>
           <p className="mb-3">While Temporal is a great option for data pipelines, we are not a data pipeline framework. Temporal enables the development of apps of all shapes, sizes and scales.</p>
           <p className="mb-3">Temporal targets developers and all code written with Temporal runs directly instead of compiling a intermediate DAG. This gives you flexibility which is impossible to achieve with more rigid DAG based systems.</p>
         </AccItem>
-        <AccItem uuid="Zeebe" header="Zeebe">
-          <h2 className="font-bold mb-4">Zeebe is a BPMN based workflow engine for orchestrating microservices at a large scale.</h2>
+        <AccItem uuid="Zeebe" header="BPM Engines">
+          <h2 className="font-bold mb-4">BPM Engines like Camunda Zeebe help orchestrate microservices at a large scale with BPMN.</h2>
           <p className="mb-3">Temporal provides a strongly-consistent code-first development environment which can be used for orchestrating microservices, building data pipelines, provisioning resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love. </p>
           <p className="mb-3">Temporal targets developers and all code written with Temporal runs directly instead of being translated to an intermediate representation. This gives you flexibility which is impossible to achieve with DSL approaches.</p>
         </AccItem>
-        <AccItem uuid="AWS" header="AWS Step Functions">
-          <h2 className="font-bold mb-4">Step Functions is a JSON based workflow coordination solution aimed at high scale, light complexity applications. </h2>
+        <AccItem uuid="AWS" header="JSON-based Workflow Engines">
+          <h2 className="font-bold mb-4">JSON-based Workflow Engines like AWS Step Functions are aimed at high scale, light complexity applications. </h2>
           <p className="mb-3">
             Whereas Temporal provides a code-first development environment which can be used to build data pipelines, orchestrate microservices, provision resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love.
           </p>

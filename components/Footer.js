@@ -6,8 +6,6 @@ export default function Footer() {
     border-t border-lightgray
     flex flex-col-reverse sm:flex-row mt-16
     `}>
-      <style jsx>{`
-      `}</style>
       <div className="flex-1 border-r border-lightgray relative">
         <img className="absolute bottom-0 left-0" src="/FooterMoon.png" alt="footer moon" />
         {/* leave blank for space */}

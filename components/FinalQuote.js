@@ -8,8 +8,6 @@ export default function FinalQuote() {
     flex flex-col bg-lightteal
     container mx-auto
     `}>
-      <style jsx>{`
-      `}</style>
       <blockquote className="text-xl sm:text-4xl leading-xl sm:leading-48 flex-1 px-8 pt-8 pb-8 sm:pt-16 sm:pb-16">
 
         <p className="mb-4">“HashiCorp needed to build long-running, reliable, fault-tolerant tasks for the HashiCorp Cloud Platform. </p>
