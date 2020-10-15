@@ -38,6 +38,7 @@ export default function Footer() {
             <ul>
               <li className="mb-2"><a href="https://github.com/temporalio/temporal">GitHub</a></li>
               <li className="mb-2"><a href="https://community.temporal.io/">Community</a></li>
+              <li className="mb-2"><a href="https://join.slack.com/t/temporalio/shared_invite/zt-c1e99p8g-beF7~ZZW2HP6gGStXD8Nuw">Slack</a></li>
               <li className="mb-2"><a href="https://twitter.com/temporaltech">Twitter</a></li>
             </ul>
           </div>
