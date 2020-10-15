@@ -5,9 +5,26 @@ import Nav from './nav'
 //   return <span className="font-bold">{children}</span>
 // }
 
+function Banner() {
+  const [open, setOpen] = React.useState(true)
+  if (!open) return null
+  return <div className="relative bg-temporalblue text-spaceblack text-center py-2">
+    <a className=" hover:text-blue-800" href="https://docs.temporal.io/blog/funding-announcement">
+      <span className="hidden md:inline">🎉</span>
+      Announcing our $18.75m Series A
+      <span className="hidden md:inline"> led by Sequoia! 🎉</span>
+    </a>
+    <button onClick={() => setOpen(false)}>
+      <svg className="absolute right-0 top-0 mr-2 mt-3 md:mt-2 w-5 sm:w-6 h-5 sm:h-6 text-spaceblack" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+      </svg></button>
+  </div>
+}
+
 export default function Hero() {
   const [clicked, setClicked] = React.useState(false)
-  return (
+  return (<>
+    <Banner />
     <section id="hero" className={`
     min-h-screen container mx-auto flex flex-col justify-between p-4 sm:p-4
     `}>
@@ -36,9 +53,10 @@ export default function Hero() {
           </a>
         </div>
           :
-          <button className="lg:text-xl hover:text-temporalblue" onClick={() => setClicked(true)}>I'm a developer, take me to code! →</button>
+          <button className="lg:text-xl hover:text-temporalblue" onClick={() => setClicked(true)}>I'm a developer, take me to code! ç</button>
         }
       </div>
     </section>
+  </>
   )
 }

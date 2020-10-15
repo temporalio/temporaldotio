@@ -48,6 +48,7 @@ module.exports = {
   },
   variants: {
      visibility: ['responsive', 'hover', 'focus'],
+     animation: ['responsive', 'hover', 'focus'],
   },
   plugins: [],
 }
