@@ -25,12 +25,12 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#317EFB"/>
         <meta property="title" content="Temporal.io: Build Invincible Apps" />
         <meta property="og:title" content="Temporal.io: Build Invincible Apps" />
-        <meta name="description" content="Temporal is the open source runtime for running mission critical code that runs atop unreliable, distributed services at any scale." />
-        <meta property="og:description" content="Temporal is the open source runtime for running mission critical code that runs atop unreliable, distributed services at any scale." />
+        <meta name="description" content="Temporal is the open source runtime for running mission critical code atop unreliable, distributed services at any scale." />
+        <meta property="og:description" content="Temporal is the open source runtime for running mission critical code atop unreliable, distributed services at any scale." />
         <meta property="og:image" content="https://temporal.io/twitter-card.png" />
         <meta property="og:url" content="http://temporal.io" />
         <meta property="twitter:title" content="Temporal.io: Build Invincible Apps" />
-        <meta property="twitter:description" content="Temporal is the open source runtime for running mission critical code that runs atop unreliable, distributed services at any scale." />
+        <meta property="twitter:description" content="Temporal is the open source runtime for running mission critical code atop unreliable, distributed services at any scale." />
         <meta property="twitter:image" content="https://temporal.io/twitter-card.png" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@temporaltech" />

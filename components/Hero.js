@@ -16,7 +16,7 @@ export default function Hero() {
           Build Invincible Apps
           </h1>
         <p className="text-2xl md:w-700 mb-8">
-          Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code that runs atop unreliable, distributed services <Bold>at any scale</Bold>.
+          Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop unreliable, distributed services <Bold>at any scale</Bold>.
         </p>
       </div>
       <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">
