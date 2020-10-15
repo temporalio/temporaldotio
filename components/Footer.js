@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer id="footer" className={`
     border-t border-lightgray
-    flex flex-col-reverse sm:flex-row mt-16
+    flex flex-col-reverse sm:flex-row sm:mt-16
     `}>
       <div className="flex-1 border-r border-lightgray relative">
         <img className="absolute bottom-0 left-0" src="/FooterMoon.png" alt="footer moon" />

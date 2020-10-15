@@ -8,14 +8,19 @@
     "serve": "next start"
   },
   "dependencies": {
-    "next": "9.5.5",
-    "react": "16.13.1",
+    "next": "9.4.0",
     "react-accessible-accordion": "^3.3.3",
-    "react-dom": "16.13.1",
+    "preact": "^10.4.4",
+    "@prefresh/next": "^0.3.0",
+    "preact-render-to-string": "^5.1.9",
+    "react": "github:preact-compat/react#1.0.0",
+    "react-dom": "github:preact-compat/react-dom#1.0.0",
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.0.1",
     "react-player": "^2.6.2",
     "react-tabs": "^3.1.1"
   },
   "devDependencies": {
+    "react-refresh": "^0.8.3",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.8.13"
   }
