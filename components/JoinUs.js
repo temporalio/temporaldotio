@@ -9,7 +9,7 @@ export default function JoinUs() {
     `}>
       <div className="flex-1 flex flex-col justify-between sm:border-r border-lightgray px-8 py-16">
         <h2 className="text-4xl leading-48 sm:text-60 sm:leading-60 mb-8">
-          Experience at the largest scale. Backing from the greatest Investors.
+          Experience at the largest scale. Backing from the greatest investors.
         </h2>
         <div className="inline-flex flex-col items-center">
           <a className="text-2xl button  w-300 h-60 mb-4  text-spaceblack bg-temporalblue hover:bg-teal-200" href="/careers">Join us</a>
