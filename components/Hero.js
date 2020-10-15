@@ -53,7 +53,7 @@ export default function Hero() {
           </a>
         </div>
           :
-          <button className="lg:text-xl hover:text-temporalblue" onClick={() => setClicked(true)}>I'm a developer, take me to code! ç</button>
+          <button className="lg:text-xl hover:text-temporalblue" onClick={() => setClicked(true)}>I'm a developer, take me to code! →</button>
         }
       </div>
     </section>
