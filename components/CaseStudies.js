@@ -8,14 +8,15 @@ export default function CaseStudies() {
      bg-purple
      container mx-auto
     flex flex-col
-    min-h-screen text-spaceblack
+ text-spaceblack
     `}>
       <div className="container pl-2 sm:pl-8 lg:pl-16">
         <h1 className="text-60 leading-60 sm:text-144 sm:leading-144 mt-4 sm:mt-8 sm:mb-4">Case Studies</h1>
         <p className="text-xl sm:text-3xl font-light mb-4">Relied on by the companies <span className="italic">other companies</span> rely on.</p>
       </div>
-      <Tabs className="border-b border-spaceblack flex flex-col flex-1">
-        <div className="relative h-64 flex-1 flex flex-col justify-end  border-spaceblack border-b">
+      <Tabs className="relative border-b border-spaceblack">
+        {/* <div className="relative flex-1 flex flex-col justify-end  border-spaceblack border-b"> */}
+        <div className="relative h-400 sm:h-400 border-spaceblack border-b">
           <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="">
             <Quote
               url="https://docs.temporal.io/blog/temporal-a-central-brain-for-box/"
@@ -81,14 +82,18 @@ function CoinbaseQuote({ quote, name, url, title, img }) {
         “{quote}”
         <ExternalLink url={url} />
       </blockquote>
-      <div className="flex items-center p-4 sm:p-8">
-        <img className="inline mr-4 w-12 h-12 rounded-full border border-spaceblack" src={img} alt={name} />
-        <span className="font-bold mr-4">{name}</span>
-        <span className="font-light">{title}</span>
+      <div className="flex justify-between items-center">
+        <div className="flex items-center p-4 sm:p-8">
+          <img className="inline mr-4 w-12 h-12 rounded-full border border-spaceblack" src={img} alt={name} />
+          <span className="flex flex-col">
+            <span className="font-bold mr-4">{name}</span>
+            <span className="font-light">{title}</span>
+          </span>
+        </div>
+        <aside className="w-300 text-yellow-900 italic text-md leading-tight sm:text-lg">
+          *Coinbase is currently using Cadence (the Temporal predecessor) and is only evaluating a future migration to Temporal
+        </aside>
       </div>
-      <aside className="text-yellow-900 italic text-md leading-tight sm:text-lg">
-        *As of the time of writing, Coinbase is using Cadence (the Temporal predecessor) and is only evaluating a future migration to Temporal
-      </aside>
     </div>
   )
 }
