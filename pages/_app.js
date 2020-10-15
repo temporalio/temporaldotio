@@ -1,4 +1,5 @@
 import '../styles/index.css'
+import 'react-image-lightbox/style.css'; 
 
 import Head from 'next/head';
 import { useEffect } from 'react'

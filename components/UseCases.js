@@ -1,4 +1,5 @@
 import React from 'react'
+import Lightbox from 'react-image-lightbox';
 
 /**
  * 
@@ -29,13 +30,16 @@ export default function UseCases() {
           <p className="mb-3">
             Temporal provides full visibility into each workflow's state. Contrast this with ad-hoc orchestration based on queues where getting a current status of each request is virtually impossible.
           </p>
+          <SimpleLink url="https://docs.temporal.io/docs/use-cases-orchestration">Learn more in our docs
+          </SimpleLink>
         </UCaseItem>
         <UCaseItem header="Financial Transactions">
           <h2 className="font-bold mb-3">
-            For software that interacts with money (especially someone else's), reliability and consistency is the highest priority. 
+            For software that interacts with money (especially someone else's), reliability and consistency is the highest priority.
           </h2>
+          <LBimage thumbnail="/samples/screenshot-transactions.svg" mainSrc="/samples/screenshot-transactions.svg" alt="transactions example" />
           <p className="mb-3">
-          Traditional solutions for financial transactions almost always introduce lurking reliability issues which directly translates to lost revenue for the business. Temporal eliminates these issues by providing an inherently reliable foundation for critical financial operations.
+            Traditional solutions for financial transactions almost always introduce lurking reliability issues which directly translates to lost revenue for the business. Temporal eliminates these issues by providing an inherently reliable foundation for critical financial operations.
           </p>
           <ul className="mb-3 list-disc ml-6 lg:w-700">
             <li className="mb-2">Native support for the SAGA pattern which supports custom compensation and rollback logic</li>
@@ -46,6 +50,8 @@ export default function UseCases() {
           <p className="mb-3">
             There have even been cases where switching to Temporal's technology immediately resulted in financial gains for the company because they previous solution was leaking money.
           </p>
+          <SimpleLink url="https://github.com/temporalio/samples-go/tree/master/expense">See Expenses code sample
+          </SimpleLink>
         </UCaseItem>
         <UCaseItem header="Resource Provisioning">
           <h2 className="font-bold mb-4">Provisioning resources depends on a series of potentially long-running operations with many possibilities for intermittent failures.</h2>
@@ -64,17 +70,13 @@ export default function UseCases() {
             <li className="mb-2">Complex configuration logic that is determined at deployment time.</li> */}
           </ul>
           <p className="mb-3">If a lengthy provisioning workflow fails in the middle, Temporal would handle the error and restart the flow at the right spot.</p>
-          {/* <p className="mb-3">
-            It's beneficial to have a single workflow engine to manage all the various tasks: spinning up the cluster, long term monitoring, managing upgrades, database schema migrations, automated staged rollout of new features.
-          </p>
-          <p className="mb-3">Some provisioning operations may take dozens of minutes or even hours to complete. Ad-hoc solutions may fail in the middle and leave the system in an undefined state.</p>
-          <p className="mb-3">Temporal workflows can express complex decision trees using a general-purpose programming language. Support for long-running operations, polling, responding to events, automatic retries are excellent building blocks for a robust provisioning flow. If a lengthy provisioning workflow fails in the middle, Temporal would handle the error and restart the flow at the right spot.</p>
-          <p className="mb-3">Temporal can route activity execution to a specific process or host, which is useful for many provisioning scenarios.</p>
-          <p className="mb-3">Many resource management operations require locking to ensure that only one mutation is executed on any given resource at a time. Temporal provides a strong guarantee of uniqueness via the operation identifier. This primitive enables the implementation of locking behavior in a fault-tolerant and scalable manner.</p> */}
+          <SimpleLink url="https://docs.temporal.io/docs/use-cases-provisioning">Learn more in our docs
+          </SimpleLink>
 
         </UCaseItem>
         <UCaseItem header="Monitoring">
           <h2 className="font-bold mb-4">Temporal provides guaranteed execution with exactly-once semantics with automatic retries.</h2>
+          <LBimage thumbnail="/samples/screenshot-monitoring.svg" mainSrc="/samples/screenshot-monitoring.svg" alt="monitoring example" />
           <p className="mb-3">Polling configuration can be as straightforward or sophisticated as needed:</p>
           <ul className="mb-3 list-disc ml-6 lg:w-700">
             <li className="mb-2">Workflows can run on a cron schedule with a single configuration setting.</li>
@@ -83,9 +85,38 @@ export default function UseCases() {
           <p className="mb-3">The history service provides visibility into history for periodic workflow executions.</p>
           <p className="mb-3">Scalability is another crucial advantage of using Temporal for periodic execution. Many use cases require periodic execution for a large number of entities. At Uber, some applications run recurring workflows for each customer. Imagine 100s of millions parallel cron jobs that don't require a separate batch processing framework.</p>
           <p className="mb-3">Temporal support for long-running activities and unlimited retries also makes it a great fit for monitoring use cases.</p>
+          <SimpleLink url="https://docs.temporal.io/docs/use-cases-monitoring">Learn more in our docs
+          </SimpleLink>
         </UCaseItem>
       </ul>
     </div>
+  )
+}
+
+function SimpleLink({ url, children }) {
+  return (
+    <p>
+      <a className="hover:underline text-blue-700 hover:text-blue-500" href={url}>{children}
+        <svg className="ml-2 w-4 h-4 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    </p>
+  )
+}
+
+function LBimage({ thumbnail, mainSrc, alt }) {
+  const [open, setOpen] = React.useState(false)
+  return (
+    <>
+      <button className="float-right h-64 w-64 transition-transform transform duration-300 hover:scale-110" onClick={() => setOpen(true)}>
+        <img src={thumbnail} alt={alt} />
+      </button>
+      {open && <Lightbox
+        mainSrc={mainSrc}
+        onCloseRequest={() => setOpen(false)}
+      />}
+    </>
   )
 }
 

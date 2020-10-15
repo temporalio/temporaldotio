@@ -1,5 +1,15 @@
 // import Link from 'next/link'
 
+function ComingSoon({ children }) {
+  return (
+
+    <div className="relative w-16 h-16 ">
+      {children}
+      {/* <span className="text-xs leading-none">Coming soon</span> */}
+      {/* <span className="invisible z-10 bg-gray-900 bg-opacity-25 absolute bottom-0 hover:visible focus:visible items-center">Coming soon</span> */}
+    </div>
+  )
+}
 export default function TwoStep() {
   return (
     <div id="two-step" className={`
@@ -12,10 +22,18 @@ export default function TwoStep() {
           <div className="flex flex-col">
             <span className="mb-8 text-lg sm:text-2xl"><span className="font-bold md:hidden">Step 1: </span>Write workflow functions in your favorite languages.</span>
             <div className="grid grid-cols-2 gap-4 place-items-center">
-              <img aria-label="go SDK" className="w-16 h-16 md:w-32 md:h-32  object-contain" src="/logos/logo-go.png" alt="logo" />
-              <img aria-label="java SDK" className="w-16 h-16 md:w-32 md:h-32  object-contain" src="/logos/logo-java.png" alt="logo" />
-              <img aria-label="python SDK" style={{ filter: 'grayscale(1)' }} className="w-16 h-16 object-contain" src="/logos/logo-python.png" alt="coming soon" />
-              <img aria-label="ruby SDK" style={{ filter: 'grayscale(1) brightness(2)' }} className="w-16 h-16 object-contain" src="/logos/logo-ruby.png" alt="coming soon" />
+              <a href="https://docs.temporal.io/docs/go-sdk-tutorial-prerequisites" className="transform hover:scale-110">
+                <img aria-label="go SDK" className="w-16 h-16 md:w-32 md:h-32  object-contain" src="/logos/logo-go.png" alt="logo" />
+              </a>
+              <a href="https://docs.temporal.io/docs/java-sdk-tutorial-prerequisites" className="transform hover:scale-110">
+                <img aria-label="java SDK" className="w-16 h-16 md:w-32 md:h-32  object-contain" src="/logos/logo-java.png" alt="logo" />
+              </a>
+              <ComingSoon>
+                <img aria-label="python SDK" style={{ filter: 'grayscale(1)' }} className="object-contain" src="/logos/logo-python.png" alt="coming soon" />
+              </ComingSoon>
+              <ComingSoon>
+                <img aria-label="ruby SDK" style={{ filter: 'grayscale(1) brightness(2)' }} className="w-16 h-16 object-contain" src="/logos/logo-ruby.png" alt="coming soon" />
+              </ComingSoon>
             </div>
           </div>
         </div>
