@@ -30,17 +30,16 @@ export default function UseCases() {
           <p className="mb-3">
             Temporal provides full visibility into each workflow's state. Contrast this with ad-hoc orchestration based on queues where getting a current status of each request is virtually impossible.
           </p>
-          <SimpleLink url="https://docs.temporal.io/docs/use-cases-orchestration">Learn more in our docs
-          </SimpleLink>
+          <SimpleLink url="https://docs.temporal.io/docs/use-cases-orchestration/#next-steps">Examples from Uber and Banzai Cloud</SimpleLink>
         </UCaseItem>
         <UCaseItem header="Financial Transactions">
           <h2 className="font-bold mb-3">
             For software that interacts with money (especially someone else's), reliability and consistency is the highest priority.
           </h2>
-          <LBimage thumbnail="/samples/screenshot-transactions.svg" mainSrc="/samples/screenshot-transactions.svg" alt="transactions example" />
           <p className="mb-3">
             Traditional solutions for financial transactions almost always introduce lurking reliability issues which directly translates to lost revenue for the business. Temporal eliminates these issues by providing an inherently reliable foundation for critical financial operations.
           </p>
+          <LBimage thumbnail="/samples/screenshot-transactions.svg" mainSrc="/samples/screenshot-transactions.svg" alt="transactions example" />
           <ul className="mb-3 list-disc ml-6 lg:w-700">
             <li className="mb-2">Native support for the SAGA pattern which supports custom compensation and rollback logic</li>
             <li className="mb-2">Support for long-running operations</li>
@@ -75,8 +74,8 @@ export default function UseCases() {
 
         </UCaseItem>
         <UCaseItem header="Monitoring">
-          <h2 className="font-bold mb-4">Temporal provides guaranteed execution with exactly-once semantics with automatic retries.</h2>
           <LBimage thumbnail="/samples/screenshot-monitoring.svg" mainSrc="/samples/screenshot-monitoring.svg" alt="monitoring example" />
+          <h2 className="font-bold mb-4">Temporal provides guaranteed execution with exactly-once semantics with automatic retries.</h2>
           <p className="mb-3">Polling configuration can be as straightforward or sophisticated as needed:</p>
           <ul className="mb-3 list-disc ml-6 lg:w-700">
             <li className="mb-2">Workflows can run on a cron schedule with a single configuration setting.</li>
@@ -109,7 +108,7 @@ function LBimage({ thumbnail, mainSrc, alt }) {
   const [open, setOpen] = React.useState(false)
   return (
     <>
-      <button className="float-right h-64 w-64 transition-transform transform duration-300 hover:scale-110" onClick={() => setOpen(true)}>
+      <button className="md:float-right float items-center md:h-64 md:w-64 transition-transform transform duration-300 hover:scale-110" onClick={() => setOpen(true)}>
         <img src={thumbnail} alt={alt} />
       </button>
       {open && <Lightbox
