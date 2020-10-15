@@ -48,13 +48,13 @@ export default function TwoStep() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row border-b border-white p-8 lg:text-xl">
-      <span className="flex-1 flex justify-center">No More Queues</span>
+      <span className="flex-1 flex justify-center">No more Queues</span>
       <span  className="hidden xl:flex items-center"> <Star/> </span>
-       <span className="flex-1 flex justify-center">No More Cronjobs</span>
+       <span className="flex-1 flex justify-center">No more Cronjobs</span>
       <span  className="hidden xl:flex items-center"> <Star/> </span>
-       <span className="flex-1 flex justify-center">No More Ad-Hoc Retry Logic</span>
+       <span className="flex-1 flex justify-center">No more Ad-Hoc Retry Logic</span>
       <span  className="hidden xl:flex items-center"> <Star/> </span>
-       <span className="flex-1 flex justify-center">No More JSON "Programming"</span>
+       <span className="flex-1 flex justify-center">No more JSON "Programming"</span>
       </div>
     </div>
   )
