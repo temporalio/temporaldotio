@@ -22,10 +22,10 @@ export default function TwoStep() {
           <div className="flex flex-col">
             <span className="mb-8 text-lg sm:text-2xl"><span className="font-bold md:hidden">Step 1: </span>Write workflow functions in your favorite languages.</span>
             <div className="grid grid-cols-2 gap-4 place-items-center">
-              <a href="https://docs.temporal.io/docs/go-sdk-tutorial-prerequisites" className="transform hover:scale-110">
+              <a href="https://docs.temporal.io/docs/go-sdk-tutorial-prerequisites" className="transition-transform transform duration-300 hover:scale-110">
                 <img aria-label="go SDK" className="w-16 h-16 md:w-32 md:h-32  object-contain" src="/logos/logo-go.png" alt="logo" />
               </a>
-              <a href="https://docs.temporal.io/docs/java-sdk-tutorial-prerequisites" className="transform hover:scale-110">
+              <a href="https://docs.temporal.io/docs/java-sdk-tutorial-prerequisites" className="transition-transform transform duration-300 hover:scale-110">
                 <img aria-label="java SDK" className="w-16 h-16 md:w-32 md:h-32  object-contain" src="/logos/logo-java.png" alt="logo" />
               </a>
               <ComingSoon>

@@ -6,6 +6,7 @@ import Nav from './nav'
 // }
 
 export default function Hero() {
+  const [clicked, setClicked] = React.useState(false)
   return (
     <div id="hero" className={`
     min-h-screen container mx-auto flex flex-col justify-between p-4 sm:p-4
@@ -26,7 +27,17 @@ export default function Hero() {
           <a className="button w-300 h-60 md:w-200 mr-4 mb-4 lg:w-300 text-spaceblack bg-temporalblue  hover:bg-teal-200" href="#explain-temporal">2 Minute Intro</a>
           <a className="button  w-300 h-60 md:w-200 lg:w-300" href="#join-us">We're Hiring</a>
         </div>
-        <a className="lg:text-xl hover:text-temporalblue" href="https://docs.temporal.io/docs/go-run-your-first-app" target="_blank" rel="noopener">I'm a developer, take me to code! →</a>
+        {clicked ? <div className="inline-flex md:-mt-8">
+          <a className="mr-8" href="https://docs.temporal.io/docs/go-run-your-first-app">
+            <img aria-label="go SDK" className="w-16 h-16 md:w-20 md:h-20 transition-transform transform duration-300 hover:scale-110  object-contain" src="/logos/logo-go.png" alt="logo" />
+          </a>
+          <a className="" href="https://docs.temporal.io/docs/java-run-your-first-app">
+            <img aria-label="java SDK" className="w-16 h-16 md:w-20 md:h-20 transition-transform transform duration-300 hover:scale-110  object-contain" src="/logos/logo-java.png" alt="logo" />
+          </a>
+        </div>
+          :
+          <button className="lg:text-xl hover:text-temporalblue" onClick={() => setClicked(true)}>I'm a developer, take me to code! →</button>
+        }
       </div>
     </div>
   )

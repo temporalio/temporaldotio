@@ -26,6 +26,7 @@ function ResponsivePlayer({ url,
   );
 }
 export default function ExplainTemporal() {
+  const [clicked, setClicked] = React.useState(false)
   return (
     <div id="explain-temporal" className={`
     min-h-screen 
@@ -61,7 +62,18 @@ export default function ExplainTemporal() {
       </div>
       <div className="flex flex-col sm:flex-row justify-center items-center my-8">
         <a className="button w-300 h-60 sm:mr-4 mb-4 sm:mb-0  text-spaceblack bg-temporalblue  hover:bg-teal-200" href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">More on YouTube</a>
-        <a className="button  w-300 h-60" href="https://docs.temporal.io/docs/go-run-your-first-app">Run Your First App</a>
+        {clicked ?
+          <div className="button w-300 h-60 bg-gray5">
+            <div className=" flex justify-around w-full">
+              <a className="" href="https://docs.temporal.io/docs/go-run-your-first-app">
+                <img aria-label="go SDK" className="w-16 h-16 md:w-16 md:h-16 transition-transform transform duration-300 hover:scale-110  object-contain" src="/logos/logo-go.png" alt="logo" />
+              </a>
+              <a className="" href="https://docs.temporal.io/docs/java-run-your-first-app">
+                <img aria-label="java SDK" className="w-16 h-16 md:w-16 md:h-16 transition-transform transform duration-300 hover:scale-110  object-contain" src="/logos/logo-java.png" alt="logo" />
+              </a>
+            </div>
+          </div>
+          : <button className="button  w-300 h-60" onClick={() => setClicked(true)}>Run Your First App</button>}
       </div>
     </div>
   )
