@@ -21,8 +21,8 @@ export default function UseCases() {
     `}>
       <h1 className="container pl-4 mb-16 md:pl-16 text-60 leading-60 lg:text-144 lg:leading-144 uppercase text-spaceblack">Use Cases</h1>
       <ul className="accordion border-t border-b border-spaceblack">
-        <UCaseItem header="Microservice Orchestration" defaultState>
-          <h2 className="font-bold mb-3">Temporal is a perfect fit for microservice orchestration scenarios.</h2>
+        <UCaseItem header="Microservices Orchestration" defaultState>
+          <h2 className="font-bold mb-3">Temporal is a perfect fit for orchestrating microservices.</h2>
           <p className="mb-3">It guarantees that workflow code eventually completes, has built-in support for exponential activity retries, and simplifies the coding of the compensation logic with native Saga pattern support.</p>
           <p className="mb-3">
             You can define retries, rollbacks, or even a human intervention step in the case of failure. Workflows are defined in general-purpose programming languages that bring the ultimate flexibility especially when compared to text-based DSL engines.
