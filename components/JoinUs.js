@@ -12,10 +12,7 @@ export default function JoinUs() {
           Experience at the largest scale. Backing by the greatest Investors.
         </h2>
         <div className="inline-flex flex-col items-center">
-          <a className="text-2xl button  w-300 h-60 mb-4" style={{
-            background: "#B2E7EA",
-            color: "#141414"
-          }} href="/careers">Join us</a>
+          <a className="text-2xl button  w-300 h-60 mb-4  text-spaceblack bg-temporalblue hover:bg-teal-200" href="/careers">Join us</a>
           <p className="text-lg inline">Seriously, we're hiring</p>
         </div>
       </div>

@@ -60,10 +60,7 @@ export default function ExplainTemporal() {
         <div className="playerShadow"></div>
       </div>
       <div className="flex flex-col sm:flex-row justify-center items-center my-8">
-        <a className="button w-300 h-60 sm:mr-4 mb-4 sm:mb-0" style={{
-          background: "#B2E7EA",
-          color: "#141414"
-        }} href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">More on YouTube</a>
+        <a className="button w-300 h-60 sm:mr-4 mb-4 sm:mb-0  text-spaceblack bg-temporalblue  hover:bg-teal-200" href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">More on YouTube</a>
         <a className="button  w-300 h-60" href="https://docs.temporal.io/docs/go-run-your-first-app">Run Your First App</a>
       </div>
     </div>
