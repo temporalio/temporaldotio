@@ -17,7 +17,7 @@ export default function CaseStudies() {
       <Tabs className="relative border-b border-spaceblack">
         {/* <div className="relative flex-1 flex flex-col justify-end  border-spaceblack border-b"> */}
         <div className="relative h-400 sm:h-400 border-spaceblack border-b">
-          <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="">
+          <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="z-10">
             <Quote
               url="https://docs.temporal.io/blog/temporal-a-central-brain-for-box/"
               img="https://media-exp1.licdn.com/dms/image/C4D03AQG6rJUkchETHg/profile-displayphoto-shrink_400_400/0?e=1608163200&v=beta&t=2j1QiqZ-N3eyYVS_9z24naXdxJrL5IAf20EgAZmk_U4"
@@ -25,14 +25,14 @@ export default function CaseStudies() {
               name="Steven Cipolla" title="Senior Staff Software Engineer, Box" />
           </TabPanel>
 
-          <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="">
+          <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="z-10">
             <Quote
               url="https://docs.temporal.io/blog/how-temporal-simplified-checkr-workflows/"
               img="https://media-exp1.licdn.com/dms/image/C5603AQE9ZYjH-So7zA/profile-displayphoto-shrink_400_400/0?e=1608163200&v=beta&t=-6LtmUDo6Uh4Hgqd6qagQzlGNbxv-e55hHYEIs_GX8k"
               quote="Developer happiness has increased. Thinking about our problems in terms of workflows and activities has clarified our product and now allow us to share workflow components with different teams."
               name="Ben Jacobson" title="Staff Software Engineer, Checkr" />
           </TabPanel>
-          <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="">
+          <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="z-10">
             <CoinbaseQuote
               url="https://docs.temporal.io/blog/reliable-crypto-transactions-at-coinbase"
               img="https://pbs.twimg.com/profile_images/943640175/new_photo_400x400.jpg"
@@ -91,7 +91,7 @@ function CoinbaseQuote({ quote, name, url, title, img }) {
           </span>
         </div>
         <aside className="w-300 text-yellow-900 italic text-md leading-tight sm:text-lg">
-          *Coinbase is currently using Cadence (the Temporal predecessor) and is only evaluating a future migration to Temporal
+          *Coinbase is using Cadence (the Temporal predecessor) and is only evaluating a future migration to Temporal
         </aside>
       </div>
     </div>
