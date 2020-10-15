@@ -22,6 +22,7 @@ export default function UseCases() {
       <h1 className="container pl-4 mb-16 md:pl-16 text-60 leading-60 lg:text-144 lg:leading-144 uppercase text-spaceblack">Use Cases</h1>
       <ul className="accordion border-t border-b border-spaceblack">
         <UCaseItem header="Microservices Orchestration" defaultState>
+          <LBimage thumbnail="/samples/screenshot-account-transfer.svg" mainSrc="/samples/screenshot-account-transfer.svg" alt="transactions example" />
           <h2 className="font-bold mb-3">Temporal is a perfect fit for orchestrating microservices.</h2>
           <p className="mb-3">It guarantees that workflow code eventually completes, has built-in support for exponential activity retries, and simplifies the coding of the compensation logic with native Saga pattern support.</p>
           <p className="mb-3">
@@ -39,7 +40,7 @@ export default function UseCases() {
           <p className="mb-3">
             Traditional solutions for financial transactions almost always introduce lurking reliability issues which directly translates to lost revenue for the business. Temporal eliminates these issues by providing an inherently reliable foundation for critical financial operations.
           </p>
-          <LBimage thumbnail="/samples/screenshot-transactions.svg" mainSrc="/samples/screenshot-transactions.svg" alt="transactions example" />
+          <LBimage thumbnail="/samples/screenshot-expenseworkflow.svg" mainSrc="/samples/screenshot-expenseworkflow.svg" alt="transactions example" />
           <ul className="mb-3 list-disc ml-6 lg:w-700">
             <li className="mb-2">Native support for the SAGA pattern which supports custom compensation and rollback logic</li>
             <li className="mb-2">Support for long-running operations</li>
@@ -57,6 +58,7 @@ export default function UseCases() {
           <p className="mb-3">While existing deployment tools support simple operations, many scenarios may still require a custom provisioning flow.</p>
           <p className="mb-3">Some provisioning operations may take dozens of minutes or even hours to complete. Ad-hoc solutions may fail in the middle and leave the system in an undefined state.</p>
           <p className="mb-3">Temporal provides excellent building blocks for resource provisioning:</p>
+          <LBimage thumbnail="/samples/screenshot-provisioning.svg" mainSrc="/samples/screenshot-provisioning.svg" alt="transactions example" />
           <ul className="mb-3 list-disc ml-6 lg:w-700">
             <li className="mb-2">Support for long-running operations</li>
             <li className="mb-2">Polling</li>
@@ -69,7 +71,7 @@ export default function UseCases() {
             <li className="mb-2">Complex configuration logic that is determined at deployment time.</li> */}
           </ul>
           <p className="mb-3">If a lengthy provisioning workflow fails in the middle, Temporal would handle the error and restart the flow at the right spot.</p>
-          <SimpleLink url="https://docs.temporal.io/docs/use-cases-provisioning">Learn more in our docs
+          <SimpleLink url="https://docs.temporal.io/docs/use-cases-provisioning/#next-steps">Examples with Kubernetes and Consul
           </SimpleLink>
 
         </UCaseItem>

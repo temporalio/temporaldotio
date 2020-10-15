@@ -16,7 +16,7 @@ export default function JoinUs() {
           <p className="text-lg inline">Seriously, we're hiring</p>
         </div>
       </div>
-      <div className="flex flex-col flex-1 border-t border-lightgray">
+      <div className="flex flex-col flex-1 border-t sm:border-t-0 border-lightgray">
         <div className="px-4 sm:px-8 py-4 sm:py-16 flex-1 border-b border-lightgray flex items-center">
           <img className="rounded-full w-16 my-4 mr-8 border border-lightgray" src="/logos/photo-samar.png" alt="samar abbas"></img>
           <div>

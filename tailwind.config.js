@@ -14,7 +14,6 @@ module.exports = {
         'white': '#F2F2F2',
         'temporalblue': '#B2E7EA',
         'spaceblack': '#141414',
-        'purple2': '#B8B4DC', // this is a hack
         'purple': '#B8B4DC',
         'gray5': '#E0E0E0',
         'lightgray': 'rgba(242,242,242,0.5)',

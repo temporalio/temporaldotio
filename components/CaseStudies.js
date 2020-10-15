@@ -6,6 +6,7 @@ export default function CaseStudies() {
     <section id="case-studies" className={`
     border-b border-spaceblack
      bg-purple
+     container mx-auto
     flex flex-col
     min-h-screen text-spaceblack
     `}>
