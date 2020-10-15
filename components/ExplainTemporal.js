@@ -16,6 +16,7 @@ function ResponsivePlayer({ url,
         border: '1px solid #E0E0E0',
       }}
       url={url}
+      controls
       // loop={loop}
       // playing={playing}
       width="800px"
@@ -52,7 +53,7 @@ export default function ExplainTemporal() {
         /* Player ratio: 100 / (1280 / 720) */
       }
       `}</style>
-      <h1 className="sm:w-700 sm:mb-4 text-4xl sm:text-60 leading-48 sm:leading-72">Watch us explain Temporal in 2 Minutes</h1>
+      <h1 className="sm:mb-4 text-4xl sm:text-60 leading-48 sm:leading-72">Temporal explained in 2 minutes</h1>
       <div className="wrapper my-8 flex justify-center">
         <ResponsivePlayer url="https://www.youtube.com/watch?v=f-18XztyN6c&feature=youtu.be" />
         <div className="playerShadow"></div>
