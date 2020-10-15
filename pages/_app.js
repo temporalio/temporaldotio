@@ -23,16 +23,23 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="icon" type="image/png" href="/temporal-icon.png" />
         <meta name="theme-color" content="#317EFB"/>
-        <meta property="title" content="Temporal.io: Build Invincible Apps" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Temporal.io: Build Invincible Apps" />
+        <meta property="title" content="Temporal.io: Build Invincible Apps" />
         <meta name="description" content="Temporal is the open source runtime for running mission critical code atop unreliable, distributed services at any scale." />
         <meta property="og:description" content="Temporal is the open source runtime for running mission critical code atop unreliable, distributed services at any scale." />
         <meta property="og:image" content="https://temporal.io/twitter-card.png" />
-        <meta property="og:url" content="http://temporal.io" />
-        <meta property="twitter:title" content="Temporal.io: Build Invincible Apps" />
-        <meta property="twitter:description" content="Temporal is the open source runtime for running mission critical code atop unreliable, distributed services at any scale." />
+        <meta property="og:url" content="https://temporal.io" />
+        <meta property="twitter:label2" content="Join us!" />
+        <meta property="twitter:data2" content="👉temporal.io/careers" />
+        <meta property="twitter:label1" content="Use us!" />
+        <meta property="twitter:data1" content="👉docs.temporal.io" />
+        <meta property="twitter:url" value="https://temporal.io" />
+        <meta property="twitter:title" value="Temporal.io: Build Invincible Apps" />
+        <meta property="twitter:description" value="Temporal is the open source runtime for running mission critical code atop unreliable, distributed services at any scale." />
         <meta property="twitter:image" content="https://temporal.io/twitter-card.png" />
         <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" value="https://temporal.io" />
         <meta name="twitter:site" content="@temporaltech" />
 
         {/* resource hints */}
