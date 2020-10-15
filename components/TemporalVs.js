@@ -22,7 +22,7 @@ export default function TemporalVs() {
         allowZeroExpanded
         preExpanded={['Homegrown']}
         className="accordion border-t border-l border-r border-white mb-32 container">
-        <AccItem uuid="Homegrown" header="Homegrown">
+        <AccItem uuid="Homegrown" header="Homegrown Scripts and Queues">
           <h2 className="font-bold">Most developers hand-write async flows using queues and job processors.</h2>
           <p>This often requires requisitioning new infrastructure, and hand-writing often buggy, not-well-distributed and hard-to-test code with a lot of ad hoc code to review that has nothing to do with the business logic.
 
