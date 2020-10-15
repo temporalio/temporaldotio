@@ -6,11 +6,11 @@ export default function TwoStep() {
     flex flex-col justify-evenly
     container mx-auto
     `}>
-      <div className="flex flex-col sm:flex-row border-t border-b border-white">
-        <div className="flex flex-1 sm:border-r border-b sm:border-b-0 border-white p-16">
-          <span className="text-3xl md:text-144 mr-16 hidden sm:block">1</span>
+      <div className="flex flex-col md:flex-row border-t border-b border-white">
+        <div className="flex flex-1 md:border-r border-b md:border-b-0 border-white p-16">
+          <span className="text-3xl md:text-144 mr-16 hidden md:block">1</span>
           <div className="flex flex-col">
-            <span className="mb-8"><span className="font-bold sm:hidden">Step 1: </span>Write workflow functions in your favorite languages.</span>
+            <span className="mb-8"><span className="font-bold md:hidden">Step 1: </span>Write workflow functions in your favorite languages.</span>
             <div className="grid grid-cols-2 gap-4 place-items-center">
               <img aria-label="go SDK" className="w-16 h-16 md:w-32 md:h-32  object-contain" src="/logos/logo-go.png" alt="logo" />
               <img aria-label="java SDK" className="w-16 h-16 md:w-32 md:h-32  object-contain" src="/logos/logo-java.png" alt="logo" />
@@ -20,9 +20,9 @@ export default function TwoStep() {
           </div>
         </div>
         <div className="flex flex-1 p-16">
-          <span className="text-3xl md:text-144  mr-16 hidden sm:block">2</span>
+          <span className="text-3xl md:text-144  mr-16 hidden md:block">2</span>
           <div className="flex flex-col">
-            <span className="mb-8"><span className="font-bold sm:hidden">Step 2: </span>Temporal handles all the reliability boilerplate!</span>
+            <span className="mb-8"><span className="font-bold md:hidden">Step 2: </span>Temporal handles all the reliability boilerplate!</span>
             <div className="grid grid-cols-3 gap-4">
               <LilIcons name="Routing" />
               <LilIcons name="Sharding" />
