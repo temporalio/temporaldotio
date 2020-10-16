@@ -1,28 +1,28 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 const links = [
   { href: 'https://docs.temporal.io/blog', label: 'Blog' },
   { href: 'https://docs.temporal.io/docs/overview', label: 'Docs' },
   { href: 'https://github.com/temporalio/temporal/', label: 'GitHub' },
   { href: '/careers', label: 'Jobs' },
-  { href: 'https://community.temporal.io/', label: 'Community' },
-]
+  { href: 'https://community.temporal.io/', label: 'Community' }
+];
 
 export default function Nav() {
   return (
     <nav>
       <style jsx>{`
-      @media (min-width: 640px) {
-        img {
-          width: 225px !important;
-          height: 56px !important;
+        @media (min-width: 640px) {
+          img {
+            width: 225px !important;
+            height: 56px !important;
+          }
         }
-      }
-      img {
-        width: 180px;
-        height: 45px;
-        object-fit: contain;
-      }
+        img {
+          width: 180px;
+          height: 45px;
+          object-fit: contain;
+        }
       `}</style>
       <ul className="flex justify-between items-center py-4">
         <li>
@@ -43,5 +43,5 @@ export default function Nav() {
         </ul>
       </ul>
     </nav>
-  )
+  );
 }

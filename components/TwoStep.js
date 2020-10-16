@@ -6,11 +6,13 @@ function ComingSoon({ children }) {
       {/* <span className="text-xs leading-none">Coming soon</span> */}
       {/* <span className="invisible z-10 bg-gray-900 bg-opacity-25 absolute bottom-0 hover:visible focus:visible items-center">Coming soon</span> */}
     </div>
-  )
+  );
 }
 export default function TwoStep() {
   return (
-    <section id="two-step" className={`
+    <section
+      id="two-step"
+      className={`
     flex flex-col justify-evenly
     container mx-auto
     `}>
@@ -18,19 +20,48 @@ export default function TwoStep() {
         <div className="flex flex-1 md:border-r border-b md:border-b-0 border-white p-16">
           <span className="text-3xl md:text-144 mr-16 hidden md:block">1</span>
           <div className="flex flex-col">
-            <span className="mb-8 text-lg sm:text-2xl"><span className="font-bold md:hidden">Step 1: </span>Write workflow functions in your favorite languages.</span>
+            <span className="mb-8 text-lg sm:text-2xl">
+              <span className="font-bold md:hidden">Step 1: </span>Write workflow functions in your
+              favorite languages.
+            </span>
             <div className="grid grid-cols-2 gap-4 place-items-center">
-              <a href="https://docs.temporal.io/docs/go-sdk-tutorial-prerequisites" className="presetTransition hover:scale-110">
-                <img aria-label="go SDK" className="w-16 h-16 md:w-32 md:h-32  object-contain" src="/logos/logo-go.png" alt="logo" />
+              <a
+                href="https://docs.temporal.io/docs/go-sdk-tutorial-prerequisites"
+                className="presetTransition hover:scale-110">
+                <img
+                  aria-label="go SDK"
+                  className="w-16 h-16 md:w-32 md:h-32  object-contain"
+                  src="/logos/logo-go.png"
+                  alt="logo"
+                />
               </a>
-              <a href="https://docs.temporal.io/docs/java-sdk-tutorial-prerequisites" className="presetTransition hover:scale-110">
-                <img aria-label="java SDK" className="w-16 h-16 md:w-32 md:h-32  object-contain" src="/logos/logo-java.png" alt="logo" />
+              <a
+                href="https://docs.temporal.io/docs/java-sdk-tutorial-prerequisites"
+                className="presetTransition hover:scale-110">
+                <img
+                  aria-label="java SDK"
+                  className="w-16 h-16 md:w-32 md:h-32  object-contain"
+                  src="/logos/logo-java.png"
+                  alt="logo"
+                />
               </a>
               <ComingSoon>
-                <img aria-label="python SDK" style={{ filter: 'grayscale(1)' }} className="object-contain" src="/logos/logo-python.png" alt="coming soon" />
+                <img
+                  aria-label="python SDK"
+                  style={{ filter: 'grayscale(1)' }}
+                  className="object-contain"
+                  src="/logos/logo-python.png"
+                  alt="coming soon"
+                />
               </ComingSoon>
               <ComingSoon>
-                <img aria-label="ruby SDK" style={{ filter: 'grayscale(1) brightness(2)' }} className="w-16 h-16 object-contain" src="/logos/logo-ruby.png" alt="coming soon" />
+                <img
+                  aria-label="ruby SDK"
+                  style={{ filter: 'grayscale(1) brightness(2)' }}
+                  className="w-16 h-16 object-contain"
+                  src="/logos/logo-ruby.png"
+                  alt="coming soon"
+                />
               </ComingSoon>
             </div>
           </div>
@@ -38,7 +69,10 @@ export default function TwoStep() {
         <div className="flex flex-1 p-16">
           <span className="text-3xl md:text-144  mr-16 hidden md:block">2</span>
           <div className="flex flex-col">
-            <span className="mb-8 text-lg sm:text-2xl"><span className="font-bold md:hidden">Step 2: </span>Temporal handles all the reliability boilerplate!</span>
+            <span className="mb-8 text-lg sm:text-2xl">
+              <span className="font-bold md:hidden">Step 2: </span>Temporal handles all the
+              reliability boilerplate!
+            </span>
             <div className="grid grid-cols-3 gap-4">
               <LilIcons name="Routing" />
               <LilIcons name="Sharding" />
@@ -67,7 +101,7 @@ export default function TwoStep() {
         </div>
       </div> */}
     </section>
-  )
+  );
 }
 
 // revive if needed together with TODO above
@@ -87,5 +121,5 @@ function LilIcons({ name }) {
       <img alt={name} className="h-12 w-12" src={`/icons/icon-${name.toLowerCase()}.svg`} />
       <div className="w-12 text-xs">{name}</div>
     </div>
-  )
+  );
 }

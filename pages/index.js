@@ -1,12 +1,12 @@
-import Hero from '../components/Hero'
-import TwoStep from '../components/TwoStep'
-import ExplainTemporal from '../components/ExplainTemporal'
-import UseCases from '../components/UseCases'
-import CaseStudies from '../components/CaseStudies'
-import JoinUs from '../components/JoinUs'
-import TemporalVs from '../components/TemporalVs'
-import FinalQuote from '../components/FinalQuote'
-import Footer from '../components/Footer'
+import Hero from '../components/Hero';
+import TwoStep from '../components/TwoStep';
+import ExplainTemporal from '../components/ExplainTemporal';
+import UseCases from '../components/UseCases';
+import CaseStudies from '../components/CaseStudies';
+import JoinUs from '../components/JoinUs';
+import TemporalVs from '../components/TemporalVs';
+import FinalQuote from '../components/FinalQuote';
+import Footer from '../components/Footer';
 import Head from 'next/head';
 
 export default function IndexPage() {
@@ -25,5 +25,5 @@ export default function IndexPage() {
       <FinalQuote />
       <Footer />
     </div>
-  )
+  );
 }

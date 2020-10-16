@@ -2,13 +2,29 @@
   "name": "temporal-landing-v1",
   "version": "0.1.0",
   "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
   "scripts": {
     "start": "next dev",
     "build": "next build",
-    "serve": "next start"
+    "serve": "next start",
+    "lint": "eslint --fix . --ignore-path ./.gitignore",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
     "@prefresh/next": "^0.3.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "next": "9.4.0",
     "preact": "^10.4.4",
     "preact-render-to-string": "^5.1.9",
@@ -20,7 +36,12 @@
     "react-tabs": "^3.1.1"
   },
   "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-plugin-react": "^7.21.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.1",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
     "react-refresh": "^0.8.3",
     "tailwindcss": "^1.8.13"
   }
