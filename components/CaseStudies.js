@@ -41,14 +41,14 @@ export default function CaseStudies() {
           </TabPanel>
         </div>
         <TabList className="flex bg-gray5">
-          <Tab selectedClassName="nograyscale" className=" grayscale p-2 flex-1 grid place-items-center border-r border-spaceblack">
-            <img className="h-16 w-16 sm:h-32 sm:w-32 object-cover" src="/logos/logo-Box2.png" aria-label="Box logo" alt="Box logo" />
+          <Tab selectedClassName="nograyscale" className="cursor-pointer grayscale p-2 flex-1 grid place-items-center border-r border-spaceblack">
+            <img className="transition-transform transform duration-300 hover:scale-110 h-16 w-16 sm:h-32 sm:w-32 object-cover" src="/logos/logo-Box2.png" aria-label="Box logo" alt="Box logo" />
           </Tab>
-          <Tab selectedClassName="nograyscale" className=" grayscale p-2 flex-1 grid place-items-center border-r border-spaceblack">
-            <img className="h-16 w-16 sm:h-32 sm:w-32 object-contain" src="/logos/logo-Checkr.png" aria-label="Checkr logo" alt="Checkr logo" />
+          <Tab selectedClassName="nograyscale" className="cursor-pointer grayscale p-2 flex-1 grid place-items-center border-r border-spaceblack">
+            <img className="transition-transform transform duration-300 hover:scale-110 h-16 w-16 sm:h-32 sm:w-32 object-contain" src="/logos/logo-Checkr.png" aria-label="Checkr logo" alt="Checkr logo" />
           </Tab>
-          <Tab selectedClassName="nograyscale" className=" grayscale p-2 flex-1 grid place-items-center ">
-            <img className="h-16 w-16 sm:h-32 sm:w-32 object-contain" src="/logos/logo-Coinbase.png" aria-label="Coinbase logo" alt="Coinbase logo" />
+          <Tab selectedClassName="nograyscale" className="cursor-pointer grayscale p-2 flex-1 grid place-items-center ">
+            <img className="transition-transform transform duration-300 hover:scale-110 h-16 w-16 sm:h-32 sm:w-32 object-contain" src="/logos/logo-Coinbase.png" aria-label="Coinbase logo" alt="Coinbase logo" />
           </Tab>
         </TabList>
       </Tabs>
