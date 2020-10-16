@@ -37,9 +37,9 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content="https://temporal.io/twitter-card.png" />
         <meta property="og:url" content="https://temporal.io" />
         <meta property="twitter:label2" content="Join us!" />
-        <meta property="twitter:data2" content="👉temporal.io/careers" />
+        <meta property="twitter:data2" content="https://temporal.io/careers" />
         <meta property="twitter:label1" content="Use us!" />
-        <meta property="twitter:data1" content="👉docs.temporal.io" />
+        <meta property="twitter:data1" content="https://docs.temporal.io" />
         <meta property="twitter:url" value="https://temporal.io" />
         <meta property="twitter:title" value="Temporal.io: Build Invincible Apps" />
         <meta
