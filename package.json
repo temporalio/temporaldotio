@@ -13,7 +13,6 @@
     "preact": "^10.4.4",
     "preact-render-to-string": "^5.1.9",
     "react": "github:preact-compat/react#1.0.0",
-    "react-accessible-accordion": "^3.3.3",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
     "react-image-lightbox": "^5.1.1",
     "react-player": "^2.6.2",

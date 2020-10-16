@@ -6,7 +6,7 @@ import Nav from './nav'
 // }
 
 function Banner() {
-  const [open, setOpen] = React.useState(true)
+  const [open, setOpen] = useLocalStorage('bannerOpen', true);
   if (!open) return null
   return <div className="relative bg-temporalblue text-spaceblack text-center py-2">
     <a className=" hover:text-blue-800" href="https://docs.temporal.io/blog/funding-announcement">
@@ -42,7 +42,7 @@ export default function Hero() {
       <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">
         <div className="flex flex-col sm:flex-row mb-4 lg:text-xl">
           <a className="button w-300 h-60 md:w-200 mr-4 mb-4 lg:w-300 text-spaceblack bg-temporalblue  hover:bg-teal-200" href="#explain-temporal">2 Minute Intro</a>
-          <a className="button  w-300 h-60 md:w-200 lg:w-300" href="#join-us">We're Hiring</a>
+          <a className="button w-300 h-60 md:w-200 lg:w-300 hover:text-temporalblue" href="#join-us">We're Hiring</a>
         </div>
         {clicked ? <div className="inline-flex md:-mt-8">
           <a className="mr-8" href="https://docs.temporal.io/docs/go-run-your-first-app">
@@ -59,4 +59,50 @@ export default function Hero() {
     </section>
   </>
   )
+}
+
+
+/**
+ * utils
+ * 
+ */
+
+// https://usehooks.com/useLocalStorage/
+function useLocalStorage(key, initialValue) {
+  // State to store our value
+  // Pass initial state function to useState so logic is only executed once
+  const [storedValue, setStoredValue] = React.useState(() => {
+    try {
+      // Get from local storage by key
+      if (typeof window !== 'undefined') {
+        const item = window.localStorage.getItem(key);
+        // Parse stored json or if none return initialValue
+        return item ? JSON.parse(item) : initialValue;
+      }
+    } catch (error) {
+      // If error also return initialValue
+      console.log(error);
+      return initialValue;
+    }
+  });
+
+  // Return a wrapped version of useState's setter function that ...
+  // ... persists the new value to localStorage. 
+  const setValue = value => {
+    try {
+      // Allow value to be a function so we have same API as useState
+      const valueToStore =
+        value instanceof Function ? value(storedValue) : value;
+      // Save state
+      setStoredValue(valueToStore);
+      // Save to local storage
+      if (typeof window !== 'undefined') {
+        window.localStorage.setItem(key, JSON.stringify(valueToStore));
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  return [storedValue, setValue];
 }

@@ -126,7 +126,7 @@ function UCaseItem({ header, children, defaultState = false }) {
   return (
     <li className="border-t border-spaceblack">
       <div className={(state ? ' bg-gray5' : '') + ' text-spaceblack p-4 md:p-8 border-b border-spaceblack text-2xl'}>
-        <button onClick={() => setState(!state)} className="flex w-full items-center justify-between">
+        <button onClick={() => setState(!state)} className="hover:text-blue-500 flex w-full items-center justify-between">
           <span>{header}</span>
           {state ?
             // - icon

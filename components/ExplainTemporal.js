@@ -73,7 +73,7 @@ export default function ExplainTemporal() {
               </a>
             </div>
           </div>
-          : <button className="button  w-300 h-60" onClick={() => setClicked(true)}>Run Your First App</button>}
+          : <button className="button hover:text-temporalblue w-300 h-60" onClick={() => setClicked(true)}>Run Your First App</button>}
       </div>
     </section>
   )
