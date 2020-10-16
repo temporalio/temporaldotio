@@ -36,7 +36,7 @@ export default function Hero() {
         <p className="text-2xl md:w-700 mb-8">
           {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
           {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
-          Temporal is the open source microservices orchestration engine for running mission critical code at any scale.
+          Temporal is the open source microservices orchestration platform for running mission critical code at any scale.
         </p>
       </div>
       <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">
