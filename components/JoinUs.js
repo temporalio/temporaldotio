@@ -1,5 +1,3 @@
-// import Link from 'next/link'
-
 export default function JoinUs() {
   return (
     <section id="join-us" className={`

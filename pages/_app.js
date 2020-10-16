@@ -73,10 +73,4 @@ function MyApp({ Component, pageProps }) {
     </div>
   )
 }
-// {/* <link rel="icon" type="image/png" href="/temporal-icon.png" /> */}
-// {/* <script dangerouslySetInnerHTML={{
-//       __html: `window.leverJobsOptions = {accountName: 'temporal', includeCss: true};` }} 
-//   />
-// <script async type='text/javascript' src='https://andreasmb.github.io/lever-jobs-embed/index.js'></script> */}
-
 export default MyApp

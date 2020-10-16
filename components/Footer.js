@@ -1,5 +1,3 @@
-// import Link from 'next/link'
-
 export default function Footer() {
   return (
     <footer id="footer" className={`
@@ -8,7 +6,6 @@ export default function Footer() {
     `}>
       <div className="flex-1 border-r border-lightgray relative">
         <img className="absolute bottom-0 left-0" src="/FooterMoon.png" alt="footer moon" />
-        {/* leave blank for space */}
       </div>
       <div className="flex-1 flex flex-col ">
         <div className="p-8 sm:p-16 sm:border-b border-lightgray">
@@ -21,13 +18,10 @@ export default function Footer() {
               <div className="email_wrap">
                 <label htmlFor="mce-EMAIL" className="sr-only">Email:</label>
                 <input className="bg-spaceblack w-full py-2 text-gray-500 border-b border-white" type="email" 
-                // value=""
                  name="EMAIL" id="mce-EMAIL" placeholder="Your email" required="required" />
               </div>
               <span className="cta_text" style={{ display: "none" }}>You are in the waitlist!</span>
-              {/* <div className="spacer" style="display:none;"></div> */}
               <input type="submit" 
-              // value=""
                name="waitlist" id="mc-embedded-waitlist" className="tt-button tt-button--lightblue tt-button--outline tt-button--block@xs button-email" style={{ display: "none" }} />
             </div>
           </form>
@@ -49,7 +43,6 @@ export default function Footer() {
               <li className="mb-2"><a href="https://docs.temporal.io/docs/go-sdk-tutorial-prerequisites">Tutorials</a></li>
               <li className="mb-2"><a href="https://docs.temporal.io/docs/overview">API</a></li>
               <li className="mb-2"><a href="https://docs.temporal.io/docs/go-run-your-first-app">Quickstarts</a></li>
-              {/* <li className="mb-2"><a href="https://twitter.com/temporaltech">REPL</a></li> */}
             </ul>
           </div>
           <img className="absolute bottom-0 right-0 mb-8 mr-8" src="/logos/temporal-white-mark.png" alt="logo" />

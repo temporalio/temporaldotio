@@ -1,25 +1,13 @@
-// import Link from 'next/link'
-
 import ReactPlayer from 'react-player';
-
-// import styles from './ResponsivePlayer.module.css';
-
-function ResponsivePlayer({ url,
-  // loop, playing
-}) {
+function ResponsivePlayer({ url }) {
   return (
     <ReactPlayer
       style={{
-        // position: 'absolute',
-        // top: '0',
-        // left: '15%',
         border: '1px solid #E0E0E0',
       }}
       url={url}
       light
       controls
-      // loop={loop}
-      // playing={playing}
       width="800px"
       height="500px"
     />
@@ -66,10 +54,10 @@ export default function ExplainTemporal() {
           <div className="button w-300 h-60 bg-gray5">
             <div className=" flex justify-around w-full">
               <a className="" href="https://docs.temporal.io/docs/go-run-your-first-app">
-                <img aria-label="go SDK" className="w-16 h-16 md:w-16 md:h-16 transition-transform transform duration-300 hover:scale-110  object-contain" src="/logos/logo-go.png" alt="logo" />
+                <img aria-label="go SDK" className="w-16 h-16 md:w-16 md:h-16 presetTransition hover:scale-110  object-contain" src="/logos/logo-go.png" alt="logo" />
               </a>
               <a className="" href="https://docs.temporal.io/docs/java-run-your-first-app">
-                <img aria-label="java SDK" className="w-16 h-16 md:w-16 md:h-16 transition-transform transform duration-300 hover:scale-110  object-contain" src="/logos/logo-java.png" alt="logo" />
+                <img aria-label="java SDK" className="w-16 h-16 md:w-16 md:h-16 presetTransition hover:scale-110  object-contain" src="/logos/logo-java.png" alt="logo" />
               </a>
             </div>
           </div>

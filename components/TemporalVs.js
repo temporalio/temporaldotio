@@ -10,24 +10,24 @@ export default function TemporalVs() {
       <h2 className="font-light italic text-md sm:text-2xl mb-4">What's the difference between Temporal and...</h2>
       <ul
         className="border-t border-l border-r border-white mb-32 container">
-        <UCaseItem header="Homegrown Scripts and Queues" defaultState>
+        <VSItem header="Homegrown Scripts and Queues" defaultState>
           <h2 className="font-bold">Most developers hand-write async flows using queues and job processors.</h2>
           <p>This often requires requisitioning new infrastructure, and hand-writing often buggy, not-well-distributed and hard-to-test code with a lot of ad hoc code to review that has nothing to do with the business logic.
 
           Temporal offers a battle tested framework to organize all async business logic, running it atop a single set of infrastructure at massive scale.</p>
-        </UCaseItem>
-        <UCaseItem header="DAG-based Workflow Engines">
+        </VSItem>
+        <VSItem header="DAG-based Workflow Engines">
           <h2 className="font-bold mb-3">DAG-based Workflow Engines like Airflow/Prefect/Luigi are pipeline solutions aimed at data scientists running at a small-medium scale.</h2>
           <p className="mb-3">Whereas Temporal provides a code-first development environment which can be used to build data pipelines, orchestrate microservices, provision resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love.</p>
           <p className="mb-3">While Temporal is a great option for data pipelines, we are not a data pipeline framework. Temporal enables the development of apps of all shapes, sizes and scales.</p>
           <p className="mb-3">Temporal targets developers and all code written with Temporal runs directly instead of compiling a intermediate DAG. This gives you flexibility which is impossible to achieve with more rigid DAG based systems.</p>
-        </UCaseItem>
-        <UCaseItem header="BPM Engines">
+        </VSItem>
+        <VSItem header="BPM Engines">
           <h2 className="font-bold mb-4">BPM Engines like Camunda Zeebe help orchestrate microservices at a large scale with BPMN.</h2>
           <p className="mb-3">Temporal provides a strongly-consistent code-first development environment which can be used for orchestrating microservices, building data pipelines, provisioning resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love. </p>
           <p className="mb-3">Temporal targets developers and all code written with Temporal runs directly instead of being translated to an intermediate representation. This gives you flexibility which is impossible to achieve with DSL approaches.</p>
-        </UCaseItem>
-        <UCaseItem header="JSON-based Workflow Engines">
+        </VSItem>
+        <VSItem header="JSON-based Workflow Engines">
           <h2 className="font-bold mb-4">JSON-based Workflow Engines like AWS Step Functions are aimed at high scale, light complexity applications. </h2>
           <p className="mb-3">
             Whereas Temporal provides a code-first development environment which can be used to build data pipelines, orchestrate microservices, provision resources and much more. Code written with Temporal is executed directly which enables users to use the development, debugging and testing processes they already know and love.
@@ -44,13 +44,15 @@ export default function TemporalVs() {
           <p className="mb-3">
             Step Functions does not support signaling and other complex "actor" features. This drastically restricts the potential use cases for Step Functions.
           </p>
-        </UCaseItem>
+        </VSItem>
       </ul>
     </section>
   )
 }
 
-function UCaseItem({ header, children, defaultState = false }) {
+// this looks very similar to VSItem in UseCases.js
+// but we keep it separate to keep it agile and customizable without affecting usecases.js
+function VSItem({ header, children, defaultState = false }) {
   const [state, setState] = React.useState(defaultState)
   return (
     <li className="border-b border-white">

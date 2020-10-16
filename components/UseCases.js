@@ -1,6 +1,6 @@
 import React from 'react'
 import Lightbox from 'react-image-lightbox';
-
+import {ExternalLinkWithSVGIcon} from './shared'
 /**
  * 
  * 
@@ -31,7 +31,7 @@ export default function UseCases() {
           <p className="mb-3">
             Temporal provides full visibility into each workflow's state. Contrast this with ad-hoc orchestration based on queues where getting a current status of each request is virtually impossible.
           </p>
-          <SimpleLink url="https://docs.temporal.io/docs/use-cases-orchestration/#next-steps">Examples from Uber and Banzai Cloud</SimpleLink>
+          <ExternalLinkWithSVGIcon url="https://docs.temporal.io/docs/use-cases-orchestration/#next-steps">Examples from Uber and Banzai Cloud</ExternalLinkWithSVGIcon>
         </UCaseItem>
         <UCaseItem header="Financial Transactions">
           <h2 className="font-bold mb-3">
@@ -50,8 +50,8 @@ export default function UseCases() {
           <p className="mb-3">
             There have even been cases where switching to Temporal's technology immediately resulted in financial gains for the company because they previous solution was leaking money.
           </p>
-          <SimpleLink url="https://github.com/temporalio/samples-go/tree/master/expense">See Expenses code sample
-          </SimpleLink>
+          <ExternalLinkWithSVGIcon url="https://github.com/temporalio/samples-go/tree/master/expense">See Expenses code sample
+          </ExternalLinkWithSVGIcon>
         </UCaseItem>
         <UCaseItem header="Resource Provisioning">
           <h2 className="font-bold mb-4">Provisioning resources depends on a series of potentially long-running operations with many possibilities for intermittent failures.</h2>
@@ -65,14 +65,10 @@ export default function UseCases() {
             <li className="mb-2">Responding to events</li>
             <li className="mb-2">Automatic retries</li>
             <li className="mb-2">Routing to specific hosts</li>
-            {/* <li className="mb-2">Automatic infrastructure provisioning for a new customer in multi-tenant environments.</li>
-            <li className="mb-2">Particularly large deployments when tens or even hundreds of thousands of resources should be configured.</li>
-            <li className="mb-2">Provisioning of custom resources that are not supported by off-the-shelf tools.</li>
-            <li className="mb-2">Complex configuration logic that is determined at deployment time.</li> */}
           </ul>
           <p className="mb-3">If a lengthy provisioning workflow fails in the middle, Temporal would handle the error and restart the flow at the right spot.</p>
-          <SimpleLink url="https://docs.temporal.io/docs/use-cases-provisioning/#next-steps">Examples with Kubernetes and Consul
-          </SimpleLink>
+          <ExternalLinkWithSVGIcon url="https://docs.temporal.io/docs/use-cases-provisioning/#next-steps">Examples with Kubernetes and Consul
+          </ExternalLinkWithSVGIcon>
 
         </UCaseItem>
         <UCaseItem header="Monitoring">
@@ -86,23 +82,11 @@ export default function UseCases() {
           <p className="mb-3">The history service provides visibility into history for periodic workflow executions.</p>
           <p className="mb-3">Scalability is another crucial advantage of using Temporal for periodic execution. Many use cases require periodic execution for a large number of entities. At Uber, some applications run recurring workflows for each customer. Imagine 100s of millions parallel cron jobs that don't require a separate batch processing framework.</p>
           <p className="mb-3">Temporal support for long-running activities and unlimited retries also makes it a great fit for monitoring use cases.</p>
-          <SimpleLink url="https://docs.temporal.io/docs/use-cases-monitoring">Learn more in our docs
-          </SimpleLink>
+          <ExternalLinkWithSVGIcon url="https://docs.temporal.io/docs/use-cases-monitoring">Learn more in our docs
+          </ExternalLinkWithSVGIcon>
         </UCaseItem>
       </ul>
     </section>
-  )
-}
-
-function SimpleLink({ url, children }) {
-  return (
-    <p>
-      <a className="hover:underline text-blue-700 hover:text-blue-500" href={url}>{children}
-        <svg className="ml-2 w-4 h-4 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
-      </a>
-    </p>
   )
 }
 
@@ -110,7 +94,7 @@ function LBimage({ thumbnail, mainSrc, alt }) {
   const [open, setOpen] = React.useState(false)
   return (
     <>
-      <button className="md:float-right float items-center md:h-64 md:w-64 transition-transform transform duration-300 hover:scale-110" onClick={() => setOpen(true)}>
+      <button className="md:float-right float items-center md:h-64 md:w-64 presetTransition hover:scale-110" onClick={() => setOpen(true)}>
         <img src={thumbnail} alt={alt} />
       </button>
       {open && <Lightbox

@@ -7,9 +7,10 @@
 /* Stop purging. */
 
 /* Write your own custom component styles here */
-/* .btn-blue {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-} */
+.presetTransition {
+  /* useful transition to have on clickable elements */
+  @apply transition-transform transform duration-300; 
+}
 
 /* Start purging... */
 @tailwind utilities;
@@ -46,15 +47,8 @@ body {
   background: #141414;
   color: #F2F2F2;
   font-family: 'Aeonik', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  /* background-image: url('/StarBackground.png') */
   background-image: url('/StarBackgroundMuted.svg');
-  /* background-repeat: no-repeat; */
   background-attachment: fixed;
-  /* background: url('/StarBackgroundMuted.svg')  no-repeat center center fixed;  */
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
   
 }
 
@@ -81,9 +75,14 @@ body {
   justify-content: center;
 }
 
+/* this is for the /careers page */
+/* needs to be in CSS since it loads async */
 .lever-job-title {
   color:  #90cdf4 !important
 }
 .lever-job-tag {
   color: #F2F2F2 !important
+}
+#lever-jobs-container {
+  color: white !important
 }

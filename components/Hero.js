@@ -1,10 +1,4 @@
-// import Link from 'next/link'
 import Nav from './nav'
-
-// function Bold({children}) {
-//   return <span className="font-bold">{children}</span>
-// }
-
 function Banner() {
   const [open, setOpen] = useLocalStorage('bannerOpen', true);
   if (!open) return null
@@ -46,10 +40,10 @@ export default function Hero() {
         </div>
         {clicked ? <div className="inline-flex md:-mt-8">
           <a className="mr-8" href="https://docs.temporal.io/docs/go-run-your-first-app">
-            <img aria-label="go SDK" className="w-16 h-16 md:w-20 md:h-20 transition-transform transform duration-300 hover:scale-110  object-contain" src="/logos/logo-go.png" alt="logo" />
+            <img aria-label="go SDK" className="w-16 h-16 md:w-20 md:h-20 presetTransition hover:scale-110  object-contain" src="/logos/logo-go.png" alt="logo" />
           </a>
           <a className="" href="https://docs.temporal.io/docs/java-run-your-first-app">
-            <img aria-label="java SDK" className="w-16 h-16 md:w-20 md:h-20 transition-transform transform duration-300 hover:scale-110  object-contain" src="/logos/logo-java.png" alt="logo" />
+            <img aria-label="java SDK" className="w-16 h-16 md:w-20 md:h-20 presetTransition hover:scale-110  object-contain" src="/logos/logo-java.png" alt="logo" />
           </a>
         </div>
           :

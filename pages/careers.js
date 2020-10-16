@@ -6,11 +6,6 @@ import Head from 'next/head';
 export default function CareersPage() {
   return (
     <div>
-      <style jsx>{` 
-      #lever-jobs-container {
-        color: white
-      }
-      `}</style>
       <div  className="mx-4 sm:mx-16">
       <Nav />
       <div>
