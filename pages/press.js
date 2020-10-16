@@ -45,12 +45,12 @@ export default function PressPage() {
             <meta property="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@temporaltech" />
           </Head>
-          <h1 className=" text-60 leading-60 lg:text-144 lg:leading-144 uppercase mb-4 lg:mb-16">
-            Press & Assets
-          </h1>
-          <p className="text-xl leading-tight">
-            We love it when developers and media talk about us! Please let us know when you do so we
-            can share it with the community, and also be mindful of our guidelines:
+          <h1 className=" text-60 leading-60 uppercase mt-8 mb-4 lg:mb-16">Press & Assets</h1>
+          <p className="text-xl  w-700">
+            We LOVE it when developers and media talk about us! Please let us know when you do so we
+            can share it with the community, and also be mindful of our guidelines (below). If in
+            doubt, email <span className="font-bold">press@temporal.io</span> and we will be happy
+            to work with you.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export default function PressPage() {
           className={`
         border-b border-spaceblack
         container mx-auto
-        bg-gray5 text-spaceblack
+        bg-temporalblue text-spaceblack
         flex flex-col p-8 mt-8
         `}>
           <h1 className="sm:mb-4 text-4xl sm:text-60 leading-48 sm:leading-72">Brand Guidelines</h1>
@@ -82,7 +82,7 @@ export default function PressPage() {
           className={`
         border-b border-spaceblack
         container mx-auto
-      bg-temporalblue text-spaceblack
+      text-spaceblack bg-gray5
         flex flex-col p-8
         `}>
           <h2 className="sm:mb-8 mb-4 text-4xl sm:text-60 leading-48 sm:leading-72">

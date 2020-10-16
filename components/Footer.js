@@ -69,6 +69,9 @@ export default function Footer() {
               <li className="mb-2">
                 <a href="https://twitter.com/temporaltech">Twitter</a>
               </li>
+              <li className="mb-2">
+                <a href="/press">Press and Brand Assets</a>
+              </li>
             </ul>
           </div>
           <div>
