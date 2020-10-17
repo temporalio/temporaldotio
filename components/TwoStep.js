@@ -18,7 +18,7 @@ export default function TwoStep() {
     `}>
       <div className="flex flex-col md:flex-row border-t border-b border-white">
         <div className="flex flex-1 md:border-r border-b md:border-b-0 border-white p-16">
-          <span className="text-3xl md:text-144 mr-16 hidden md:block">1</span>
+          <span className="text-3xl lg:text-144 mr-16 hidden md:block">1</span>
           <div className="flex flex-col">
             <span className="mb-8 text-lg sm:text-2xl">
               <span className="font-bold md:hidden">Step 1: </span>Write workflow functions in your
@@ -67,7 +67,7 @@ export default function TwoStep() {
           </div>
         </div>
         <div className="flex flex-1 p-16">
-          <span className="text-3xl md:text-144  mr-16 hidden md:block">2</span>
+          <span className="text-3xl lg:text-144  mr-16 hidden md:block">2</span>
           <div className="flex flex-col">
             <span className="mb-8 text-lg sm:text-2xl">
               <span className="font-bold md:hidden">Step 2: </span>Temporal handles all the
