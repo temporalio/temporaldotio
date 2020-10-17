@@ -8,8 +8,8 @@
     }
   },
   "lint-staged": {
-    "./**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
+    "./**/*.{js,jsx,ts,tsx,html,css}": [
+      "prettier --write"
     ]
   },
   "scripts": {
@@ -17,7 +17,7 @@
     "build": "next build",
     "serve": "next start",
     "lint": "eslint --fix . --ignore-path ./.gitignore",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,html,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
     "@prefresh/next": "^0.3.0",
