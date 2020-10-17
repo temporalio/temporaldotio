@@ -21,7 +21,7 @@ export default function UseCases() {
      bg-gray5
     flex flex-col pt-16
     `}>
-      <h1 className="container pl-4 mb-16 md:pl-16 text-60 leading-60 lg:text-144 lg:leading-144 uppercase text-spaceblack">
+      <h1 className="container pl-4 mb-16 md:pl-8 text-60 leading-60 lg:text-144 lg:leading-144 uppercase text-spaceblack">
         Use Cases
       </h1>
       <ul className="accordion border-t border-b border-spaceblack">
