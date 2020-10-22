@@ -19,6 +19,9 @@ module.exports = {
         lightgray: 'rgba(242,242,242,0.5)',
         lightteal: '#C7EDEF'
       },
+      maxWidth: {
+        700: '700px'
+      },
       width: {
         200: '200px',
         300: '300px',

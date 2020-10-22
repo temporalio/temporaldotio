@@ -53,40 +53,40 @@ export default function Footer() {
         </div>
         <div className="p-8 sm:p-16 pb-32 relative flex">
           <div className="mr-32">
-            <h3 className="mb-4 font-light text-gray-200 sm:text-gray-500">Community</h3>
+            <h3 className="mb-4 font-bold underline text-gray-200 sm:text-gray-500">Community</h3>
             <ul>
-              <li className="mb-2">
+              <li className="mb-2 font-light">
                 <a href="https://github.com/temporalio/temporal">GitHub</a>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 font-light">
                 <a href="https://community.temporal.io/">Community</a>
               </li>
-              <li className="mb-2">
-                <a href="https://join.slack.com/t/temporalio/shared_invite/zt-c1e99p8g-beF7~ZZW2HP6gGStXD8Nuw">
+              <li className="mb-2 font-light">
+                <a href="https://join.slack.com/t/temporalio/shared_invite/zt-ijmxkn84-7kK9uXqqX1BOomLnbBkK1Q">
                   Slack
                 </a>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 font-light">
                 <a href="https://twitter.com/temporaltech">Twitter</a>
               </li>
-              <li className="mb-2">
-                <a href="/press">Press and Brand Assets</a>
+              <li className="mb-2 font-light">
+                <a href="/press">Press/Brand Assets</a>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="mb-4 font-light text-gray-200 sm:text-gray-500">Docs</h3>
+            <h3 className="mb-4 font-bold underline text-gray-200 sm:text-gray-500">Docs</h3>
             <ul>
-              <li className="mb-2">
+              <li className="mb-2 font-light">
                 <a href="https://docs.temporal.io/docs/install-temporal-server">Guides</a>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 font-light">
                 <a href="https://docs.temporal.io/docs/go-sdk-tutorial-prerequisites">Tutorials</a>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 font-light">
                 <a href="https://docs.temporal.io/docs/overview">API</a>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 font-light">
                 <a href="https://docs.temporal.io/docs/go-run-your-first-app">Quickstarts</a>
               </li>
             </ul>

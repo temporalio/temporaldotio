@@ -46,7 +46,7 @@ export default function PressPage() {
             <meta name="twitter:site" content="@temporaltech" />
           </Head>
           <h1 className=" text-60 leading-60 uppercase mt-8 mb-4 lg:mb-16">Press & Assets</h1>
-          <p className="text-xl  w-700">
+          <p className="text-xl max-w-700">
             We LOVE it when developers and media talk about us! Please let us know when you do so we
             can share it with the community, and also be mindful of our guidelines (below). If in
             doubt, email <span className="font-bold">press@temporal.io</span> and we will be happy
@@ -62,7 +62,9 @@ export default function PressPage() {
         bg-temporalblue text-spaceblack
         flex flex-col p-8 mt-8
         `}>
-          <h1 className="sm:mb-4 text-4xl sm:text-60 leading-48 sm:leading-72">Brand Guidelines</h1>
+          <h1 className="sm:mb-8 mb-4 text-4xl sm:text-60 leading-48 sm:leading-72">
+            Brand Guidelines
+          </h1>
           <ul className="list-disc pl-4">
             <li className="">Only show the logo in black or white</li>
             <li className="">Don't alter, rotate or modify the logo</li>
@@ -118,9 +120,7 @@ export default function PressPage() {
             />
           </ul>
 
-          <h2 className="mt-16 mb-4 sm:mb-8 text-4xl sm:text-60 leading-48 sm:leading-72">
-            Brand Assets (SVG)
-          </h2>
+          <h2 className="mt-16 mb-4 sm:mb-8 text-4xl sm:text-60 leading-48 sm:leading-72">SVG</h2>
           <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <Asset url="/press/twitter-card.svg" label="Dark logo+text on White" />
             <Asset url="/press/logo-only-black-on-white.svg" label="Dark logo on White" />
@@ -138,7 +138,6 @@ export default function PressPage() {
           </ul>
         </section>
       </div>
-      <hr />
       <Footer />
     </div>
   );
