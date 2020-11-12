@@ -78,16 +78,16 @@ export default function Footer() {
             <h3 className="mb-4 font-bold underline text-gray-200 sm:text-gray-500">Docs</h3>
             <ul>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/docs/install-temporal-server">Guides</a>
+                <a href="https://docs.temporal.io/docs/get-started#quick-start">Quick start</a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/docs/go-sdk-tutorial-prerequisites">Tutorials</a>
+                <a href="https://docs.temporal.io/docs/install-temporal-server">Server</a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/docs/overview">API</a>
+                <a href="https://docs.temporal.io/docs/sdks-introduction">API</a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/docs/go-run-your-first-app">Quickstarts</a>
+                <a href="https://docs.temporal.io/docs/overview">Concepts</a>
               </li>
             </ul>
           </div>
