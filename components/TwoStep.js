@@ -26,7 +26,7 @@ export default function TwoStep() {
             </span>
             <div className="grid grid-cols-2 gap-4 place-items-center">
               <a
-                href="https://docs.temporal.io/docs/go-sdk-tutorial-prerequisites"
+                href="https://docs.temporal.io/docs/go-sdk-tutorial-overview"
                 className="presetTransition hover:scale-110">
                 <img
                   aria-label="go SDK"
@@ -36,7 +36,7 @@ export default function TwoStep() {
                 />
               </a>
               <a
-                href="https://docs.temporal.io/docs/java-sdk-tutorial-prerequisites"
+                href="https://docs.temporal.io/docs/java-sdk-tutorial-overview"
                 className="presetTransition hover:scale-110">
                 <img
                   aria-label="java SDK"
