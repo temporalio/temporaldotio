@@ -59,7 +59,7 @@ export default function CareersPage() {
           </h2>
         </div>
         <div className="container sm:p-8 rounded-lg my-16 sm:ml-16">
-          <div id="lever-jobs-container"></div>
+          <div id="lever-jobs-container">Loading... (contact us if this message persists)</div>
         </div>
       </div>
       <hr />
