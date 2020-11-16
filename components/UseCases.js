@@ -80,7 +80,7 @@ export default function UseCases() {
           </ul>
           <p className="mb-3">
             There have even been cases where switching to Temporal's technology immediately resulted
-            in financial gains for the company because they previous solution was leaking money.
+            in financial gains for the company because their previous solution was leaking money.
           </p>
           <ExternalLinkWithSVGIcon url="https://github.com/temporalio/samples-go/tree/master/expense">
             See Expenses code sample
