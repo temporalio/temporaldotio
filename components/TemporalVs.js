@@ -121,19 +121,14 @@ function VSItem({ header, children, defaultState = false }) {
           <span>{header}</span>
           <span>
             {state ? (
-              // x icon
+              // - icon
               <svg
                 className="w-8 sm:w-12 h-8 sm:h-12"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
               </svg>
             ) : (
               // plus icon
