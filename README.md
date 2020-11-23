@@ -1,4 +1,4 @@
-Website for Temporal Technologies
+## Website for Temporal Technologies
 
 - Made Oct 2020
 - Design by Wildshore
@@ -7,7 +7,25 @@ See this live: http://temporal.io/
 
 [![GitHub Super-Linter](https://github.com/temporalio/temporaldotio/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
-Notes:
+### Running locally
+
+Install node dependencies:
+
+```
+npm install
+```
+
+Start local dev server:
+
+```
+npm start
+```
+
+Open http://localhost:3000
+
+! Does not currently work with yarn (Nov 2020)
+
+##### Notes:
 
 - before preact: https://temporaldotio-paqneq2k7.vercel.app/
   - https://webpagetest.org/result/201015_Di9A_913748db7579834af354354784716697/
