@@ -78,10 +78,10 @@ export default function Footer() {
             <h3 className="mb-4 font-bold underline text-gray-200 sm:text-gray-500">Docs</h3>
             <ul>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/docs/get-started#quick-start">Quick start</a>
+                <a href="https://docs.temporal.io/docs/get-started">Get started</a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/docs/server-quick-install">Server</a>
+                <a href="https://docs.temporal.io/docs/server-introduction">Server</a>
               </li>
               <li className="mb-2 font-light">
                 <a href="https://docs.temporal.io/docs/sdks-introduction">API</a>
