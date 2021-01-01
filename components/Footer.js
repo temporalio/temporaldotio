@@ -62,7 +62,7 @@ export default function Footer() {
                 <a href="https://community.temporal.io/">Community</a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://join.slack.com/t/temporalio/shared_invite/zt-k3p4x0ec-nehFdZ4iAISJyYKWE8DxyA">
+                <a href="https://join.slack.com/t/temporalio/shared_invite/zt-kfgfjuye-L8gCQVRhPykA2td8pk7eTQ">
                   Slack
                 </a>
               </li>
