@@ -50,12 +50,17 @@ export default function CareersPage() {
               type="text/javascript"
               src="https://andreasmb.github.io/lever-jobs-embed/index.js"></script>
           </Head>
-          <h1 className="text-3xl sm:w-800 leading-lg sm:text-4xl sm:leading-4xl font-bold mb-4">
+          <h1 className="text-3xl sm:w-800 sm:mt-12 leading-lg sm:text-4xl sm:leading-4xl font-bold mb-4">
             Help us deliver a new way to build scalable and reliable applications!
           </h1>
-          <h2 className="text-xl leading-tight">
-            If none of these positions are a fit, email careers@temporal.io describing your dream
-            job.
+          <h2 className="text-xl leading-tight italic">
+            If none of these positions are a fit, email{' '}
+            <a
+              href="careers@temporal.io"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              careers@temporal.io
+            </a>{' '}
+            describing your dream job.
           </h2>
         </div>
         <div className="container sm:p-8 rounded-lg my-16 sm:ml-16">
@@ -63,6 +68,33 @@ export default function CareersPage() {
         </div>
       </div>
       <hr />
+      <div className="mx-4 sm:mx-16">
+        <h1
+          id="external-jobs"
+          className="text-3xl sm:w-800 sm:mt-12 leading-lg sm:text-4xl sm:leading-4xl font-bold mb-4">
+          Temporal Developer Jobs
+        </h1>
+        <ul className="container list-disc rounded-lg my-16 sm:ml-16">
+          <li className="test">
+            If you are a company that uses Temporal, you can{' '}
+            <a
+              href="careers@temporal.io"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              advertise a job with us here
+            </a>{' '}
+            for free.
+          </li>
+          <li className="test">
+            If you are a developer that loves Temporal, you can{' '}
+            <a
+              href="http://eepurl.com/hhcaaX"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              sign up for our mailing list
+            </a>{' '}
+            to hear when jobs are advertised.
+          </li>
+        </ul>
+      </div>
       <Footer />
     </div>
   );
