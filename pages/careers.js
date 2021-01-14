@@ -78,9 +78,9 @@ export default function CareersPage() {
           <li className="test">
             If you are a company that uses Temporal, you can{' '}
             <a
-              href="careers@temporal.io"
+              href="mailto:careers@temporal.io"
               className="font-bold underline text-blue-400 hover:text-blue-200">
-              advertise a job with us here
+              email us to advertise a job here
             </a>{' '}
             for free.
           </li>
