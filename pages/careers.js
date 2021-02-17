@@ -74,7 +74,7 @@ export default function CareersPage() {
           className="text-3xl sm:w-800 sm:mt-12 leading-lg sm:text-4xl sm:leading-4xl font-bold mb-4">
           Temporal Developer Jobs
         </h1>
-        <ul className="container list-disc rounded-lg my-16 sm:ml-16">
+        <ul className="container rounded-lg">
           <li className="test">
             If you are a company that uses Temporal, you can{' '}
             <a
@@ -92,6 +92,29 @@ export default function CareersPage() {
               sign up for our mailing list
             </a>{' '}
             to hear when jobs are advertised.
+          </li>
+        </ul>
+        <h3
+          id="external-joblist"
+          className="text-xl sm:w-800 sm:mt-12 leading-lg sm:text-xl sm:leading-4xl font-bold">
+          Companies hiring Developers to work with Temporal:
+        </h3>
+        <ul className="container list-disc rounded-lg my-8 sm:ml-16">
+          <li className="test">
+            <a
+              href="https://jobs.lever.co/nylas/d8788060-ef4f-48ea-8b7b-787c31ec4e46"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              Nylas - Senior Software Engineer (Workflows)
+            </a>{' '}
+            - Toronto
+          </li>
+          <li className="test">
+            <a
+              href="https://jobs.lever.co/nylas/50471019-fe86-4429-b857-98b17434d839"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              Nylas - Senior Software Engineer (Workflows)
+            </a>{' '}
+            - Vancouver
           </li>
         </ul>
       </div>
