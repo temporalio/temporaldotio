@@ -100,7 +100,7 @@ export default function CareersPage() {
           Companies hiring Developers to work with Temporal:
         </h3>
         <ul className="container list-disc rounded-lg my-8 sm:ml-16">
-          <li className="test">
+          <li>
             <a
               href="https://jobs.lever.co/nylas/d8788060-ef4f-48ea-8b7b-787c31ec4e46"
               className="font-bold underline text-blue-400 hover:text-blue-200">
@@ -108,13 +108,21 @@ export default function CareersPage() {
             </a>{' '}
             - Toronto
           </li>
-          <li className="test">
+          <li>
             <a
               href="https://jobs.lever.co/nylas/50471019-fe86-4429-b857-98b17434d839"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Nylas - Senior Software Engineer (Workflows)
             </a>{' '}
             - Vancouver
+          </li>
+          <li>
+            <a
+              href="https://jobs.lever.co/nightfall/2284505f-49e4-48b6-a530-4e1869a68fe4"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              Nightfall AI - Senior Backend Engineer
+            </a>{' '}
+            - US & Canada Remote
           </li>
         </ul>
       </div>
