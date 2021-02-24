@@ -45,6 +45,25 @@ export default function TwoStep() {
                   alt="logo"
                 />
               </a>
+              <a
+                href="https://docs.temporal.io/docs/php-sdk-overview"
+                className="presetTransition hover:scale-110">
+                <img
+                  aria-label="php SDK"
+                  className="w-16 h-16 md:w-32 md:h-32  object-contain"
+                  src="/logos/logo-php.png"
+                  alt="logo"
+                />
+              </a>
+              <ComingSoon>
+                <img
+                  aria-label="typescript SDK"
+                  style={{ filter: 'grayscale(1)' }}
+                  className="object-contain"
+                  src="/logos/logo-typescript.png"
+                  alt="coming soon"
+                />
+              </ComingSoon>
               <ComingSoon>
                 <img
                   aria-label="python SDK"
