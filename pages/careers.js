@@ -132,6 +132,14 @@ export default function CareersPage() {
             </a>{' '}
             - US Remote
           </li>
+          <li>
+            <a
+              href="https://www.datadoghq.com/careers/detail/?gh_jid=1825853"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              Datadog - Software Engineer - Site Reliability
+            </a>{' '}
+            - NY/Paris Remote
+          </li>
         </ul>
       </div>
       <Footer />
