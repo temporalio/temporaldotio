@@ -124,6 +124,14 @@ export default function CareersPage() {
             </a>{' '}
             - US & Canada Remote
           </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/jobs/view/senior-software-engineer-cloud-database-infra-cash-app-at-cash-app-2315548952/"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              Square/Cash App - Senior Software Engineer (Cloud Database Infra)
+            </a>{' '}
+            - US Remote
+          </li>
         </ul>
       </div>
       <Footer />
