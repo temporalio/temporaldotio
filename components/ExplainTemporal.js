@@ -14,7 +14,7 @@ function ResponsivePlayer({ url }) {
   );
 }
 export default function ExplainTemporal() {
-  const [clicked, setClicked] = React.useState(false);
+  // const [clicked, setClicked] = React.useState(false);
   return (
     <section
       id="explain-temporal"
@@ -57,34 +57,11 @@ export default function ExplainTemporal() {
           href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">
           More on YouTube
         </a>
-        {clicked ? (
-          <div className="button w-300 h-60 bg-gray5">
-            <div className=" flex justify-around w-full">
-              <a className="" href="https://docs.temporal.io/docs/go-run-your-first-app">
-                <img
-                  aria-label="go SDK"
-                  className="w-16 h-16 md:w-16 md:h-16 presetTransition hover:scale-110  object-contain"
-                  src="/logos/logo-go.png"
-                  alt="logo"
-                />
-              </a>
-              <a className="" href="https://docs.temporal.io/docs/java-run-your-first-app">
-                <img
-                  aria-label="java SDK"
-                  className="w-16 h-16 md:w-16 md:h-16 presetTransition hover:scale-110  object-contain"
-                  src="/logos/logo-java.png"
-                  alt="logo"
-                />
-              </a>
-            </div>
-          </div>
-        ) : (
-          <button
-            className="button hover:text-temporalblue w-300 h-60"
-            onClick={() => setClicked(true)}>
-            Run Your First App
-          </button>
-        )}
+        <a
+          className="button w-300 h-60 hover:text-temporalblue"
+          href="https://docs.temporal.io/docs/external-resources">
+          I Still Don't Get It
+        </a>
       </div>
     </section>
   );
