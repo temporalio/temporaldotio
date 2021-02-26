@@ -128,7 +128,7 @@ export default function CareersPage() {
             <a
               href="https://www.linkedin.com/jobs/view/senior-software-engineer-cloud-database-infra-cash-app-at-cash-app-2315548952/"
               className="font-bold underline text-blue-400 hover:text-blue-200">
-              Square/Cash App - Senior Software Engineer (Cloud Database Infra)
+              Square - Senior Software Engineer (Cloud Database Infra), Cash App
             </a>{' '}
             - US Remote
           </li>
