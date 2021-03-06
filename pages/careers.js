@@ -102,11 +102,11 @@ export default function CareersPage() {
         <ul className="container list-disc rounded-lg my-8 sm:ml-16">
           <li>
             <a
-              href="https://stripe.com/jobs/listing/infrastructure-engineer-developer-productivity-workflow-engine/2964407"
+              href="https://www.datadoghq.com/careers/detail/?gh_jid=1825853"
               className="font-bold underline text-blue-400 hover:text-blue-200">
-              Stripe - Infrastructure Engineer, Developer Productivity (Workflow Engine)
+              Datadog - Software Engineer - Site Reliability
             </a>{' '}
-            - North America Remote
+            - NY/Paris Remote
           </li>
           <li>
             <a
@@ -142,11 +142,11 @@ export default function CareersPage() {
           </li>
           <li>
             <a
-              href="https://www.datadoghq.com/careers/detail/?gh_jid=1825853"
+              href="https://stripe.com/jobs/listing/infrastructure-engineer-developer-productivity-workflow-engine/2964407"
               className="font-bold underline text-blue-400 hover:text-blue-200">
-              Datadog - Software Engineer - Site Reliability
+              Stripe - Infrastructure Engineer, Developer Productivity (Workflow Engine)
             </a>{' '}
-            - NY/Paris Remote
+            - North America Remote
           </li>
         </ul>
       </div>
