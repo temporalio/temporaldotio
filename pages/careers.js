@@ -102,6 +102,14 @@ export default function CareersPage() {
         <ul className="container list-disc rounded-lg my-8 sm:ml-16">
           <li>
             <a
+              href="https://stripe.com/jobs/listing/infrastructure-engineer-developer-productivity-workflow-engine/2964407"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              Stripe - Infrastructure Engineer, Developer Productivity (Workflow Engine)
+            </a>{' '}
+            - North America Remote
+          </li>
+          <li>
+            <a
               href="https://jobs.lever.co/nylas/d8788060-ef4f-48ea-8b7b-787c31ec4e46"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Nylas - Senior Software Engineer (Workflows)
