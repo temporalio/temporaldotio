@@ -87,7 +87,7 @@ export default function Footer() {
                 <a href="https://docs.temporal.io/docs/sdks-introduction">API</a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/docs/overview">Concepts</a>
+                <a href="https://docs.temporal.io/docs/concept-overview">Concepts</a>
               </li>
               <li className="mb-2 font-light">
                 <a href="https://docs.temporal.io/privacy-policy/">Privacy Policy</a>
