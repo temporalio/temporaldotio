@@ -101,6 +101,19 @@ export default function CareersPage() {
         </h3>
         <ul className="container list-disc rounded-lg my-8 sm:ml-16">
           <li>
+            Bolt - <a
+              href="https://www.bolt.com/careers/software-engineer-platforms/f193e0fa-7cf0-42aa-8837-8bdd4dca3e22/"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              Software Engineer
+            </a> and
+            <a
+              href="https://www.bolt.com/careers/senior-software-engineer-platforms/ce0d1fe3-bb00-4b4a-99f0-848bbc5a87c3/"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              Senior Software Engineer
+            </a>  - Platforms{' '}
+            - San Francisco
+          </li>
+          <li>
             <a
               href="https://www.datadoghq.com/careers/detail/?gh_jid=1825853"
               className="font-bold underline text-blue-400 hover:text-blue-200">
