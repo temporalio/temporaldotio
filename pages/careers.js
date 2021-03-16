@@ -126,7 +126,7 @@ export default function CareersPage() {
               href="https://jobs.lever.co/nylas/d8788060-ef4f-48ea-8b7b-787c31ec4e46"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Toronto
-            </a> and 
+            </a> and{' '}
             <a
               href="https://jobs.lever.co/nylas/50471019-fe86-4429-b857-98b17434d839"
               className="font-bold underline text-blue-400 hover:text-blue-200">
