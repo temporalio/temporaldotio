@@ -48,7 +48,7 @@ export default function PressPage() {
           <h1 className=" text-60 leading-60 uppercase mt-8 mb-4 lg:mb-16">Press & Assets</h1>
           <p className="text-xl max-w-700">
             We LOVE it when developers and media talk about us! Please let us know when you do so we
-            can share it with the community, and also be mindful of our guidelines (below). If in
+            can <a className="underline text-blue-400 hover:text-blue-200" href="https://docs.temporal.io/docs/external-resources">share it with the community</a>, and also be mindful of our guidelines (below). If in
             doubt, email <span className="font-bold">press@temporal.io</span> and we will be happy
             to work with you.
           </p>
