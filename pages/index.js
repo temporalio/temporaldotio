@@ -1,5 +1,5 @@
 import Hero from '../components/Hero';
-import TwoStep from '../components/TwoStep';
+// import TwoStep from '../components/TwoStep';
 import ExplainTemporal from '../components/ExplainTemporal';
 import UseCases from '../components/UseCases';
 import CaseStudies from '../components/CaseStudies';
@@ -16,7 +16,7 @@ export default function IndexPage() {
         <title>Temporal.io Home</title>
       </Head>
       <Hero />
-      <TwoStep />
+      {/* <TwoStep /> */}
       <ExplainTemporal />
       <UseCases />
       <CaseStudies />

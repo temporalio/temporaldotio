@@ -36,7 +36,7 @@ function Banner() {
 export default function Hero() {
   const [clicked, setClicked] = React.useState(false);
   return (
-    <>
+    <div className="border-b border-white">
       <Banner />
       <section
         id="hero"
@@ -94,7 +94,7 @@ export default function Hero() {
           )}
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
