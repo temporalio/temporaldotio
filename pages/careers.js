@@ -101,20 +101,23 @@ export default function CareersPage() {
         </h3>
         <ul className="container list-disc rounded-lg my-8 sm:ml-16">
           <li>
-            Bolt - <a
+            Bolt -{' '}
+            <a
               href="https://www.bolt.com/careers/software-engineer-platforms/f193e0fa-7cf0-42aa-8837-8bdd4dca3e22/"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Software Engineer
-            </a> and{' '}
+            </a>{' '}
+            and{' '}
             <a
               href="https://www.bolt.com/careers/senior-software-engineer-platforms/ce0d1fe3-bb00-4b4a-99f0-848bbc5a87c3/"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Senior Software Engineer
-            </a>  - Platforms{' '}
-            - San Francisco
+            </a>{' '}
+            - Platforms - San Francisco
           </li>
           <li>
-            Datadog - <a
+            Datadog -{' '}
+            <a
               href="https://www.datadoghq.com/careers/detail/?gh_jid=1825853"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Software Engineer - Site Reliability
@@ -122,11 +125,13 @@ export default function CareersPage() {
             - NY/Paris Remote
           </li>
           <li>
-            Nylas - Senior Software Engineer (Workflows) - <a
+            Nylas - Senior Software Engineer (Workflows) -{' '}
+            <a
               href="https://jobs.lever.co/nylas/d8788060-ef4f-48ea-8b7b-787c31ec4e46"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Toronto
-            </a> and{' '}
+            </a>{' '}
+            and{' '}
             <a
               href="https://jobs.lever.co/nylas/50471019-fe86-4429-b857-98b17434d839"
               className="font-bold underline text-blue-400 hover:text-blue-200">
@@ -134,7 +139,8 @@ export default function CareersPage() {
             </a>
           </li>
           <li>
-            Nightfall AI - <a
+            Nightfall AI -{' '}
+            <a
               href="https://jobs.lever.co/nightfall/2284505f-49e4-48b6-a530-4e1869a68fe4"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Senior Backend Engineer
@@ -142,15 +148,17 @@ export default function CareersPage() {
             - US & Canada Remote
           </li>
           <li>
+            Square -{' '}
             <a
               href="https://www.linkedin.com/jobs/view/senior-software-engineer-cloud-database-infra-cash-app-at-cash-app-2315548952/"
               className="font-bold underline text-blue-400 hover:text-blue-200">
-              Square - Senior Software Engineer (Cloud Database Infra), Cash App
+              Senior Software Engineer (Cloud Database Infra), Cash App
             </a>{' '}
             - US Remote
           </li>
           <li>
-            Stripe - <a
+            Stripe -{' '}
+            <a
               href="https://stripe.com/jobs/listing/infrastructure-engineer-developer-productivity-workflow-engine/2964407"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Infrastructure Engineer, Developer Productivity (Workflow Engine)

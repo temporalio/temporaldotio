@@ -63,6 +63,13 @@ export default function ExplainTemporal() {
           I Still Don't Get It
         </a>
       </div>
+      <div className="flex flex-col sm:flex-row justify-center items-center my-8">
+        <a
+          className="font-bold hover:underline text-blue-400 hover:text-blue-200"
+          href="mailto:support@temporal.io?subject=[Temporal.io] Enquiry&body=Hi, I heard about Temporal via YOUR_SOURCE_HERE and I had some questions...">
+          Email us — we answer all questions!
+        </a>
+      </div>
     </section>
   );
 }
