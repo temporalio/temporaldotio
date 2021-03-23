@@ -74,7 +74,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="mr-16 sm:mr-32">
             <h3 className="mb-4 font-bold underline text-gray-200 sm:text-gray-500">Docs</h3>
             <ul>
               <li className="mb-2 font-light">
@@ -94,6 +94,14 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          <img
+            // className="presetTransition hover:scale-110 h-16 w-16 sm:h-32 sm:w-32 object-cover"
+            // className="h-16 w-16 sm:h-32 sm:w-32 object-cover"
+            className="absolute bottom-0 sm:relative sm:bottom-auto left-1 mb-6 mr-6 h-16 w-16 sm:h-32 sm:w-32"
+            src="/logos/logo-soc2.png"
+            aria-label="SOC2 logo"
+            alt="SOC2 logo"
+          />
           <img
             className="absolute bottom-0 right-0 mb-8 mr-8"
             src="/logos/temporal-white-mark.png"
