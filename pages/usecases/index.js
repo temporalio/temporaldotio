@@ -48,7 +48,7 @@ export default function Page() {
           </li>
           <li>
             <a className="hover:underline text-blue-300 hover:text-blue-200" href="#Pipelines">
-              Data Processing Pipelines
+              Data Pipelines
             </a>
           </li>
           <li>
@@ -76,7 +76,7 @@ export default function Page() {
           <Provisioning slugPrefix="provisioning" />
           <Header id="Monitoring">Monitoring and Polling</Header>
           <Monitoring slugPrefix="Monitoring" />
-          <Header id="Pipelines">Data Processing Pipelines</Header>
+          <Header id="Pipelines">Data Pipelines</Header>
           <Pipelines slugPrefix="Pipelines" />
           <Header id="Processes">Long Running Processes</Header>
           <Processes slugPrefix="Processes" />
