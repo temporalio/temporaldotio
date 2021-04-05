@@ -68,10 +68,10 @@ export default function CareersPage() {
         </div>
       </div>
       <hr />
-      <div className="mx-4 sm:mx-16">
+      <div className="mx-4 sm:mx-16 mb-12">
         <h1
           id="external-jobs"
-          className="text-3xl sm:w-800 sm:mt-12 leading-lg sm:text-4xl sm:leading-4xl font-bold mb-4">
+          className="text-3xl sm:w-800 mt-12 leading-lg sm:text-4xl sm:leading-4xl font-bold mb-4">
           Other Companies on Temporal with open Developer Jobs
         </h1>
         <ul className="container rounded-lg">
@@ -96,12 +96,12 @@ export default function CareersPage() {
         </ul>
         <h3
           id="external-joblist"
-          className="text-xl sm:w-800 sm:mt-12 leading-lg sm:text-xl sm:leading-4xl font-bold">
+          className="text-xl sm:w-800 mt-12 leading-lg sm:text-xl sm:leading-4xl font-bold">
           Companies hiring Developers to work with Temporal:
         </h3>
-        <ul className="container list-disc rounded-lg my-8 sm:ml-16">
+        <ul className="container list-disc rounded-lg my-8 sm:ml-16 space-y-4">
           <li>
-            Bolt -{' '}
+            <span className="font-bold text-xl uppercase">Bolt</span>:{' '}
             <a
               href="https://www.bolt.com/careers/software-engineer-platforms/f193e0fa-7cf0-42aa-8837-8bdd4dca3e22/"
               className="font-bold underline text-blue-400 hover:text-blue-200">
@@ -113,57 +113,61 @@ export default function CareersPage() {
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Senior Software Engineer
             </a>{' '}
-            - Platforms - San Francisco
+            - Platforms <span className="text-sm text-gray-500">San Francisco</span>
           </li>
           <li>
-            Datadog -{' '}
+            <span className="font-bold text-xl uppercase">Datadog</span>:{' '}
             <a
               href="https://www.datadoghq.com/careers/detail/?gh_jid=1825853"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Software Engineer - Site Reliability
             </a>{' '}
-            - NY/Paris Remote
+            <span className="text-sm text-gray-500">NY/Paris Remote</span>
           </li>
           <li>
-            Nylas - Senior Software Engineer (Workflows) -{' '}
+            <span className="font-bold text-xl uppercase">Nylas</span>:{' '}
             <a
               href="https://jobs.lever.co/nylas/d8788060-ef4f-48ea-8b7b-787c31ec4e46"
               className="font-bold underline text-blue-400 hover:text-blue-200">
-              Toronto
+              Senior Software Engineer (Workflows)
             </a>{' '}
-            and{' '}
+            <span className="text-sm text-gray-500">Toronto</span>
+          </li>
+          <li>
+            <span className="font-bold text-xl uppercase">Nylas</span>:{' '}
             <a
               href="https://jobs.lever.co/nylas/50471019-fe86-4429-b857-98b17434d839"
               className="font-bold underline text-blue-400 hover:text-blue-200">
-              Vancouver
-            </a>
+              Senior Software Engineer (Workflows)
+            </a>{' '}
+            <span className="text-sm text-gray-500">Vancouver</span>
           </li>
           <li>
-            Nightfall AI -{' '}
+            <span className="font-bold text-xl uppercase">Nightfall AI</span>:{' '}
             <a
               href="https://jobs.lever.co/nightfall/2284505f-49e4-48b6-a530-4e1869a68fe4"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Senior Backend Engineer
             </a>{' '}
-            - US & Canada Remote
+            <span className="text-sm text-gray-500">US & Canada Remote</span>
           </li>
           <li>
-            Square -{' '}
+            <span className="font-bold text-xl uppercase">Square</span>:{' '}
             <a
               href="https://www.linkedin.com/jobs/view/senior-software-engineer-cloud-database-infra-cash-app-at-cash-app-2315548952/"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Senior Software Engineer (Cloud Database Infra), Cash App
             </a>{' '}
-            - US Remote
+            <span className="text-sm text-gray-500">US Remote</span>
           </li>
           <li>
-            Stripe -{' '}
+            <span className="font-bold text-xl uppercase">Stripe</span>:{' '}
             <a
               href="https://stripe.com/jobs/listing/infrastructure-engineer-developer-productivity-workflow-engine/2964407"
               className="font-bold underline text-blue-400 hover:text-blue-200">
               Infrastructure Engineer, Developer Productivity (Workflow Engine)
             </a>{' '}
-            - North America Remote
+            <span className="text-sm text-gray-500">North America Remote</span>
           </li>
         </ul>
       </div>
