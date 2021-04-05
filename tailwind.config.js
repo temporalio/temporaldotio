@@ -19,6 +19,9 @@ module.exports = {
         lightgray: 'rgba(242,242,242,0.5)',
         lightteal: '#C7EDEF'
       },
+      gridTemplateColumns: {
+        usecases: '200px minmax(0, 1fr)'
+      },
       maxWidth: {
         700: '700px'
       },

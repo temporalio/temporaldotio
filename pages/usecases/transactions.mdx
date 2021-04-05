@@ -11,7 +11,7 @@ export function LBimage({ thumbnail, mainSrc, alt }) {
   return (
     <>
       <button
-        className="items-center h-32 md:h-64 w-700 presetTransition hover:scale-105"
+        className="items-center h-32 md:h-400 w-700 max-w-full presetTransition hover:scale-105"
         onClick={() => setOpen(true)}>
         <img src={thumbnail} alt={alt} />
       </button>
