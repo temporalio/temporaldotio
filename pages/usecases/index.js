@@ -95,10 +95,11 @@ function Header({ id, children }) {
   return (
     <div
       className="self-start sticky top-0 
-    bg-spaceblack w-full mb-4 py-4 md:pt-12
+    bg-spaceblack w-full mb-4 py-4 pt-10
+ border-t-2 border-temporalblue
     ">
       <h2
-        className="text-2xl font-bold 
+        className="text-4xl font-bold 
     leading-lg sm:text-3xl sm:leading-2xl ">
         <a className="hover:underline text-blue-300 hover:text-blue-200" href={`#${id}`}>
           {children}

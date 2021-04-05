@@ -13,7 +13,9 @@ export const H2 = (slugPrefix = '') => ({ children }) => {
   let slug = slugify(children);
   slug = slugPrefix ? `${slugPrefix}-${slug}` : slug;
   return (
-    <h2 className="text-md mt-12 mb-4 uppercase font-bold hover:text-temporalblue" id={slug}>
+    <h2
+      className="text-md mt-8 md:mt-12 mb-4 uppercase font-bold hover:text-temporalblue"
+      id={slug}>
       <a href={`#${slug}`}>{children}</a>
     </h2>
   );
@@ -55,7 +57,7 @@ export const Code = ({ children }) => <code className="font-mono">{children}</co
 
 export const OL = ({ children }) => <ol className="space-y-4 mb-4">{children}</ol>;
 export const UL = ({ children }) => <ul className="space-y-4 mb-4">{children}</ul>;
-export const LI = ({ children }) => <li className="list-disc ml-4">{children}</li>;
+export const LI = ({ children }) => <li className="list-disc ml-6">{children}</li>;
 export const Blockquote = ({ children }) => (
   <div className=" border-l-2 border-temporalblue bg-lightgray text-spaceblack">{children}</div>
 );
