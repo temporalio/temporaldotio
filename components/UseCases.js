@@ -49,9 +49,11 @@ export default function UseCases() {
             orchestration based on queues where getting a current status of each request is
             virtually impossible.
           </p>
-          <ExternalLinkWithSVGIcon url="https://docs.temporal.io/docs/use-cases-orchestration/#next-steps">
-            Examples from Uber and Banzai Cloud
-          </ExternalLinkWithSVGIcon>
+          <a
+            className="hover:underline text-blue-800 hover:text-blue-500"
+            href="/usecases#orchestration">
+            Learn More, with examples from Uber and Banzai Cloud
+          </a>
         </UCaseItem>
         <UCaseItem header="Financial Transactions">
           <h2 className="font-bold mb-3">
@@ -82,6 +84,12 @@ export default function UseCases() {
             There have even been cases where switching to Temporal's technology immediately resulted
             in financial gains for the company because their previous solution was leaking money.
           </p>
+          <a
+            className="hover:underline text-blue-800 hover:text-blue-500"
+            href="/usecases#transactions">
+            Learn More
+          </a>
+          {' | '}
           <ExternalLinkWithSVGIcon url="https://github.com/temporalio/samples-go/tree/master/expense">
             See Expenses code sample
           </ExternalLinkWithSVGIcon>
@@ -118,9 +126,11 @@ export default function UseCases() {
             If a lengthy provisioning workflow fails in the middle, Temporal would handle the error
             and restart the flow at the right spot.
           </p>
-          <ExternalLinkWithSVGIcon url="https://docs.temporal.io/docs/use-cases-provisioning/#next-steps">
-            Examples with Kubernetes and Consul
-          </ExternalLinkWithSVGIcon>
+          <a
+            className="hover:underline text-blue-800 hover:text-blue-500"
+            href="/usecases#provisioning">
+            Learn More, with examples from Kubernetes and Consul
+          </a>
         </UCaseItem>
         <UCaseItem header="Monitoring">
           <LBimage
@@ -158,9 +168,11 @@ export default function UseCases() {
             Temporal support for long-running activities and unlimited retries also makes it a great
             fit for monitoring use cases.
           </p>
-          <ExternalLinkWithSVGIcon url="https://docs.temporal.io/docs/use-cases-monitoring">
-            Learn more in our docs
-          </ExternalLinkWithSVGIcon>
+          <a
+            className="hover:underline text-blue-800 hover:text-blue-500"
+            href="/usecases#monitoring">
+            Learn More, with example Cluster Lifecycle monitoring workflow
+          </a>
         </UCaseItem>
       </ul>
     </section>
