@@ -1,6 +1,11 @@
 const withPrefresh = require('@prefresh/next');
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/
+});
 
-module.exports = withPrefresh({
+const withPlugins = require('next-compose-plugins');
+
+const prefreshPlugin = withPrefresh({
   webpack(config, { dev, isServer }) {
     // Move Preact into the framework chunk instead of duplicating in routes:
     const splitChunks = config.optimization && config.optimization.splitChunks;
@@ -49,6 +54,11 @@ module.exports = withPrefresh({
     ];
   }
 });
+const MDXPlugin = withMDX({
+  pageExtensions: ['js', 'jsx', 'mdx']
+});
+
+module.exports = withPlugins([prefreshPlugin, MDXPlugin]);
 // module.exports = {
 //   devIndicators: {
 //     autoPrerender: false,

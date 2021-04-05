@@ -1,6 +1,8 @@
-export function ExternalLinkWithSVGIcon({ url, children }) {
+export function ExternalLinkWithSVGIcon({ url, children, className }) {
   return (
-    <a href={url} className="hover:underline text-blue-800 hover:text-blue-500">
+    <a
+      href={url}
+      className={className ? className : 'hover:underline text-blue-800 hover:text-blue-500'}>
       {children}
       <svg
         className="w-6 h-6 sm:w-8 sm:h-8 inline ml-1 sm:ml-2"

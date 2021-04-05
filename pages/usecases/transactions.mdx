@@ -1,0 +1,54 @@
+import MDXProvider from './_mdxprovider'
+import Lightbox from 'react-image-lightbox';
+export const meta = {
+  title: 'Markdown/MDX with Next.js',
+  author: 'Lee Robinson'
+}
+export default ({ children, slugPrefix }) => <MDXProvider {...{meta, slugPrefix}}>{children}</MDXProvider>
+
+export function LBimage({ thumbnail, mainSrc, alt }) {
+  const [open, setOpen] = React.useState(false);
+  return (
+    <>
+      <button
+        className="items-center h-32 md:h-64 w-700 presetTransition hover:scale-105"
+        onClick={() => setOpen(true)}>
+        <img src={thumbnail} alt={alt} />
+      </button>
+      {open && <Lightbox mainSrc={mainSrc} onCloseRequest={() => setOpen(false)} />}
+    </>
+  );
+}
+
+## Motivation
+
+Most businesses have to deal with managing complex **monetary transactions** and transfers, including:
+
+- Handling consumer's subscriptions, installment payments, and communications in a reliable and timely manner.
+- Integrating with multiple payment systems and shopping platform backends.
+- Detecting suspicious and fraudulent Activities.
+
+Similar to [microservices orchestration](/docs/use-cases-orchestration), such workflows need a way to deliver the transactional **consistency**&mdash;but across multiple third-party vendors. Each of these third-party systems has a potential for failure, delays, or intermittent availability issues. Despite the challenges, the entire process represents a long-running transaction that needs to eventually complete in a predictable way.
+
+In some cases, instead of trying to complete the process by continuously retrying, **compensation rollback** logic should be executed. [Saga Pattern](https://microservices.io/patterns/data/saga.html) is one way to standardize compensation APIs.
+
+## Benefits
+
+Temporal provides an extensive toolset for dealing with the unpredictability of external services via reliable and transparent mechanisms: built-in execution guarantees, exponential Activity **retries**, timeouts.
+
+Temporal boasts native Saga Pattern support out of the box. Simply define a compensation action for each Workflow Activity. That way, when a failure happens in one of the downstream services, compensation actions will run for each of the Activities that previously succeeded.
+
+## Example
+
+The Workflow snippet below orchestrates two Activity calls: booking a hotel and reserving a flight. If the first Activity fails (including all the configured retries), the Workflow returns directly.
+
+However, if the first Activity (reservation) succeeds, but the second one fails, you need to cancel the already booked hotel to avoid undesirable charges. The error-handling block contains a call that cancels the hotel reservation before completing the Workflow.
+
+<LBimage thumbnail="/samples/screenshot-transactionsbooking.png"
+  mainSrc="/samples/screenshot-transactionsbooking.png"
+  alt="code screenshot"
+ />
+
+## Next Steps
+
+* Explore the full [Saga example in Java](https://github.com/temporalio/temporal-java-samples/tree/master/src/main/java/io/temporal/samples/bookingsaga)

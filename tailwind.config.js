@@ -5,11 +5,11 @@ module.exports = {
   },
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    fontFamily: {
-      light: ['Aeonik-Light'],
-      bold: ['Aeonik-Bold']
-    },
     extend: {
+      fontFamily: {
+        light: ['Aeonik-Light'],
+        bold: ['Aeonik-Bold']
+      },
       colors: {
         white: '#F2F2F2',
         temporalblue: '#B2E7EA',
