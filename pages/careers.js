@@ -1,4 +1,4 @@
-import Nav from '../components/nav';
+import { Nav } from '../components/Nav';
 import Footer from '../components/Footer';
 import React from 'react';
 import Head from 'next/head';

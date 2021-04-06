@@ -5,11 +5,11 @@ module.exports = {
   },
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    fontFamily: {
-      light: ['Aeonik-Light'],
-      bold: ['Aeonik-Bold']
-    },
     extend: {
+      fontFamily: {
+        light: ['Aeonik-Light'],
+        bold: ['Aeonik-Bold']
+      },
       colors: {
         white: '#F2F2F2',
         temporalblue: '#B2E7EA',
@@ -18,6 +18,9 @@ module.exports = {
         gray5: '#E0E0E0',
         lightgray: 'rgba(242,242,242,0.5)',
         lightteal: '#C7EDEF'
+      },
+      gridTemplateColumns: {
+        usecases: '200px minmax(0, 1fr)'
       },
       maxWidth: {
         700: '700px'
