@@ -57,7 +57,7 @@ export default function UseCases() {
         </UCaseItem>
         <UCaseItem header="Financial Transactions">
           <h2 className="font-bold mb-3">
-            For software that interact with money (especially someone else's), reliability and
+            For software that interacts with money (especially someone else's), reliability and
             consistency are top priorities.
           </h2>
           <p className="mb-3">
