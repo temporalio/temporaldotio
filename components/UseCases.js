@@ -158,7 +158,7 @@ export default function UseCases() {
             parallel cron jobs that don't require a separate batch processing framework.
           </p>
           <p className="mb-3">
-            Temporal's support for long-running activities and unlimited retries also makes it a
+            Temporal's support for long-running Activities and unlimited retries also makes it a
             great fit for monitoring use cases.
           </p>
           <ExternalLinkWithSVGIcon url="https://docs.temporal.io/docs/use-cases-monitoring">
