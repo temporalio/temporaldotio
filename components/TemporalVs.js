@@ -61,7 +61,7 @@ export default function TemporalVs() {
             promote the visualization aspect of workflow design, the actual execution semantics are
             expressed as a mix of programming and expression languages which are enforced by the
             specific runtime implementation. Temporal does not suffer from these types of
-            restrictions allowing you to fully define your workflows using a programming language.
+            restrictions enabling you to fully define your workflows using a programming language.
             This provides a high level of flexibility not only with defining your workflow logic but
             also testing and debugging in the development environment of your choice.
           </p>
