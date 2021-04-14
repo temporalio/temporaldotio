@@ -44,7 +44,7 @@ export default function TemporalVs() {
             sizes, regardless of scale.
           </p>
           <p className="mb-3">
-            Temporal targets developers and all code written with Temporal runs directly,
+            Temporal targets developers. All code written with Temporal runs directly,
             eliminating any extra compilation steps often required by DAG-based solutions. This
             provides extra flexibility which is impossible to achieve with more rigid DAG based
             systems.
