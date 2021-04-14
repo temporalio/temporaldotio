@@ -69,7 +69,7 @@ export default function TemporalVs() {
             BPM engines translate the workflow definitions markup into code, which requires
             additional compilation steps. This kind of code generation is approached differently by each runtime
             engine using tools they chose. Temporal eliminates the intermediate compilation steps
-            allowing you to express your workflow logic directly in code. In addition, Temporal
+           enabling you to express your workflow logic directly in code. In addition, Temporal
             provides you with high-level concepts such as asynchronous invocations, retries, error
             propagation and compensation which can be expressed much easier than in BPM-based
             solutions, especially for larger workflows.
