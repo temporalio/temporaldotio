@@ -52,27 +52,27 @@ export default function TemporalVs() {
         </VSItem>
         <VSItem header="BPM Engines">
           <h2 className="font-bold mb-4">
-            BPM Engines like Camunda Zeebe define their workflows using a flow-chart-based DSL such
+            BPM Engines like Camunda Zeebe define their workflows using a flow-chart based DSL such
             as BPMN.
           </h2>
           <p className="mb-3">
             Flow-chart based workflow DSLs suffer from being bound to a specific set of features and
             capabilities provided by the underlying workflow language they use. Even though they
             promote the visualization aspect of workflow design, the actual execution semantics are
-            expressed in a mix of programming and expression languages which are enforced by the
-            specific runtime implementation. Temporal eliminates the need of a restricting workflow
-            language DSL by allowing you to fully define your workflows using a programming
-            language. This provides a high level of flexibility not only with defining your workflow
-            logic but also testing and debugging in the development environment of your choice.
+            expressed as a mix of programming and expression languages which are enforced by the
+            specific runtime implementation. Temporal does not suffer from these type of
+            restrictions allowing you to fully define your workflows using a programming language.
+            This provides a high level of flexibility not only with defining your workflow logic but
+            also testing and debugging in the development environment of your choice.
           </p>
           <p className="mb-3">
             BPM engines translate the workflow definitions markup into code, which requires
             additional compilation steps. This code generation is done differently by each runtime
-            engine using tools they enforce. Temporal eliminates the intermediate compilation steps
+            engine using tools they chose. Temporal eliminates the intermediate compilation steps
             allowing you to express your workflow logic directly in code. In addition, Temporal
             provides you with high-level concepts such as asynchronous invocations, retries, error
             propagation and compensation which can be expressed much easier than in BPM-based
-            solutions especially for larger workflows.
+            solutions, especially for larger workflows.
           </p>
         </VSItem>
         <VSItem header="JSON/YAML-based Workflow Engines">
