@@ -97,7 +97,7 @@ export default function UseCases() {
             require a custom provisioning flow.
           </p>
           <p className="mb-3">
-            Some provisioning operations may take hours or event days to complete. Ad-hoc
+            Some provisioning operations may take hours or even days to complete. Ad-hoc
             provisioning solutions are often unable to handle these cases resulting in application
             failures and an inconsistent operation state.
           </p>
