@@ -21,60 +21,76 @@ export default function TemporalVs() {
           </h2>
           <p>
             This often requires requisitioning new infrastructure, and hand-writing often buggy,
-            not-well-distributed and hard-to-test code with a lot of ad hoc code to review that has
-            nothing to do with the business logic. Temporal offers a battle tested framework to
-            organize all async business logic, running it atop a single set of infrastructure at
-            massive scale.
+            not-well-distributed and hard-to-test code. Temporal offers a battle tested framework
+            enabling you to capture and define your business logic in a structured way and run it
+            it atop a single set of infrastructure at massive scale. It allows developers to
+            focus on your actual business requirements and not plumbing work.
           </p>
         </VSItem>
         <VSItem header="DAG-based Workflow Engines">
           <h2 className="font-bold mb-3">
             DAG-based Workflow Engines like Airflow/Prefect/Luigi are pipeline solutions aimed at
-            data scientists running at a small-medium scale.
+            data scientists running at a small-to-medium scale.
           </h2>
           <p className="mb-3">
-            Whereas Temporal provides a code-first development environment which can be used to
-            build data pipelines, orchestrate microservices, provision resources and much more. Code
-            written with Temporal is executed directly which enables users to use the development,
-            debugging and testing processes they already know and love.
+            Temporal provides a code-first development environment which can be used to build data
+            pipelines, orchestrate microservices, provision resources and much more at any scale.
+            Code written with Temporal is executed directly which enables users to easily integrate
+            Temporal into their existing development, testing, and debugging environmentss.
           </p>
           <p className="mb-3">
-            While Temporal is a great option for data pipelines, we are not a data pipeline
-            framework. Temporal enables the development of apps of all shapes, sizes and scales.
+            While Temporal is a great option for data pipelines, this encompasses only a very small
+            subset of its use cases. Temporal enables development of applications of all shapes and
+            sizes, regardless of scale.
           </p>
           <p className="mb-3">
-            Temporal targets developers and all code written with Temporal runs directly instead of
-            compiling a intermediate DAG. This gives you flexibility which is impossible to achieve
-            with more rigid DAG based systems.
+            Temporal targets developers. All code written with Temporal runs directly,
+            eliminating any extra compilation steps often required by DAG-based solutions. This
+            provides extra flexibility which is impossible to achieve with more rigid DAG based
+            systems.
           </p>
         </VSItem>
         <VSItem header="BPM Engines">
           <h2 className="font-bold mb-4">
-            BPM Engines like Camunda Zeebe help orchestrate microservices at a large scale with
-            BPMN.
+            BPM Engines like Camunda Zeebe define their workflows using a flow-chart based DSL such
+            as BPMN.
           </h2>
           <p className="mb-3">
-            Temporal provides a strongly-consistent code-first development environment which can be
-            used for orchestrating microservices, building data pipelines, provisioning resources
-            and much more. Code written with Temporal is executed directly which enables users to
-            use the development, debugging and testing processes they already know and love.{' '}
+            Flow-chart based workflow DSLs suffer from being bound to a specific set of features and
+            capabilities provided by the underlying workflow language they use. Even though they
+            promote the visualization aspect of workflow design, the actual execution semantics are
+            expressed as a mix of programming and expression languages which are enforced by the
+            specific runtime implementation. Temporal does not suffer from these types of
+            restrictions enabling you to fully define your workflows using a programming language.
+            This provides a high level of flexibility not only with defining your workflow logic but
+            also testing and debugging in the development environment of your choice.
           </p>
           <p className="mb-3">
-            Temporal targets developers and all code written with Temporal runs directly instead of
-            being translated to an intermediate representation. This gives you flexibility which is
-            impossible to achieve with DSL approaches.
+            BPM engines translate workflow definition markup into code, which requires
+            additional compilation steps. This kind of code generation is approached differently by each runtime
+            engine using tools they chose. Temporal eliminates the intermediate compilation steps
+           enabling you to express your workflow logic directly in code. In addition, Temporal
+            provides you with high-level concepts such as asynchronous invocations, retries, error
+            propagation and compensation which can be expressed much easier than in BPM-based
+            solutions, especially for larger workflows.
           </p>
         </VSItem>
-        <VSItem header="JSON-based Workflow Engines">
+        <VSItem header="JSON/YAML-based Workflow Engines">
           <h2 className="font-bold mb-4">
-            JSON-based Workflow Engines like AWS Step Functions are aimed at high scale, light
+            JSON/YAML-based Workflow Engines like AWS Step Functions are aimed at high scale, light
             complexity applications.{' '}
           </h2>
           <p className="mb-3">
-            Whereas Temporal provides a code-first development environment which can be used to
-            build data pipelines, orchestrate microservices, provision resources and much more. Code
-            written with Temporal is executed directly which enables users to use the development,
-            debugging and testing processes they already know and love.
+            Workflow engines based on declarative DSLs contain a very small set of features and
+            typically target very specific technology domains. Similar to BPM-based engines, they
+            require additional compilation steps to translate the workflow definitions into
+            executable code. They also often target stateless orchestration use cases only. Temporal
+            not only eliminates the intermediate compilation steps allowing you to express your
+            workflow logic directly in code, but it also targets a much larger set of use cases. It
+            can be used to build data pipelines, orchestrate microservices, provision resources and
+            much more. Code written with Temporal is executed directly which enables users to easily
+            develop, debug, and test their workflows using a development environment of their
+            choice.
           </p>
           <p className="mb-3">
             Step Functions can be a great service for non-developers or technical managers to define
@@ -83,9 +99,9 @@ export default function TemporalVs() {
             to Temporal.
           </p>
           <p className="mb-3">
-            Temporal is an open source system which enables developers to test locally, deploy to
-            their own hardware and more. Step Functions is only available as a service from AWS
-            which puts you at the mercy of their decisions.
+            Temporal is an open source platform which enables you to deploy your workflow
+            applications on environments of your choice. Step Functions on the other hand is only
+            available as a service from AWS.
           </p>
           <p className="mb-3">
             Temporal targets developers and all code written with Temporal runs directly instead of
@@ -93,8 +109,9 @@ export default function TemporalVs() {
             with more rigid DSL based systems.
           </p>
           <p className="mb-3">
-            Step Functions does not support signaling and other complex "actor" features. This
-            drastically restricts the potential use cases for Step Functions.
+            Temporal provides you with high-level concepts such as asynchronous invocations,
+            retries, error propagation and compensation which can be expressed much easier and are
+            often not existing in domain-specific DSL based solutions.
           </p>
         </VSItem>
       </ul>

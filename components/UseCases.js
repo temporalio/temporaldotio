@@ -35,19 +35,21 @@ export default function UseCases() {
             Temporal is a perfect fit for orchestrating microservices.
           </h2>
           <p className="mb-3">
-            It guarantees that workflow code eventually completes, has built-in support for
-            exponential activity retries, and simplifies the coding of the compensation logic with
+            It guarantees workflow completion of any size and complexity, has built-in support for
+            exponential activity retries, and simplifies defining workflow compensation logic with
             native Saga pattern support.
           </p>
           <p className="mb-3">
-            You can define retries, rollbacks, or even a human intervention step in the case of
-            failure. Workflows are defined in general-purpose programming languages that bring the
-            ultimate flexibility especially when compared to text-based DSL engines.
+            You can define retries, rollbacks, cleanup, and even human intervention steps in the
+            case of failure. Workflows are defined in general-purpose programming languages that
+            bring the ultimate flexibility for defining workflows of any complexity, especially when
+            compared to markup-based DSLs.
           </p>
           <p className="mb-3">
-            Temporal provides full visibility into each workflow's state. Contrast this with ad-hoc
-            orchestration based on queues where getting a current status of each request is
-            virtually impossible.
+            Temporal provides full visibility into end-to-end workflows that can span multiple
+            services. It makes complex microservices orchestration manageable by providing a high
+            level of insight into each workflow's state. Contrast this with ad-hoc orchestration
+            based on queues where gaining visibility of your workflows is virtually impossible.
           </p>
           <a
             className="hover:underline text-blue-800 hover:text-blue-500"
@@ -58,13 +60,12 @@ export default function UseCases() {
         <UCaseItem header="Financial Transactions">
           <h2 className="font-bold mb-3">
             For software that interacts with money (especially someone else's), reliability and
-            consistency is the highest priority.
+            consistency are top priorities.
           </h2>
           <p className="mb-3">
             Traditional solutions for financial transactions almost always introduce lurking
-            reliability issues which directly translates to lost revenue for the business. Temporal
-            eliminates these issues by providing an inherently reliable foundation for critical
-            financial operations.
+            reliability issues that can cause loss of revenue. Temporal eliminates these issues by
+            providing an inherently reliable foundation for critical financial operations based on:
           </p>
           <LBimage
             thumbnail="/samples/screenshot-expenseworkflow.svg"
@@ -77,8 +78,8 @@ export default function UseCases() {
               logic
             </li>
             <li className="mb-2">Support for long-running operations</li>
-            <li className="mb-2">Guarantees that workflow code eventually completes</li>
-            <li className="mb-2">Has built-in support for exponential activity retries</li>
+            <li className="mb-2">Completion guarantee for workflows of any size and complexity</li>
+            <li className="mb-2">Built-in support for exponential activity retries</li>
           </ul>
           <p className="mb-3">
             There have even been cases where switching to Temporal's technology immediately resulted
@@ -104,8 +105,9 @@ export default function UseCases() {
             require a custom provisioning flow.
           </p>
           <p className="mb-3">
-            Some provisioning operations may take dozens of minutes or even hours to complete.
-            Ad-hoc solutions may fail in the middle and leave the system in an undefined state.
+            Some provisioning operations may take hours or even days to complete. Ad-hoc
+            provisioning solutions are often unable to handle these cases resulting in application
+            failures and an inconsistent operation state.
           </p>
           <p className="mb-3">
             Temporal provides excellent building blocks for resource provisioning:
@@ -123,8 +125,9 @@ export default function UseCases() {
             <li className="mb-2">Routing to specific hosts</li>
           </ul>
           <p className="mb-3">
-            If a lengthy provisioning workflow fails in the middle, Temporal would handle the error
-            and restart the flow at the right spot.
+            If a long-running provisioning workflow fails during its execution, Temporal would
+            handle the error and resume workflow execution from the point where the failure
+            occurred.
           </p>
           <a
             className="hover:underline text-blue-800 hover:text-blue-500"
@@ -165,8 +168,8 @@ export default function UseCases() {
             parallel cron jobs that don't require a separate batch processing framework.
           </p>
           <p className="mb-3">
-            Temporal support for long-running activities and unlimited retries also makes it a great
-            fit for monitoring use cases.
+            Temporal's support for long-running Activities and unlimited retries also makes it a
+            great fit for monitoring use cases.
           </p>
           <a
             className="hover:underline text-blue-800 hover:text-blue-500"
