@@ -21,10 +21,10 @@ export default function TemporalVs() {
           </h2>
           <p>
             This often requires requisitioning new infrastructure, and hand-writing often buggy,
-            not-well-distributed and hard-to-test code. Temporal offers a battle tested framework to
-            organize all async business logic, running it atop a single set of infrastructure at
-            massive scale. It allows developers to focus on the actual business logic and not on
-            plumbing activities.
+            not-well-distributed and hard-to-test code. Temporal offers a battle tested framework
+            allowing you to capture and define your business logic in a structured way and run it
+            running it atop a single set of infrastructure at massive scale. It allows developers to
+            focus on your actual business requirements and not plumbing work.
           </p>
         </VSItem>
         <VSItem header="DAG-based Workflow Engines">
