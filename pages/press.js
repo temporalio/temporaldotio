@@ -143,6 +143,20 @@ export default function PressPage() {
             />
           </ul>
         </section>
+        <section>
+          <p className="mt-4">
+                Temporal's corporate address is:
+          </p>
+          <p className="mt-2">
+                Temporal Technologies, Inc
+          </p>
+          <p className="mt-2">
+                4431 175th Pl SE
+          </p>
+          <p className="mt-2">
+                Bellevue, WA 98006
+          </p>
+        </section>
       </div>
       <Footer />
     </div>
