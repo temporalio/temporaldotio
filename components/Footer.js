@@ -92,6 +92,9 @@ export default function Footer() {
               <li className="mb-2 font-light">
                 <a href="https://docs.temporal.io/privacy-policy/">Privacy Policy</a>
               </li>
+              <li className="mb-2 font-light">
+                <a href="https://docs.temporal.io/pdf/temporal-tos-2021-01-19.pdf">Privacy Policy</a>
+              </li>
             </ul>
           </div>
           <img
