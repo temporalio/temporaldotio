@@ -10,6 +10,32 @@ module.exports = {
         light: ['Aeonik-Light'],
         bold: ['Aeonik-Bold']
       },
+      keyframes: {
+        'fade-in-left': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-5px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
+        },
+        'fade-in-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
+        }
+      },
+      animation: {
+        'fade-in-left': 'fade-in-left 3s ease-out infinite',
+        'fade-in-down': 'fade-in-down 3s ease-out infinite'
+      },
       colors: {
         white: '#F2F2F2',
         temporalblue: '#B2E7EA',
