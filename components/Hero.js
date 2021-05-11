@@ -6,17 +6,17 @@ const allSites = [
   {
     src: '/logos/logo-Box2.png',
     label: 'Box logo',
-    url: 'https://www.box.com/'
+    url: 'https://docs.temporal.io/blog/Temporal-a-central-brain-for-Box'
   },
   {
     src: '/logos/logo-Checkr.png',
     label: 'Checkr logo',
-    url: 'https://checkr.com/'
+    url: 'https://docs.temporal.io/blog/how-temporal-simplified-checkr-workflows'
   },
   {
     src: '/logos/logo-Coinbase.svg',
     label: 'Coinbase logo',
-    url: 'https://www.coinbase.com/'
+    url: 'https://docs.temporal.io/blog/reliable-crypto-transactions-at-coinbase'
   }
 ];
 
