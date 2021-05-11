@@ -6,21 +6,14 @@ module.exports = {
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      transitionDelay: {
+        3000: '3000ms'
+      },
       fontFamily: {
         light: ['Aeonik-Light'],
         bold: ['Aeonik-Bold']
       },
       keyframes: {
-        'fade-in-left': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateX(-5px)'
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)'
-          }
-        },
         'fade-in-down': {
           '0%': {
             opacity: '0',
@@ -33,8 +26,7 @@ module.exports = {
         }
       },
       animation: {
-        'fade-in-left': 'fade-in-left 3s ease-out infinite',
-        'fade-in-down': 'fade-in-down 3s ease-out infinite'
+        'fade-in-down': 'fade-in-down 3s ease-out'
       },
       colors: {
         white: '#F2F2F2',
