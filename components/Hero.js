@@ -5,32 +5,38 @@ import React from 'react';
 const allSites = [
   {
     src: '/logos/logo-Box2.png',
-    label: 'Box logo'
+    label: 'Box logo',
+    url: 'https://www.box.com/'
   },
   {
     src: '/logos/logo-Checkr.png',
-    label: 'Checkr logo'
+    label: 'Checkr logo',
+    url: 'https://checkr.com/'
   },
   {
     src: '/logos/logo-Coinbase.svg',
-    label: 'Coinbase logo'
+    label: 'Coinbase logo',
+    url: 'https://www.coinbase.com/'
   }
 ];
 
 export default function Hero() {
   const [clicked, setClicked] = React.useState(false);
   const [site, setSite] = React.useState(allSites[0]);
+  const [initialStart, setInitialStart] = React.useState(true);
 
   React.useEffect(() => {
     let i = 0;
     const interval = setInterval(() => {
+      if (initialStart === true) i = 1;
       if (i === allSites.length) i = 0;
       setSite(allSites[i]);
-      i++;
+      setInitialStart(false);
+      i += 1;
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [initialStart]);
 
   return (
     <div className="border-b border-white">
@@ -50,12 +56,15 @@ export default function Hero() {
             {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
             Temporal is the open source microservices orchestration platform for running mission
             critical code at
-            <img
-              className="presetTransition animate-fade-in-down inline mx-2 hover:scale-110 sm:h-10 sm:w-10 object-contain"
-              src={site.src}
-              aria-label={site.label}
-              alt={site.label}
-            />
+            <a href={site.url}>
+              <img
+                className="presetTransition animate-fade-in-down inline mx-2 hover:scale-110 sm:h-10 sm:w-10 object-contain"
+                src={site.src}
+                key={site.src}
+                aria-label={site.label}
+                alt={site.label}
+              />
+            </a>
             scale.
           </p>
         </div>
