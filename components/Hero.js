@@ -23,20 +23,18 @@ const allSites = [
 export default function Hero() {
   const [clicked, setClicked] = React.useState(false);
   const [site, setSite] = React.useState(allSites[0]);
-  const [initialStart, setInitialStart] = React.useState(true);
 
   React.useEffect(() => {
-    let i = 0;
+    let i = 1;
     const interval = setInterval(() => {
-      if (initialStart === true) i = 1;
       if (i === allSites.length) i = 0;
+
       setSite(allSites[i]);
-      setInitialStart(false);
       i += 1;
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [initialStart]);
+  }, []);
 
   return (
     <div className="border-b border-white">
