@@ -16,7 +16,7 @@ import {
   Del,
   Hr,
   HX
-} from '../../components/elements';
+} from '../components/elements';
 // import {Banner} from '../../components/Banner'
 // import {Nav} from '../../components/Nav'
 import Head from 'next/head';

@@ -1,6 +1,6 @@
-import Layout from './_mdxprovider';
-import { Nav } from '../../components/Nav';
-import { Banner } from '../../components/Banner';
+import Layout from '../usecases/_mdxprovider';
+import { Nav } from '../components/Nav';
+import { Banner } from '../components/Banner';
 import Orchestration from './orchestration.mdx';
 import Transactions from './transactions.mdx';
 import Provisioning from './provisioning.mdx';
@@ -9,7 +9,7 @@ import Pipelines from './pipelines.mdx';
 import Processes from './long-running-processes.mdx';
 import DSL from './dsl.mdx';
 import Actors from './actors.mdx';
-import Footer from '../../components/Footer';
+import Footer from '../components/Footer';
 export default function Page() {
   return (
     <Layout>

@@ -56,7 +56,7 @@ export default function Hero() {
             critical code at
             <a href={site.url}>
               <img
-                className="presetTransition animate-fade-in-down inline mx-2 hover:scale-110 sm:h-10 sm:w-10 object-contain"
+                className="presetTransition animate-fade-in-down inline mx-2 hover:scale-110 h-10 w-10 object-contain"
                 src={site.src}
                 key={site.src}
                 aria-label={site.label}
