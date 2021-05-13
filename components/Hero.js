@@ -42,7 +42,7 @@ export default function Hero() {
       <section
         id="hero"
         className={`
-    min-h-screen container mx-auto flex flex-col justify-between p-4 sm:p-4
+    min-h-screen max-h-[1080px] container mx-auto flex flex-col justify-between p-4 sm:p-4
     `}>
         <Nav />
         <div>

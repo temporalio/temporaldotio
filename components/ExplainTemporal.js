@@ -19,7 +19,7 @@ export default function ExplainTemporal() {
     <section
       id="explain-temporal"
       className={`
-    min-h-screen 
+    min-h-screen max-h-[1080px]
     container mx-auto
     flex flex-col justify-evenly
     px-8 py-16
@@ -76,20 +76,7 @@ export default function ExplainTemporal() {
           I Still Don't Get It! Why Temporal?
         </a>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center items-center my-8">
-        <svg
-          className="w-4 inline mr-2"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-          />
-        </svg>
+      <div className="flex flex-col sm:flex-row justify-center items-center my-4">
         <a
           className="font-bold hover:underline text-blue-400 hover:text-blue-200"
           href="mailto:support@temporal.io?subject=[Temporal.io] Enquiry&body=Hi, I heard about Temporal via YOUR_SOURCE_HERE and I had some questions...">

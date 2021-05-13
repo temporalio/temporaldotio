@@ -5,7 +5,7 @@ export default function TemporalVs() {
       className={`
     container mx-auto
     text-white
-    min-h-screen
+    min-h-screen max-h-[1080px]
     px-2 sm:px-8 py-16
     `}>
       <h1 className=" text-60 leading-60 lg:text-144 lg:leading-144 uppercase mb-4 lg:mb-16">
@@ -22,9 +22,9 @@ export default function TemporalVs() {
           <p>
             This often requires requisitioning new infrastructure, and hand-writing often buggy,
             not-well-distributed and hard-to-test code. Temporal offers a battle tested framework
-            enabling you to capture and define your business logic in a structured way and run it
-            it atop a single set of infrastructure at massive scale. It allows developers to
-            focus on your actual business requirements and not plumbing work.
+            enabling you to capture and define your business logic in a structured way and run it it
+            atop a single set of infrastructure at massive scale. It allows developers to focus on
+            your actual business requirements and not plumbing work.
           </p>
         </VSItem>
         <VSItem header="DAG-based Workflow Engines">
@@ -44,10 +44,9 @@ export default function TemporalVs() {
             sizes, regardless of scale.
           </p>
           <p className="mb-3">
-            Temporal targets developers. All code written with Temporal runs directly,
-            eliminating any extra compilation steps often required by DAG-based solutions. This
-            provides extra flexibility which is impossible to achieve with more rigid DAG based
-            systems.
+            Temporal targets developers. All code written with Temporal runs directly, eliminating
+            any extra compilation steps often required by DAG-based solutions. This provides extra
+            flexibility which is impossible to achieve with more rigid DAG based systems.
           </p>
         </VSItem>
         <VSItem header="BPM Engines">
@@ -66,13 +65,13 @@ export default function TemporalVs() {
             also testing and debugging in the development environment of your choice.
           </p>
           <p className="mb-3">
-            BPM engines translate workflow definition markup into code, which requires
-            additional compilation steps. This kind of code generation is approached differently by each runtime
-            engine using tools they chose. Temporal eliminates the intermediate compilation steps
-           enabling you to express your workflow logic directly in code. In addition, Temporal
-            provides you with high-level concepts such as asynchronous invocations, retries, error
-            propagation and compensation which can be expressed much easier than in BPM-based
-            solutions, especially for larger workflows.
+            BPM engines translate workflow definition markup into code, which requires additional
+            compilation steps. This kind of code generation is approached differently by each
+            runtime engine using tools they chose. Temporal eliminates the intermediate compilation
+            steps enabling you to express your workflow logic directly in code. In addition,
+            Temporal provides you with high-level concepts such as asynchronous invocations,
+            retries, error propagation and compensation which can be expressed much easier than in
+            BPM-based solutions, especially for larger workflows.
           </p>
         </VSItem>
         <VSItem header="JSON/YAML-based Workflow Engines">

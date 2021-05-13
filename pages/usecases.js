@@ -67,7 +67,7 @@ export default function Page() {
             </a>
           </li>
         </ul>
-        <section className="grid grid-cols-1 md:grid-cols-usecases gap-4 auto-cols-min ">
+        <section className="grid grid-cols-1 md:grid-cols-usecases gap-4 auto-cols-min">
           <Header id="orchestration">Microservices Orchestration</Header>
           <Orchestration slugPrefix="orchestration" />
           <Header id="transactions">Distributed Transactions</Header>

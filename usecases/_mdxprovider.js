@@ -55,7 +55,7 @@ export default function MDXProvider(props) {
       {/* <Banner />
         <Nav /> */}
       <_MDXProvider components={components}>
-        <main id={props.slugPrefix} className="text-xl flex-1" {...props} />
+        <main id={props.slugPrefix} className="text-lg flex-1 font-serif" {...props} />
       </_MDXProvider>
     </>
   );

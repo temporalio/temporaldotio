@@ -3,7 +3,7 @@ export default function JoinUs() {
     <section
       id="join-us"
       className={`
-    border-b border-lightgray min-h-screen
+    border-b border-lightgray min-h-screen max-h-[1080px]
     flex flex-col sm:flex-row 
     container mx-auto
     `}>
