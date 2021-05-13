@@ -6,9 +6,27 @@ module.exports = {
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      transitionDelay: {
+        3000: '3000ms'
+      },
       fontFamily: {
         light: ['Aeonik-Light'],
         bold: ['Aeonik-Bold']
+      },
+      keyframes: {
+        'fade-in-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
+        }
+      },
+      animation: {
+        'fade-in-down': 'fade-in-down 0.5s ease-out'
       },
       colors: {
         white: '#F2F2F2',

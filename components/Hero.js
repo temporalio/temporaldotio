@@ -1,8 +1,41 @@
 import { Nav } from './Nav';
 import { Banner } from './Banner';
+import React from 'react';
+
+const allSites = [
+  {
+    src: '/logos/logo-Box2.png',
+    label: 'Box logo',
+    url: 'https://docs.temporal.io/blog/Temporal-a-central-brain-for-Box'
+  },
+  {
+    src: '/logos/logo-Checkr.png',
+    label: 'Checkr logo',
+    url: 'https://docs.temporal.io/blog/how-temporal-simplified-checkr-workflows'
+  },
+  {
+    src: '/logos/logo-Coinbase.svg',
+    label: 'Coinbase logo',
+    url: 'https://docs.temporal.io/blog/reliable-crypto-transactions-at-coinbase'
+  }
+];
 
 export default function Hero() {
   const [clicked, setClicked] = React.useState(false);
+  const [site, setSite] = React.useState(allSites[0]);
+
+  React.useEffect(() => {
+    let i = 1;
+    const interval = setInterval(() => {
+      if (i === allSites.length) i = 0;
+
+      setSite(allSites[i]);
+      i += 1;
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="border-b border-white">
       <Banner />
@@ -20,7 +53,17 @@ export default function Hero() {
             {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
             {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
             Temporal is the open source microservices orchestration platform for running mission
-            critical code at any scale.
+            critical code at
+            <a href={site.url}>
+              <img
+                className="presetTransition animate-fade-in-down inline mx-2 hover:scale-110 sm:h-10 sm:w-10 object-contain"
+                src={site.src}
+                key={site.src}
+                aria-label={site.label}
+                alt={site.label}
+              />
+            </a>
+            scale.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">

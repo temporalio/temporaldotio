@@ -77,7 +77,7 @@ export default function CaseStudies() {
             className="cursor-pointer grayscale p-2 flex-1 grid place-items-center ">
             <img
               className="presetTransition hover:scale-110 h-16 w-16 sm:h-32 sm:w-32 object-contain"
-              src="/logos/logo-Coinbase.png"
+              src="/logos/logo-Coinbase.svg"
               aria-label="Coinbase logo"
               alt="Coinbase logo"
             />
