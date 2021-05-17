@@ -17,6 +17,11 @@ const allSites = [
     src: '/logos/logo-Coinbase.svg',
     label: 'Coinbase logo',
     url: 'https://docs.temporal.io/blog/reliable-crypto-transactions-at-coinbase'
+  },
+  {
+    src: '/logos/logo-Descript.png',
+    label: 'Descript logo',
+    url: 'https://docs.temporal.io/blog/descript-case-study'
   }
 ];
 
