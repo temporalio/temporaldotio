@@ -18,6 +18,11 @@ export default function CaseStudies() {
         </h1>
         <p className="text-xl sm:text-3xl font-light mb-4">
           Relied on by the companies <span className="italic">other companies</span> rely on.
+          <a
+            href={'https://docs.temporal.io/blog/tags/case-study/'}
+            className={'pl-2 hover:underline text-blue-800 hover:text-blue-500'}>
+            See all...
+          </a>
         </p>
       </div>
       <Tabs className="relative border-b border-spaceblack">
@@ -91,10 +96,11 @@ export default function CaseStudies() {
 function Quote({ quote, name, url, title, img }) {
   return (
     <div className="">
-      <blockquote className="mb-8 text-2xl leading-tight sm:text-3xl sm:leading-3xl lg:w-800 flex-1">
-        “{quote}”
-        <ExternalLinkWithSVGIcon url={url} />
-      </blockquote>
+      <a href={url} className={'hover:underline hover:text-blue-800'}>
+        <blockquote className="mb-8 text-2xl leading-tight sm:text-3xl sm:leading-3xl lg:w-800 flex-1">
+          “{quote}”
+        </blockquote>
+      </a>
       <div className="flex items-center">
         <img
           className="inline mr-4 w-16 h-16 rounded-full border border-spaceblack"
