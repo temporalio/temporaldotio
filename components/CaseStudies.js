@@ -55,6 +55,15 @@ export default function CaseStudies() {
               title="Software Engineer, Coinbase"
             />
           </TabPanel>
+          <TabPanel className="absolute h-full w-full p-2 sm:p-8 lg:px-16" selectedClassName="z-10">
+            <Quote
+              url="https://docs.temporal.io/blog/descript-case-study"
+              img="https://avatars.githubusercontent.com/u/2502591?v=4"
+              quote="It was a game changing revelation - Temporal gave us the ability to test our workflows with unit tests, basically just writing code instead of writing JSON or YAML, which are completely untestable."
+              name="Nicolas Gere"
+              title="Software Engineer, Descript"
+            />
+          </TabPanel>
         </div>
         <TabList className="flex bg-gray5">
           <Tab
@@ -79,12 +88,22 @@ export default function CaseStudies() {
           </Tab>
           <Tab
             selectedClassName="nograyscale"
-            className="cursor-pointer grayscale p-2 flex-1 grid place-items-center ">
+            className="cursor-pointer grayscale p-2 flex-1 grid place-items-center border-r border-spaceblack">
             <img
               className="presetTransition hover:scale-110 h-16 w-16 sm:h-32 sm:w-32 object-contain"
               src="/logos/logo-Coinbase.svg"
               aria-label="Coinbase logo"
               alt="Coinbase logo"
+            />
+          </Tab>
+          <Tab
+            selectedClassName="nograyscale"
+            className="cursor-pointer grayscale p-2 flex-1 grid place-items-center ">
+            <img
+              className="presetTransition hover:scale-110 h-16 w-16 sm:h-32 sm:w-32 object-contain"
+              src="/logos/logo-Descript.png"
+              aria-label="Descript logo"
+              alt="Descript logo"
             />
           </Tab>
         </TabList>

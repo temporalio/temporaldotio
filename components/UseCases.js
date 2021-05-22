@@ -196,7 +196,7 @@ function LBimage({ thumbnail, mainSrc, alt }) {
   );
 }
 
-function UCaseItem({ header, children, defaultState = false }) {
+function UCaseItem({ header, children, defaultState = true }) {
   const [state, setState] = React.useState(defaultState);
   return (
     <li className="border-t border-spaceblack">
