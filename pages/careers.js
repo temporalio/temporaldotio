@@ -161,6 +161,15 @@ export default function CareersPage() {
             <span className="text-sm text-gray-500">US Remote</span>
           </li>
           <li>
+            <span className="font-bold text-xl uppercase">SS&C Technologies</span>:{' '}
+            <a
+              href="https://wd1.myworkdaysite.com/en-US/recruiting/ssctech/SSCTechnologies/job/Denver-CO/Staff-Software-Engineer---Private-Cloud_R3140"
+              className="font-bold underline text-blue-400 hover:text-blue-200">
+              Staff Software Engineer - Private Cloud
+            </a>{' '}
+            <span className="text-sm text-gray-500">Denver/US Remote</span>
+          </li>
+          <li>
             <span className="font-bold text-xl uppercase">Stripe</span>:{' '}
             <a
               href="https://stripe.com/jobs/listing/infrastructure-engineer-developer-productivity-workflow-engine/2964407"
