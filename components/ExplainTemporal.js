@@ -51,10 +51,8 @@ export default function ExplainTemporal() {
         <ResponsivePlayer url="https://www.youtube.com/watch?v=f-18XztyN6c&feature=youtu.be" />
         <div className="playerShadow"></div>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center items-center my-8">
-        <a
-          className="button w-300 h-60 sm:mr-4 mb-4 sm:mb-0  text-spaceblack bg-temporalblue  hover:bg-teal-200"
-          href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">
+      <div className="flex flex-col gap-4 sm:flex-row justify-center items-center my-8">
+        <a className="btn-primary" href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">
           More on YouTube
           <svg
             className="w-4 inline ml-1"
@@ -70,9 +68,7 @@ export default function ExplainTemporal() {
             />
           </svg>
         </a>
-        <a
-          className="button w-300 h-60 hover:text-temporalblue"
-          href="https://docs.temporal.io/docs/external-resources">
+        <a className="btn-secondary" href="https://docs.temporal.io/docs/external-resources">
           I Still Don't Get It! Why Temporal?
         </a>
       </div>

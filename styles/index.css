@@ -16,6 +16,15 @@
 @tailwind utilities;
 /* Stop purging. */
 
+@layer components {
+  .btn-primary {
+    @apply transition rounded-full w-300 h-60 md:w-200 flex items-center justify-center lg:w-300 text-spaceblack bg-temporalblue hover:text-temporalblue hover:bg-spaceblack border border-temporalblue;
+  }
+  .btn-secondary {
+    @apply transition rounded-full w-300 h-60 md:w-200 flex items-center justify-center lg:w-300 border hover:bg-white hover:text-spaceblack;
+  }
+}
+
 /* Your own custom utilities */
 @font-face {
   font-family: 'Aeonik';
@@ -68,18 +77,6 @@ body {
 .nograyscale {
   filter: grayscale(0%);
   opacity: 1;
-}
-
-.button {
-  left: 50px;
-  top: 857px;
-  border: 1px solid var(--off-white);
-  box-sizing: border-box;
-  border-radius: 46px;
-  padding: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* this is for the /careers page */

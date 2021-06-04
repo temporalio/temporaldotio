@@ -72,15 +72,11 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">
-          <div className="flex flex-col sm:flex-row mb-4 lg:text-xl">
-            <a
-              className="button w-300 h-60 md:w-200 mr-4 mb-4 lg:w-300 text-spaceblack bg-temporalblue  hover:bg-teal-200"
-              href="#explain-temporal">
+          <div className="flex flex-col gap-4 sm:flex-row mb-4 lg:text-xl">
+            <a className="btn-primary" href="#explain-temporal">
               2 Minute Intro
             </a>
-            <a
-              className="button w-300 h-60 md:w-200 lg:w-300 hover:text-temporalblue"
-              href="#join-us">
+            <a className="btn-secondary" href="#join-us">
               We're Hiring
             </a>
           </div>
