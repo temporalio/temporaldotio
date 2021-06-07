@@ -4,7 +4,7 @@ export default function JoinUs() {
       id="join-us"
       className={`
     border-b border-lightgray min-h-screen max-h-[1080px]
-    flex flex-col sm:flex-row 
+    flex flex-col sm:flex-row
     container mx-auto
     `}>
       <div className="flex-1 flex flex-col justify-between sm:border-r border-lightgray px-8 py-16">
@@ -12,9 +12,7 @@ export default function JoinUs() {
           Experience at the largest scale. Backing from the greatest investors.
         </h2>
         <div className="inline-flex flex-col items-center">
-          <a
-            className="text-2xl button  w-300 h-60 mb-4  text-spaceblack bg-temporalblue hover:bg-teal-200"
-            href="/careers">
+          <a className="text-2xl btn-primary mb-4" href="/careers">
             Join us
           </a>
           <p className="text-lg inline">Seriously, we're hiring</p>

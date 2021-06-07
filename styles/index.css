@@ -16,6 +16,15 @@
 @tailwind utilities;
 /* Stop purging. */
 
+@layer components {
+  .btn-primary {
+    @apply transition rounded-full w-300 h-60 md:w-200 flex items-center justify-center lg:w-300 text-spaceblack bg-temporalblue hover:text-temporalblue hover:bg-spaceblack border border-temporalblue;
+  }
+  .btn-secondary {
+    @apply transition rounded-full w-300 h-60 md:w-200 flex items-center justify-center lg:w-300 border hover:bg-white hover:text-spaceblack;
+  }
+}
+
 /* Your own custom utilities */
 @font-face {
   font-family: 'Aeonik';
@@ -40,12 +49,20 @@
   font-style: normal;
   font-display: swap;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   background: #141414;
-  color: #f2f2f2;
+  color: var(--off-white);
   font-family: 'Aeonik', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
@@ -62,25 +79,13 @@ body {
   opacity: 1;
 }
 
-.button {
-  left: 50px;
-  top: 857px;
-  border: 1px solid #f2f2f2;
-  box-sizing: border-box;
-  border-radius: 46px;
-  padding: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* this is for the /careers page */
 /* needs to be in CSS since it loads async */
 .lever-job-title {
   color: #90cdf4 !important;
 }
 .lever-job-tag {
-  color: #f2f2f2 !important;
+  color: var(--off-white) !important;
 }
 #lever-jobs-container {
   color: white !important;
@@ -96,6 +101,7 @@ html {
   --temporal-purple: #b8b4dc;
   --bright-blue: #127ae5;
   --bright-purple: #8f86da;
+  --scroll-white: hsla(0, 0%, 90%, 0.5);
   /* accents */
   --green-1: #9ee587;
   --green-2: #32d67b;
@@ -103,8 +109,8 @@ html {
   --orange-2: #ff7065;
 }
 
-/* 
-  CUSTOM SCROLLBARS! https://css-tricks.com/the-current-state-of-styling-scrollbars/ 
+/*
+  CUSTOM SCROLLBARS! https://css-tricks.com/the-current-state-of-styling-scrollbars/
   */
 body::-webkit-scrollbar-track {
   background-color: var(--space-black);
@@ -113,6 +119,6 @@ body::-webkit-scrollbar {
   width: clamp(5px, 1vw, 20px);
 }
 body::-webkit-scrollbar-thumb {
-  background: linear-gradient(var(--bright-blue), var(--bright-purple));
+  background: linear-gradient(var(--temporal-blue), var(--scroll-white));
   border-radius: 2px;
 }
