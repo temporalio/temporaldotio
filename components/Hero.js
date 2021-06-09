@@ -72,7 +72,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">
-          <div className="flex flex-col gap-4 sm:flex-row mb-4 lg:text-xl">
+          <div className="flex flex-col gap-4 sm:flex-row lg:text-xl">
             <a className="btn-primary" href="#explain-temporal">
               2 Minute Intro
             </a>
@@ -80,6 +80,13 @@ export default function Hero() {
               Get Started
             </a>
           </div>
+          <iframe
+            src="https://ghbtns.com/github-btn.html?user=temporalio&repo=temporal&type=star&count=true&size=large"
+            frameBorder="0"
+            scrolling="0"
+            width="170"
+            height="30"
+            title="GitHub"></iframe>
         </div>
       </section>
     </div>
