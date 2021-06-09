@@ -16,6 +16,15 @@
 @tailwind utilities;
 /* Stop purging. */
 
+@layer utilities {
+  .transform-3d {
+    transform-style: preserve-3d;
+  }
+  .perspective {
+    perspective: 800px;
+  }
+}
+
 @layer components {
   .btn-primary {
     @apply transition rounded-full w-300 h-60 md:w-200 flex items-center justify-center lg:w-300 text-spaceblack bg-temporalblue hover:text-temporalblue hover:bg-spaceblack border border-temporalblue;

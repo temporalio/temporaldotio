@@ -1,5 +1,6 @@
 import { Nav } from './Nav';
 import { Banner } from './Banner';
+import OrbitalCases from './OrbitalCases';
 import React from 'react';
 
 const allSites = [
@@ -57,17 +58,8 @@ export default function Hero() {
           <p className="text-2xl md:w-700 mb-8">
             {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
             {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
-            Temporal is the open source microservices orchestration platform for running mission
-            critical code at
-            <a href={site.url}>
-              <img
-                className="presetTransition animate-fade-in-down inline mx-2 hover:scale-110 h-10 w-10 object-contain"
-                src={site.src}
-                key={site.src}
-                aria-label={site.label}
-                alt={site.label}
-              />
-            </a>
+            The platform for running mission critical code at&nbsp;
+            <OrbitalCases />
             scale.
           </p>
         </div>
@@ -81,10 +73,11 @@ export default function Hero() {
             </a>
           </div>
           <iframe
+            className="mt-4"
             src="https://ghbtns.com/github-btn.html?user=temporalio&repo=temporal&type=star&count=true&size=large"
             frameBorder="0"
             scrolling="0"
-            width="170"
+            width="148"
             height="30"
             title="GitHub"></iframe>
         </div>
