@@ -76,34 +76,10 @@ export default function Hero() {
             <a className="btn-primary" href="#explain-temporal">
               2 Minute Intro
             </a>
-            <a className="btn-secondary" href="#join-us">
-              We're Hiring
+            <a className="btn-secondary" href="https://docs.temporal.io/application-development">
+              Get Started
             </a>
           </div>
-          {clicked ? (
-            <div className="inline-flex md:-mt-8">
-              <a className="mr-8" href="https://docs.temporal.io/docs/go-run-your-first-app">
-                <img
-                  aria-label="go SDK"
-                  className="w-16 h-16 md:w-20 md:h-20 presetTransition hover:scale-110  object-contain"
-                  src="/logos/logo-go.png"
-                  alt="logo"
-                />
-              </a>
-              <a className="" href="https://docs.temporal.io/docs/java-run-your-first-app">
-                <img
-                  aria-label="java SDK"
-                  className="w-16 h-16 md:w-20 md:h-20 presetTransition hover:scale-110  object-contain"
-                  src="/logos/logo-java.png"
-                  alt="logo"
-                />
-              </a>
-            </div>
-          ) : (
-            <button className="lg:text-xl hover:text-temporalblue" onClick={() => setClicked(true)}>
-              I'm a developer, take me to code! →
-            </button>
-          )}
         </div>
       </section>
     </div>
