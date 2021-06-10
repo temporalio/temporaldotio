@@ -44,6 +44,10 @@ const OrbitalCases = () => (
         transform: translate(-50%, -50%) rotate(calc((var(--logo-idx) * var(--seg)) * 1deg))
           translate(-150%, 0) rotateY(calc(var(--angle) * -1deg));
       }
+
+      .logo:hover img {
+        transform: scale(1.1) rotate(15deg);
+      }
       @keyframes rotate {
         to {
           transform: rotate(-360deg);
@@ -51,6 +55,7 @@ const OrbitalCases = () => (
       }
     `}</style>
     <span
+      aria-hidden="true"
       className="logos lg:inline-block hidden h-12 w-12 bg-red relative transform-3d perspective mx-2"
       style={{ '--logo-count': CASES.length }}>
       <span
@@ -63,7 +68,7 @@ const OrbitalCases = () => (
               className="logos__logo logo h-12 w-12 top-2/4 left-2/4 absolute transform-3d"
               key={logo.url}
               style={{ '--logo-idx': index }}>
-              <img src={logo.src} alt={logo.label} />
+              <img className="transition-all" src={logo.src} alt={logo.label} />
             </a>
           ))}
         </span>
