@@ -52,10 +52,10 @@ export default function Hero() {
     `}>
         <Nav />
         <div>
-          <h1 className="text-60 leading-60 mb-8 sm:text-144 sm:leading-144 uppercase lg:w-800">
+          <h1 className="text-60 leading-60 mb-8 lg:text-144 lg:leading-144 uppercase lg:w-800">
             Build Invincible Apps
           </h1>
-          <p className="text-2xl md:w-700 mb-8">
+          <p className="text-2xl lg:w-700 mb-8">
             {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
             {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
             The platform for running mission critical code at&nbsp;
@@ -63,8 +63,8 @@ export default function Hero() {
             scale.
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">
-          <div className="flex flex-col gap-4 sm:flex-row lg:text-xl">
+        <div className="flex flex-col lg:flex-row justify-between mb-8 sm:mb-8 items-center">
+          <div className="flex flex-col gap-4 lg:flex-row lg:text-xl">
             <a className="btn-primary" href="#explain-temporal">
               2 Minute Intro
             </a>

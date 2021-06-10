@@ -3,6 +3,7 @@ export default function Footer() {
     <footer
       id="footer"
       className={`
+      overflow-hidden
     border-t border-lightgray
     flex flex-col-reverse sm:flex-row sm:mt-16
     `}>
