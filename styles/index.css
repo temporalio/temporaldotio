@@ -16,6 +16,15 @@
 @tailwind utilities;
 /* Stop purging. */
 
+@layer utilities {
+  .transform-3d {
+    transform-style: preserve-3d;
+  }
+  .perspective {
+    perspective: 800px;
+  }
+}
+
 @layer components {
   .btn-primary {
     @apply transition rounded-full w-300 h-60 md:w-200 flex items-center justify-center lg:w-300 text-spaceblack bg-temporalblue hover:text-temporalblue hover:bg-spaceblack border border-temporalblue;
@@ -23,6 +32,36 @@
   .btn-secondary {
     @apply transition rounded-full w-300 h-60 md:w-200 flex items-center justify-center lg:w-300 border hover:bg-white hover:text-spaceblack;
   }
+  .nav-link {
+    @apply hover:text-temporalblue transition-colors relative;
+  }
+}
+
+/* Nav link pseudos */
+.nav-link:hover {
+  --nav-scale: 1;
+}
+.nav-link:after,
+.nav-link:before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  transition: transform 150ms;
+  height: 2px;
+  background: var(--temporal-blue);
+  transform: scale(var(--nav-scale, 0));
+}
+
+.nav-link:after {
+  bottom: 100%;
+  left: 0;
+  transform-origin: 0 50%;
+}
+
+.nav-link:before {
+  top: calc(100% + 2px);
+  right: 0;
+  transform-origin: 100% 50%;
 }
 
 /* Your own custom utilities */

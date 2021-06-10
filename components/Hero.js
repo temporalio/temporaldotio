@@ -1,5 +1,6 @@
 import { Nav } from './Nav';
 import { Banner } from './Banner';
+import OrbitalCases from './OrbitalCases';
 import React from 'react';
 
 const allSites = [
@@ -51,59 +52,34 @@ export default function Hero() {
     `}>
         <Nav />
         <div>
-          <h1 className="text-60 leading-60 mb-8 sm:text-144 sm:leading-144 uppercase lg:w-800">
+          <h1 className="text-60 leading-60 mb-8 lg:text-144 lg:leading-144 uppercase lg:w-800">
             Build Invincible Apps
           </h1>
-          <p className="text-2xl md:w-700 mb-8">
+          <p className="text-2xl lg:w-700 mb-8">
             {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
             {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
-            Temporal is the open source microservices orchestration platform for running mission
-            critical code at
-            <a href={site.url}>
-              <img
-                className="presetTransition animate-fade-in-down inline mx-2 hover:scale-110 h-10 w-10 object-contain"
-                src={site.src}
-                key={site.src}
-                aria-label={site.label}
-                alt={site.label}
-              />
-            </a>
+            The platform for running mission critical code at&nbsp;
+            <OrbitalCases />
             scale.
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between mb-8 sm:mb-8 items-center">
-          <div className="flex flex-col gap-4 sm:flex-row mb-4 lg:text-xl">
+        <div className="flex flex-col lg:flex-row justify-between mb-8 sm:mb-8 items-center">
+          <div className="flex flex-col gap-4 lg:flex-row lg:text-xl">
             <a className="btn-primary" href="#explain-temporal">
               2 Minute Intro
             </a>
-            <a className="btn-secondary" href="#join-us">
-              We're Hiring
+            <a className="btn-secondary" href="https://docs.temporal.io/application-development">
+              Get Started
             </a>
           </div>
-          {clicked ? (
-            <div className="inline-flex md:-mt-8">
-              <a className="mr-8" href="https://docs.temporal.io/docs/go-run-your-first-app">
-                <img
-                  aria-label="go SDK"
-                  className="w-16 h-16 md:w-20 md:h-20 presetTransition hover:scale-110  object-contain"
-                  src="/logos/logo-go.png"
-                  alt="logo"
-                />
-              </a>
-              <a className="" href="https://docs.temporal.io/docs/java-run-your-first-app">
-                <img
-                  aria-label="java SDK"
-                  className="w-16 h-16 md:w-20 md:h-20 presetTransition hover:scale-110  object-contain"
-                  src="/logos/logo-java.png"
-                  alt="logo"
-                />
-              </a>
-            </div>
-          ) : (
-            <button className="lg:text-xl hover:text-temporalblue" onClick={() => setClicked(true)}>
-              I'm a developer, take me to code! →
-            </button>
-          )}
+          <iframe
+            className="mt-4"
+            src="https://ghbtns.com/github-btn.html?user=temporalio&repo=temporal&type=star&count=true&size=large"
+            frameBorder="0"
+            scrolling="0"
+            width="148"
+            height="30"
+            title="GitHub"></iframe>
         </div>
       </section>
     </div>

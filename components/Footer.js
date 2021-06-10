@@ -3,6 +3,7 @@ export default function Footer() {
     <footer
       id="footer"
       className={`
+      overflow-hidden
     border-t border-lightgray
     flex flex-col-reverse sm:flex-row sm:mt-16
     `}>
@@ -53,7 +54,6 @@ export default function Footer() {
         </div>
         <div className="p-8 sm:p-16 pb-32 relative flex">
           <div className="mr-32">
-            <h3 className="mb-4 font-bold underline text-gray-200 sm:text-gray-500">Community</h3>
             <ul>
               <li className="mb-2 font-light">
                 <a href="https://github.com/temporalio/temporal">GitHub</a>
@@ -75,7 +75,6 @@ export default function Footer() {
             </ul>
           </div>
           <div className="mr-16 sm:mr-32">
-            <h3 className="mb-4 font-bold underline text-gray-200 sm:text-gray-500">Docs</h3>
             <ul>
               <li className="mb-2 font-light">
                 <a href="https://docs.temporal.io/docs/get-started">Get started</a>
@@ -96,7 +95,9 @@ export default function Footer() {
                 <a href="https://docs.temporal.io/privacy-policy/">Privacy Policy</a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/pdf/temporal-tos-2021-01-19.pdf">Terms of Service</a>
+                <a href="https://docs.temporal.io/pdf/temporal-tos-2021-01-19.pdf">
+                  Terms of Service
+                </a>
               </li>
             </ul>
           </div>
