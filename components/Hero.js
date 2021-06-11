@@ -77,7 +77,7 @@ export default function Hero() {
             src="https://ghbtns.com/github-btn.html?user=temporalio&repo=temporal&type=star&count=true&size=large"
             frameBorder="0"
             scrolling="0"
-            width="148"
+            width="150"
             height="30"
             title="GitHub"></iframe>
         </div>
