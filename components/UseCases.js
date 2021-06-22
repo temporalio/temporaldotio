@@ -142,7 +142,7 @@ export default function UseCases() {
             alt="monitoring example"
           />
           <h2 className="font-bold mb-4">
-            Temporal provides guaranteed execution with exactly-once semantics with automatic
+            Temporal provides guaranteed execution with at-least-once semantics with automatic
             retries.
           </h2>
           <p className="mb-3">
