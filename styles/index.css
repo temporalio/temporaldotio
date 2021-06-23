@@ -37,6 +37,16 @@
   }
 }
 
+.case-study--active {
+  --tw-grayscale: grayscale(0);
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+}
+.case-study__tabs {
+  transform: translate3d(calc(var(--x, 0) * 1px), calc(var(--y, 0) * 1px), 40px)
+    rotateY(calc(var(--x, 0) * 1deg)) rotate(calc(var(--x, 0) * 0.25deg));
+}
+
 /* Nav link pseudos */
 .nav-link:hover {
   --nav-scale: 1;
@@ -107,15 +117,6 @@ body {
     'Segoe UI Symbol', 'Noto Color Emoji';
   background-image: url('/StarBackgroundMuted.svg');
   background-attachment: fixed;
-}
-
-.grayscale {
-  filter: grayscale(100%);
-  opacity: 0.7;
-}
-.nograyscale {
-  filter: grayscale(0%);
-  opacity: 1;
 }
 
 /* this is for the /careers page */
