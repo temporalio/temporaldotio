@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
+import DirectionalControl from './DirectionalControl';
+
 const mapRange = (inputLower, inputUpper, outputLower, outputUpper) => {
   const INPUT_RANGE = inputUpper - inputLower;
   const OUTPUT_RANGE = outputUpper - outputLower;
@@ -100,11 +102,11 @@ const CaseStudies = () => {
           ))}
         </TabList>
       </Tabs>
-      <a
-        className="mt-8 inline-block font-bold hover:underline text-blue-400 hover:text-blue-200"
-        href="https://docs.temporal.io/blog/tags/case-study">
-        See Case Studies
-      </a>
+      <div className="mt-12 flex justify-center">
+        <DirectionalControl href="https://docs.temporal.io/blog/tags/case-study">
+          See Case Studies
+        </DirectionalControl>
+      </div>
     </section>
   );
 };

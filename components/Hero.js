@@ -1,5 +1,6 @@
 import { Nav } from './Nav';
 import { Banner } from './Banner';
+import DirectionalControl from './DirectionalControl';
 import OrbitalCases from './OrbitalCases';
 import React from 'react';
 
@@ -27,21 +28,6 @@ const allSites = [
 ];
 
 export default function Hero() {
-  const [clicked, setClicked] = React.useState(false);
-  const [site, setSite] = React.useState(allSites[0]);
-
-  React.useEffect(() => {
-    let i = 1;
-    const interval = setInterval(() => {
-      if (i === allSites.length) i = 0;
-
-      setSite(allSites[i]);
-      i += 1;
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="border-b border-white">
       <Banner />
@@ -65,12 +51,10 @@ export default function Hero() {
         </div>
         <div className="flex flex-col lg:flex-row justify-between mb-8 sm:mb-8 items-center">
           <div className="flex flex-col gap-4 lg:flex-row lg:text-xl">
-            <a className="btn-primary" href="#explain-temporal">
-              2 Minute Intro
-            </a>
-            <a className="btn-secondary" href="https://docs.temporal.io/application-development">
+            <DirectionalControl href="#explain-temporal">2 Minute Intro</DirectionalControl>
+            <DirectionalControl secondary href="https://docs.temporal.io/application-development">
               Get Started
-            </a>
+            </DirectionalControl>
           </div>
           <iframe
             className="mt-4"
