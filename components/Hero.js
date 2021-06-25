@@ -29,7 +29,7 @@ const allSites = [
 
 export default function Hero() {
   return (
-    <div>
+    <div className=" border-b border-white">
       <Banner />
       <section
         id="hero"
