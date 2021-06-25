@@ -35,6 +35,110 @@
   .nav-link {
     @apply hover:text-temporalblue transition-colors relative;
   }
+  .dir-control {
+    @apply w-300 h-60 md:w-200 lg:w-300 transition-all border-2 no-underline outline-none rounded-full text-center cursor-pointer font-bold relative flex items-center justify-center;
+  }
+}
+
+.case-study--active {
+  --tw-grayscale: grayscale(0);
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+}
+.case-study__tabs {
+  transform: translate3d(calc(var(--x, 0) * 1px), calc(var(--y, 0) * 1px), 40px)
+    rotateY(calc(var(--x, 0) * 1deg)) rotate(calc(var(--x, 0) * 0.25deg));
+}
+
+.dir-control {
+  --buttonColor: var(--temporal-blue);
+  --backdrop: var(--temporal-blue);
+  --slideColor: var(--space-black);
+  --bg: var(--temporal-blue);
+  --borderWidth: 2;
+  --textColor: var(--space-black);
+  border-color: var(--buttonColor, var(--bg));
+  color: var(--textColor, var(--buttonColor));
+  background: var(--backdrop);
+  transform: translate(0, calc(var(--y, 0) * 1%)) scale(var(--scale, 1));
+}
+
+.dir-control:hover {
+  --y: -5;
+  --scale: 1.05;
+}
+
+.dir-control:active {
+  --y: 0;
+  --scale: 0.95;
+}
+
+.dir-control span {
+  clip-path: var(--clip);
+  bottom: calc(var(--borderWidth) * -1px);
+  left: calc(var(--borderWidth) * -1px);
+  right: calc(var(--borderWidth) * -1px);
+  top: calc(var(--borderWidth) * -1px);
+}
+
+.dir-control span:nth-of-type(1):hover,
+.dir-control span:nth-of-type(2):hover,
+.dir-control span:nth-of-type(3):hover,
+.dir-control span:nth-of-type(4):hover {
+  --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 2;
+}
+
+.dir-control span:nth-of-type(1):hover ~ b:nth-of-type(1),
+.dir-control span:nth-of-type(2):hover ~ b:nth-of-type(2),
+.dir-control span:nth-of-type(3):hover ~ b:nth-of-type(3),
+.dir-control span:nth-of-type(4):hover ~ b:nth-of-type(4) {
+  --clip: inset(0 0 0 0);
+}
+
+.dir-control span:nth-of-type(1) {
+  --clip: polygon(0 0, 100% 0, 50% 50%, 50% 50%);
+}
+.dir-control span:nth-of-type(2) {
+  --clip: polygon(100% 0, 100% 100%, 50% 50%);
+}
+.dir-control span:nth-of-type(3) {
+  --clip: polygon(0 100%, 100% 100%, 50% 50%);
+}
+.dir-control span:nth-of-type(4) {
+  --clip: polygon(0 0, 0 100%, 50% 50%);
+}
+
+.dir-control b {
+  background: var(--slideColor, var(--buttonColor));
+  border-color: var(--buttonColor, var(--bg));
+  bottom: calc(var(--borderWidth) * -1px);
+  clip-path: var(--clip);
+  color: var(--bg, var(--off-white));
+  left: calc(var(--borderWidth) * -1px);
+  right: calc(var(--borderWidth) * -1px);
+  top: calc(var(--borderWidth) * -1px);
+}
+
+.dir-control b:nth-of-type(1) {
+  --clip: inset(0 0 100% 0);
+}
+.dir-control b:nth-of-type(2) {
+  --clip: inset(0 0 0 100%);
+}
+.dir-control b:nth-of-type(3) {
+  --clip: inset(100% 0 0 0);
+}
+.dir-control b:nth-of-type(4) {
+  --clip: inset(0 100% 0 0);
+}
+
+.dir-control--secondary {
+  --bg: var(--space-black);
+  --backdrop: transparent;
+  --buttonColor: var(--off-white);
+  --slideColor: var(--off-white);
+  --textColor: var(--off-white);
 }
 
 /* Nav link pseudos */
@@ -62,6 +166,32 @@
   top: calc(100% + 2px);
   right: 0;
   transform-origin: 100% 50%;
+}
+
+/* Stacker Cards */
+.stack:before,
+.stack:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--space-black);
+  border: 2px solid var(--off-white);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.stack:hover {
+  --expand: 1;
+}
+
+.stack:after {
+  transform: translate(calc(var(--expand) * -2%), calc(var(--expand) * -2%));
+}
+
+.stack__content {
+  transform: translate(calc(var(--expand) * -4%), calc(var(--expand) * -4%));
 }
 
 /* Your own custom utilities */
@@ -107,15 +237,6 @@ body {
     'Segoe UI Symbol', 'Noto Color Emoji';
   background-image: url('/StarBackgroundMuted.svg');
   background-attachment: fixed;
-}
-
-.grayscale {
-  filter: grayscale(100%);
-  opacity: 0.7;
-}
-.nograyscale {
-  filter: grayscale(0%);
-  opacity: 1;
 }
 
 /* this is for the /careers page */

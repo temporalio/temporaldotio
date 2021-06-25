@@ -1,3 +1,5 @@
+import DirectionalControl from './DirectionalControl';
+
 export default function JoinUs() {
   return (
     <section
@@ -12,9 +14,9 @@ export default function JoinUs() {
           Experience at the largest scale. Backing from the greatest investors.
         </h2>
         <div className="inline-flex flex-col items-center">
-          <a className="text-2xl btn-primary mb-4" href="/careers">
-            Join us
-          </a>
+          <DirectionalControl className="mb-4" href="/careers">
+            Join Us
+          </DirectionalControl>
           <p className="text-lg inline">Seriously, we're hiring</p>
         </div>
       </div>

@@ -1,4 +1,6 @@
 import ReactPlayer from 'react-player';
+import DirectionalControl from './DirectionalControl';
+
 function ResponsivePlayer({ url }) {
   return (
     <ReactPlayer
@@ -52,7 +54,7 @@ export default function ExplainTemporal() {
         <div className="playerShadow"></div>
       </div>
       <div className="flex flex-col gap-4 sm:flex-row justify-center items-center my-8">
-        <a className="btn-primary" href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">
+        <DirectionalControl href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">
           More on YouTube
           <svg
             className="w-4 inline ml-1"
@@ -67,18 +69,18 @@ export default function ExplainTemporal() {
               d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
             />
           </svg>
-        </a>
-        <a className="btn-secondary" href="https://docs.temporal.io/docs/external-resources">
-          I Still Don't Get It! Why Temporal?
-        </a>
+        </DirectionalControl>
+        <DirectionalControl secondary href="https://docs.temporal.io/docs/external-resources">
+          Why Temporal?
+        </DirectionalControl>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center items-center my-4">
+      {/* <div className="flex flex-col sm:flex-row justify-center items-center my-4">
         <a
-          className="font-bold hover:underline text-blue-400 hover:text-blue-200"
+          className="nav-link font-bold text-temporalblue"
           href="mailto:support@temporal.io?subject=[Temporal.io] Enquiry&body=Hi, I heard about Temporal via YOUR_SOURCE_HERE and I had some questions...">
           More questions? Email us!
         </a>
-      </div>
+      </div> */}
     </section>
   );
 }

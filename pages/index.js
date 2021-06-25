@@ -1,7 +1,7 @@
 import Hero from '../components/Hero';
 // import TwoStep from '../components/TwoStep';
 import ExplainTemporal from '../components/ExplainTemporal';
-import UseCases from '../components/UseCases';
+import StackedUseCases from '../components/StackedUseCases';
 import CaseStudies from '../components/CaseStudies';
 import JoinUs from '../components/JoinUs';
 import TemporalVs from '../components/TemporalVs';
@@ -18,8 +18,8 @@ export default function IndexPage() {
       <Hero />
       {/* <TwoStep /> */}
       <ExplainTemporal />
-      <UseCases />
       <CaseStudies />
+      <StackedUseCases />
       <JoinUs />
       <TemporalVs />
       <FinalQuote />

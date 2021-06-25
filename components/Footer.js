@@ -1,3 +1,5 @@
+import DirectionalControl from './DirectionalControl';
+
 export default function Footer() {
   return (
     <footer
@@ -14,88 +16,108 @@ export default function Footer() {
         <div className="p-8 sm:p-16 sm:border-b border-lightgray">
           <h2 className="text-3xl font-bold mb-4">Temporal Cloud</h2>
           <p className="w-56 lg:w-700 mb-8">
-            Temporal Cloud is coming soon. Sign up for waitlist and updates.
+            Temporal Cloud is a fully managed cloud offering of the open-source Server.{' '}
+            <a
+              className="hover:underline text-blue-400 hover:text-blue-300"
+              href="https://docs.temporal.io/#cloud">
+              See features
+            </a>{' '}
+            and sign up for the waitlist.
           </p>
-
-          <form
-            action="https://temporal.us17.list-manage.com/subscribe/post?u=2334a0f23e55fd1840613755d&amp;id=bbbbd4709f"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            target="_blank"
-            noValidate="novalidate"
-            className="validate">
-            <div id="mc_embed_signup_scroll" className="signup_controls">
-              <div className="email_wrap">
-                <label htmlFor="mce-EMAIL" className="sr-only">
-                  Email:
-                </label>
-                <input
-                  className="bg-spaceblack w-full py-2 text-gray-500 border-b border-white"
-                  type="email"
-                  name="EMAIL"
-                  id="mce-EMAIL"
-                  placeholder="Your email"
-                  required="required"
-                />
-              </div>
-              <span className="cta_text" style={{ display: 'none' }}>
-                You are in the waitlist!
-              </span>
-              <input
-                type="submit"
-                name="waitlist"
-                id="mc-embedded-waitlist"
-                className="tt-button tt-button--lightblue tt-button--outline tt-button--block@xs button-email"
-                style={{ display: 'none' }}
-              />
-            </div>
-          </form>
+          <div className="mt-4 flex">
+            <DirectionalControl
+              secondary
+              href="https://us17.list-manage.com/survey?u=2334a0f23e55fd1840613755d&id=f1895b6f4a">
+              Book your place
+            </DirectionalControl>
+          </div>
         </div>
         <div className="p-8 sm:p-16 pb-32 relative flex">
           <div className="mr-32">
             <ul>
               <li className="mb-2 font-light">
-                <a href="https://github.com/temporalio/temporal">GitHub</a>
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://github.com/temporalio/temporal">
+                  GitHub
+                </a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://community.temporal.io/">Community</a>
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://community.temporal.io/">
+                  Community
+                </a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://join.slack.com/t/temporalio/shared_invite/zt-onhti57l-J0bl~Tr7MqSUnIc1upjRkw">
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://join.slack.com/t/temporalio/shared_invite/zt-onhti57l-J0bl~Tr7MqSUnIc1upjRkw">
                   Slack
                 </a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://twitter.com/temporalio">Twitter</a>
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://twitter.com/temporalio">
+                  Twitter
+                </a>
               </li>
               <li className="mb-2 font-light">
-                <a href="/press">Press/Brand Assets</a>
+                <a className="hover:text-blue-200 hover:underline" href="/press">
+                  Press/Brand Assets
+                </a>
               </li>
             </ul>
           </div>
           <div className="mr-16 sm:mr-32">
             <ul>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/docs/get-started">Get started</a>
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://docs.temporal.io/docs/get-started">
+                  Get started
+                </a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/docs/server-introduction">Server</a>
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://docs.temporal.io/docs/server-introduction">
+                  Server
+                </a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/docs/sdks-introduction">API</a>
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://docs.temporal.io/docs/sdks-introduction">
+                  API
+                </a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/docs/concept-overview">Concepts</a>
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://docs.temporal.io/docs/concept-overview">
+                  Concepts
+                </a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/security">Security</a>
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://docs.temporal.io/security">
+                  Security
+                </a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/privacy-policy/">Privacy Policy</a>
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://docs.temporal.io/privacy-policy/">
+                  Privacy Policy
+                </a>
               </li>
               <li className="mb-2 font-light">
-                <a href="https://docs.temporal.io/pdf/temporal-tos-2021-01-19.pdf">
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://docs.temporal.io/pdf/temporal-tos-2021-01-19.pdf">
                   Terms of Service
                 </a>
               </li>
