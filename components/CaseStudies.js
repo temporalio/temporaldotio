@@ -87,7 +87,13 @@ const CaseStudies = () => {
     };
 
     if (tabsRef.current) {
-      document.addEventListener('deviceorientation', update, true);
+      DeviceOrientationEvent.requestPermission()
+        .then((response) => {
+          if (response == 'granted') {
+            window.addEventListener('deviceorientation', update);
+          }
+        })
+        .catch(console.error);
     }
 
     return () => {
