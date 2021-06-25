@@ -13,8 +13,16 @@ const QUOTES = [
   {
     url: 'https://docs.temporal.io/blog/temporal-a-central-brain-for-box/',
     img: 'https://temporal.io/logos/photo-steven.png',
-    quote:
-      "One thing that the API does really well is give you this illusion of single threaded or at least local execution without having to get into the details of trying to orchestrate multiple things. It's pretty amazing.",
+    quote: (
+      <span>
+        One thing that the API does really well is give you this illusion of single threaded
+        execution{' '}
+        <span className="text-temporalblue hover:text-lightteal">
+          without having to orchestrate
+        </span>{' '}
+        multiple things. It's pretty amazing.
+      </span>
+    ),
     name: 'Steven Cipolla',
     title: 'Senior Staff Software Engineer, Box',
     logo: 'https://temporal.io/logos/logo-Box2.png',
@@ -23,8 +31,18 @@ const QUOTES = [
   {
     url: 'https://docs.temporal.io/blog/how-temporal-simplified-checkr-workflows/',
     img: 'https://avatars1.githubusercontent.com/u/114386',
-    quote:
-      'Developer happiness has increased. Thinking about our problems in terms of workflows and activities has clarified our product and now allow us to share workflow components with different teams.',
+    quote: (
+      <span>
+        <span className="text-temporalblue hover:text-lightteal">
+          Developer happiness has increased
+        </span>
+        . Thinking about our problems in terms of workflows and activities has{' '}
+        <span className="text-temporalblue hover:text-lightteal">clarified our product</span> and
+        now allow us to{' '}
+        <span className="text-temporalblue hover:text-lightteal">share workflow components</span>{' '}
+        with different teams.
+      </span>
+    ),
     name: 'Ben Jacobson',
     title: 'Staff Software Engineer, Checkr',
     logo: 'https://temporal.io/logos/logo-Checkr.png',
@@ -33,8 +51,18 @@ const QUOTES = [
   {
     url: 'https://docs.temporal.io/blog/reliable-crypto-transactions-at-coinbase',
     img: 'https://pbs.twimg.com/profile_images/943640175/new_photo_400x400.jpg',
-    quote:
-      "Trying to model complex SAGAS using a plain execution graph such as Zeebe and Step Functions provide will make things unnecessarily more complex, plus we want a solution which we could explore for more use cases that don't necessarily use SAGAS. So I think this is where Temporal really shined.",
+    quote: (
+      <span>
+        Trying to model complex SAGAS using{' '}
+        <span className="text-temporalblue hover:text-lightteal">a plain execution graph</span> such
+        as Zeebe and Step Functions{' '}
+        <span className="text-temporalblue hover:text-lightteal">
+          makes things unnecessarily complex
+        </span>
+        , plus we want a solution which we could explore for more use cases that don't necessarily
+        use SAGAS. So I think this is where Temporal really shined.
+      </span>
+    ),
     name: 'Anthony Dmitriyev',
     title: 'Software Engineer, Coinbase',
     logo: 'https://temporal.io/logos/logo-Coinbase.svg',
@@ -43,8 +71,16 @@ const QUOTES = [
   {
     url: 'https://docs.temporal.io/blog/descript-case-study',
     img: 'https://avatars.githubusercontent.com/u/2502591?v=4',
-    quote:
-      'It was a game changing revelation - Temporal gave us the ability to test our workflows with unit tests, basically just writing code instead of writing JSON or YAML, which are completely untestable.',
+    quote: (
+      <span>
+        It was a game changing revelation - Temporal gave us{' '}
+        <span className="text-temporalblue hover:text-lightteal">
+          the ability to test our workflows
+        </span>{' '}
+        with unit tests, basically just writing code instead of writing JSON or YAML, which are
+        completely untestable.
+      </span>
+    ),
     name: 'Nicolas Gere',
     title: 'Software Engineer, Descript',
     logo: 'https://temporal.io/logos/logo-Descript.png',
