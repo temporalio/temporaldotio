@@ -78,36 +78,38 @@ const QUOTES = [
 
 const CaseStudies = () => {
   const tabsRef = useRef(null);
-  useEffect(() => {
-    const update = ({ beta, gamma }) => {
-      const newX = mapRange(-180, 180, -10, 10)(beta);
-      const newY = mapRange(-90, 90, -10, 10)(gamma);
-      tabsRef.current.style.setProperty('--x', newX);
-      tabsRef.current.style.setProperty('--y', newY);
-    };
 
-    if (tabsRef.current) {
-      if (
-        typeof DeviceOrientationEvent !== 'undefined' &&
-        typeof DeviceOrientationEvent.requestPermission === 'function'
-      ) {
-        // ios
-        DeviceOrientationEvent.requestPermission()
-          .then((response) => {
-            if (response == 'granted') {
-              window.addEventListener('deviceorientation', update);
-            }
-          })
-          .catch(console.error);
-      } else {
-        window.addEventListener('deviceorientation', update);
-      }
-    }
+  // // Todo: figure out if we can make deviceorientation work on iOS
+  // useEffect(() => {
+  //   const update = ({ beta, gamma }) => {
+  //     const newX = mapRange(-180, 180, -10, 10)(beta);
+  //     const newY = mapRange(-90, 90, -10, 10)(gamma);
+  //     tabsRef.current.style.setProperty('--x', newX);
+  //     tabsRef.current.style.setProperty('--y', newY);
+  //   };
 
-    return () => {
-      document.removeEventListener('deviceorientation', update);
-    };
-  }, []);
+  //   if (tabsRef.current) {
+  //     if (
+  //       typeof DeviceOrientationEvent !== 'undefined' &&
+  //       typeof DeviceOrientationEvent.requestPermission === 'function'
+  //     ) {
+  //       // ios
+  //       DeviceOrientationEvent.requestPermission()
+  //         .then((response) => {
+  //           if (response == 'granted') {
+  //             window.addEventListener('deviceorientation', update);
+  //           }
+  //         })
+  //         .catch(console.error);
+  //     } else {
+  //       window.addEventListener('deviceorientation', update);
+  //     }
+  //   }
+
+  //   return () => {
+  //     document.removeEventListener('deviceorientation', update);
+  //   };
+  // }, []);
   useEffect(() => {
     const update = ({ x, y }) => {
       const newX = mapRange(0, window.innerWidth, -10, 10)(x);
