@@ -87,13 +87,21 @@ const CaseStudies = () => {
     };
 
     if (tabsRef.current) {
-      DeviceOrientationEvent.requestPermission()
-        .then((response) => {
-          if (response == 'granted') {
-            window.addEventListener('deviceorientation', update);
-          }
-        })
-        .catch(console.error);
+      if (
+        typeof DeviceOrientationEvent !== 'undefined' &&
+        typeof DeviceOrientationEvent.requestPermission === 'function'
+      ) {
+        // ios
+        DeviceOrientationEvent.requestPermission()
+          .then((response) => {
+            if (response == 'granted') {
+              window.addEventListener('deviceorientation', update);
+            }
+          })
+          .catch(console.error);
+      } else {
+        window.addEventListener('deviceorientation', update);
+      }
     }
 
     return () => {
