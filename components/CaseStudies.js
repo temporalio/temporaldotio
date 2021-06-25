@@ -107,7 +107,9 @@ const CaseStudies = () => {
     };
   }, []);
   return (
-    <section id="case-studies" className={`container my-16 mx-auto px-8 py-16 text-center`}>
+    <section
+      id="case-studies"
+      className={`container my-16 mx-auto px-8 py-16 text-center border-b border-white`}>
       <Tabs className="case-study transform-3d perspective">
         <div ref={tabsRef} className="case-study__tabs transform-3d">
           {QUOTES.map((quote) => (

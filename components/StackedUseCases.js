@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import DirectionalControl from './DirectionalControl';
 
 const Stack = ({ content, link, title }) => (
   <div className="stack after:transition-all text-white relative">
@@ -15,24 +16,49 @@ const Stack = ({ content, link, title }) => (
 const USE_CASES = [
   {
     link: '/usecases#orchestration',
-    content: 'Temporal is a perfect fit for orchestrating microservices.',
+    content: (
+      <div>
+        Define{' '}
+        <span className="text-temporalblue">
+          retries, rollbacks, cleanup, and even human-in-the-loop
+        </span>{' '}
+        steps in the case of failure. With end to end visibility across multiple services.
+      </div>
+    ),
     title: 'Microservices Orchestration'
   },
   {
-    content:
-      "For software that interacts with money (especially someone else's), reliability and consistency are top priorities.",
+    content: (
+      <div>
+        <span className="text-temporalblue">
+          Reliability, consistency, failure compensation, long running operations, and distributed
+          transactions
+        </span>{' '}
+        for your most critical financial operations.
+      </div>
+    ),
     link: '/usecases#transactions',
     title: 'Financial Transactions'
   },
   {
-    content:
-      'Provisioning resources depends on a series of potentially long-running operations with many possibilities for intermittent failures.',
+    content: (
+      <div>
+        When ad-hoc provisioning doesn't scale and Kubernetes or Fargate doesn't give you enough
+        control, <span className="text-temporalblue">write your own control plane</span> in
+        languages you know best.
+      </div>
+    ),
     link: '/usecases#provisioning',
     title: 'Resource Provisioning'
   },
   {
-    content:
-      'Temporal provides guaranteed execution with exactly-once semantics with automatic retries.',
+    content: (
+      <div>
+        Reliable polling that is as simple or sophisticated as you need, at massive scale. Imagine{' '}
+        <span className="text-temporalblue">100s of millions parallel cron jobs</span> that survive
+        any machine failure.
+      </div>
+    ),
     link: '/usecases#monitoring',
     title: 'Monitoring'
   }
@@ -44,6 +70,7 @@ const StackedUseCases = () => (
     className={`
     container mx-auto
     px-8 py-16
+    border-b border-white
     `}>
     <div className="grid gap-6 md:grid-cols-2 lg:w-800 mx-auto">
       {USE_CASES.map((useCase) => (
@@ -54,6 +81,11 @@ const StackedUseCases = () => (
           key={useCase.link}
         />
       ))}
+    </div>
+    <div className="mt-12 flex justify-center">
+      <DirectionalControl secondary href="/usecases">
+        More Use Cases
+      </DirectionalControl>
     </div>
   </section>
 );

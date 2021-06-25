@@ -17,9 +17,9 @@ export default function IndexPage() {
       </Head>
       <Hero />
       {/* <TwoStep /> */}
+      <CaseStudies />
       <ExplainTemporal />
       <StackedUseCases />
-      <CaseStudies />
       <JoinUs />
       <TemporalVs />
       <FinalQuote />
