@@ -168,6 +168,32 @@
   transform-origin: 100% 50%;
 }
 
+/* Stacker Cards */
+.stack:before,
+.stack:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--space-black);
+  border: 2px solid var(--off-white);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.stack:hover {
+  --expand: 1;
+}
+
+.stack:after {
+  transform: translate(calc(var(--expand) * -2%), calc(var(--expand) * -2%));
+}
+
+.stack__content {
+  transform: translate(calc(var(--expand) * -4%), calc(var(--expand) * -4%));
+}
+
 /* Your own custom utilities */
 @font-face {
   font-family: 'Aeonik';

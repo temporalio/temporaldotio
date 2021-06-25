@@ -103,7 +103,7 @@ const CaseStudies = () => {
         </TabList>
       </Tabs>
       <div className="mt-12 flex justify-center">
-        <DirectionalControl href="https://docs.temporal.io/blog/tags/case-study">
+        <DirectionalControl secondary href="https://docs.temporal.io/blog/tags/case-study">
           See Case Studies
         </DirectionalControl>
       </div>

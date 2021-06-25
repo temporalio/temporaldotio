@@ -76,7 +76,7 @@ export default function ExplainTemporal() {
       </div>
       <div className="flex flex-col sm:flex-row justify-center items-center my-4">
         <a
-          className="font-bold hover:underline text-blue-400 hover:text-blue-200"
+          className="nav-link font-bold text-temporalblue"
           href="mailto:support@temporal.io?subject=[Temporal.io] Enquiry&body=Hi, I heard about Temporal via YOUR_SOURCE_HERE and I had some questions...">
           More questions? Email us!
         </a>
