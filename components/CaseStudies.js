@@ -16,11 +16,8 @@ const QUOTES = [
     quote: (
       <span>
         One thing that the API does really well is give you this illusion of single threaded
-        execution{' '}
-        <span className="text-temporalblue hover:text-lightteal">
-          without having to orchestrate
-        </span>{' '}
-        multiple things. It's pretty amazing.
+        execution <span className="text-temporalblue">without having to orchestrate</span> multiple
+        things. It's pretty amazing.
       </span>
     ),
     name: 'Steven Cipolla',
@@ -33,14 +30,10 @@ const QUOTES = [
     img: 'https://avatars1.githubusercontent.com/u/114386',
     quote: (
       <span>
-        <span className="text-temporalblue hover:text-lightteal">
-          Developer happiness has increased
-        </span>
-        . Thinking about our problems in terms of workflows and activities has{' '}
-        <span className="text-temporalblue hover:text-lightteal">clarified our product</span> and
-        now allow us to{' '}
-        <span className="text-temporalblue hover:text-lightteal">share workflow components</span>{' '}
-        with different teams.
+        <span className="text-temporalblue">Developer happiness has increased</span>. Thinking about
+        our problems in terms of workflows and activities has{' '}
+        <span className="text-temporalblue">clarified our product</span> and now allow us to{' '}
+        <span className="text-temporalblue">share workflow components</span> with different teams.
       </span>
     ),
     name: 'Ben Jacobson',
@@ -54,13 +47,10 @@ const QUOTES = [
     quote: (
       <span>
         Trying to model complex SAGAS using{' '}
-        <span className="text-temporalblue hover:text-lightteal">a plain execution graph</span> such
-        as Zeebe and Step Functions{' '}
-        <span className="text-temporalblue hover:text-lightteal">
-          makes things unnecessarily complex
-        </span>
-        , plus we want a solution which we could explore for more use cases that don't necessarily
-        use SAGAS. So I think this is where Temporal really shined.
+        <span className="text-temporalblue">a plain execution graph</span> such as Zeebe and Step
+        Functions <span className="text-temporalblue">makes things unnecessarily complex</span>,
+        plus we want a solution which we could explore for more use cases that don't necessarily use
+        SAGAS. So I think this is where Temporal really shined.
       </span>
     ),
     name: 'Anthony Dmitriyev',
@@ -74,11 +64,9 @@ const QUOTES = [
     quote: (
       <span>
         It was a game changing revelation - Temporal gave us{' '}
-        <span className="text-temporalblue hover:text-lightteal">
-          the ability to test our workflows
-        </span>{' '}
-        with unit tests, basically just writing code instead of writing JSON or YAML, which are
-        completely untestable.
+        <span className="text-temporalblue">the ability to test our workflows</span> with unit
+        tests, basically just writing code instead of writing JSON or YAML, which are completely
+        untestable.
       </span>
     ),
     name: 'Nicolas Gere',

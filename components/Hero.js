@@ -1,5 +1,5 @@
 import { Nav } from './Nav';
-import { Banner } from './Banner';
+// import { Banner } from './Banner'; // company announcements - not needed for now
 import DirectionalControl from './DirectionalControl';
 import OrbitalCases from './OrbitalCases';
 import React from 'react';
@@ -30,7 +30,7 @@ const allSites = [
 export default function Hero() {
   return (
     <div className=" border-b border-white">
-      <Banner />
+      {/* <Banner /> */}
       <section
         id="hero"
         className={`
