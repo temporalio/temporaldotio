@@ -1,3 +1,5 @@
+// prettier-ignore-start
+
 export const Node = (
   <pre className="p-4 overflow-scroll font-mono" style="background-color: #292D3E">
     <code>
@@ -113,3 +115,5 @@ export const PHP = (
     <code>PHP CODE HERE</code>
   </pre>
 );
+
+// prettier-ignore-end
