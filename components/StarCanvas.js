@@ -7,7 +7,9 @@ const SCALE_LIMIT = 2;
 const ALPHA_LIMIT = 0.2;
 const SIZE_LIMIT = 3;
 const LIGHT_START = 85;
-const PHRASE = 'temporal';
+const CYCLES = 30;
+const PHRASE =
+  'arrowup,arrowup,arrowdown,arrowdown,arrowleft,arrowright,arrowleft,arrowright,keyb,keya';
 
 const StarCanvas = () => {
   const canvasRef = useRef(null);
@@ -89,11 +91,11 @@ const StarCanvas = () => {
   // Easter Egg Effect
   useEffect(() => {
     const shouldWeParty = (e) => {
-      keysRef.current.push(e.key);
+      keysRef.current.push(e.code);
       if (
         keysRef.current
-          .slice(keysRef.current.length - PHRASE.length, keysRef.current.length)
-          .join('')
+          .slice(keysRef.current.length - 10, keysRef.current.length)
+          .join(',')
           .toLowerCase() === PHRASE &&
         (!partyRef.current ||
           (partyRef.current &&
@@ -139,13 +141,16 @@ const StarCanvas = () => {
             {
               hue: gsap.utils.random(0, 359),
               yoyo: true,
-              repeat: 10
+              repeat: CYCLES
             },
             0
           );
       }
     };
     window.addEventListener('keyup', shouldWeParty);
+    return () => {
+      window.removeEventListener('keyup', shouldWeParty);
+    };
   }, []);
 
   return <canvas ref={canvasRef} className="h-full w-full fixed inset-0 bg-spaceblack -z-1" />;
