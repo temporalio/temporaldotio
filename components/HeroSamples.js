@@ -17,9 +17,6 @@ export const Node = (
         <span style="color: #82AAFF">mainWorkflow</span>
         <span style="color: #89DDFF">(</span>
         <span style="color: #A6ACCD">userId</span>
-        <span style="color: #89DDFF">:</span>
-        <span style="color: #A6ACCD"> </span>
-        <span style="color: #FFCB6B">string</span>
         <span style="color: #89DDFF">)</span>
         <span style="color: #A6ACCD"> </span>
         <span style="color: #89DDFF">{'{'}</span>
@@ -44,7 +41,7 @@ export const Node = (
         <span style="color: #A6ACCD">interactionSignal</span>
         <span style="color: #89DDFF">,</span>
         <span style="color: #F07178"> </span>
-        <span style="color: #676E95; font-style: italic">// receive signals from users</span>
+        <span style="color: #676E95; font-style: italic">// receive signals from users!</span>
       </span>
       <span style="display:block">
         <span style="color: #F07178"> </span>
@@ -55,11 +52,13 @@ export const Node = (
         <span style="color: #89DDFF">*</span>
         <span style="color: #F07178"> </span>
         <span style="color: #A6ACCD">DAY</span>
-        <span style="color: #F07178">)] </span>
+        <span style="color: #F07178">)</span>
+        <span style="color: #89DDFF">,</span>
+        <span style="color: #F07178"> </span>
         <span style="color: #676E95; font-style: italic">// sleep for 30 days!</span>
       </span>
       <span style="display:block">
-        <span style="color: #F07178"> )</span>
+        <span style="color: #F07178"> ])</span>
         <span style="color: #89DDFF">;</span>
       </span>
       <span style="display:block">
@@ -92,7 +91,7 @@ export const Node = (
       </span>
       <span style="display:block">
         <span style="color: #676E95; font-style: italic">
-          // Write Tests + Scale Horizontally + Version Workflows + Encrypt Data + ...{' '}
+          // Scale to Millions + Write Tests + Encrypt Data + Migrate Versions + ...{' '}
         </span>
       </span>
     </code>
