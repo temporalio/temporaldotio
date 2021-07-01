@@ -1,5 +1,5 @@
 export const Node = (
-  <pre className="p-4 overflow-scroll" style="background-color: #292D3E">
+  <pre className="p-4 overflow-scroll font-mono" style="background-color: #292D3E">
     <code>
       <span style="display:block"></span>
       <span style="display:block">
@@ -37,14 +37,14 @@ export const Node = (
         <span style="color: #F07178">([</span>
       </span>
       <span style="display:block">
-        <span style="color: #F07178"> </span>
+        <span style="color: #F07178">{'    '}</span>
         <span style="color: #A6ACCD">interactionSignal</span>
         <span style="color: #89DDFF">,</span>
         <span style="color: #F07178"> </span>
         <span style="color: #676E95; font-style: italic">// receive signals from users!</span>
       </span>
       <span style="display:block">
-        <span style="color: #F07178"> </span>
+        <span style="color: #F07178">{'    '}</span>
         <span style="color: #82AAFF">sleep</span>
         <span style="color: #F07178">(</span>
         <span style="color: #F78C6C">30</span>
@@ -71,7 +71,7 @@ export const Node = (
         <span style="color: #89DDFF">{'{'}</span>
       </span>
       <span style="display:block">
-        <span style="color: #F07178"> </span>
+        <span style="color: #F07178">{'    '}</span>
         <span style="color: #89DDFF; font-style: italic">await</span>
         <span style="color: #F07178"> </span>
         <span style="color: #82AAFF">sendEmailActivity</span>
