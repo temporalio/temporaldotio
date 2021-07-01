@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as gtag from '../lib/gtag';
 
+import StarCanvas from '../components/StarCanvas';
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   useEffect(() => {
@@ -74,6 +76,7 @@ function MyApp({ Component, pageProps }) {
           }}
         />
       </Head>
+      <StarCanvas />
       <Component {...pageProps} />
     </div>
   );

@@ -237,6 +237,7 @@ body {
     'Segoe UI Symbol', 'Noto Color Emoji';
   background-image: url('/StarBackgroundMuted.svg');
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 /* this is for the /careers page */
