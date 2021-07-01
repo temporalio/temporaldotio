@@ -129,20 +129,7 @@ const CaseStudies = () => {
   return (
     <section id="case-studies" className={`container my-16 mx-auto px-8 py-16 text-center`}>
       <Tabs className="case-study transform-3d perspective">
-        <div ref={tabsRef} className="case-study__tabs transform-3d">
-          {QUOTES.map((quote) => (
-            <TabPanel key={quote.url} className="" selectedClassName="">
-              <Quote
-                url={quote.url}
-                img={quote.img}
-                quote={quote.quote}
-                name={quote.name}
-                title={quote.title}
-              />
-            </TabPanel>
-          ))}
-        </div>
-        <TabList className="flex gap-2 justify-center">
+        <TabList className="flex gap-2 justify-center mb-12">
           {QUOTES.map((quote) => (
             <Tab
               key={quote.img}
@@ -157,12 +144,25 @@ const CaseStudies = () => {
             </Tab>
           ))}
         </TabList>
+        <div ref={tabsRef} className="case-study__tabs transform-3d">
+          {QUOTES.map((quote) => (
+            <TabPanel key={quote.url} className="" selectedClassName="">
+              <Quote
+                url={quote.url}
+                img={quote.img}
+                quote={quote.quote}
+                name={quote.name}
+                title={quote.title}
+              />
+            </TabPanel>
+          ))}
+        </div>
+        <div className="mt-12 flex justify-center">
+          <DirectionalControl secondary href="https://docs.temporal.io/blog/tags/case-study">
+            See Case Studies
+          </DirectionalControl>
+        </div>
       </Tabs>
-      <div className="mt-12 flex justify-center">
-        <DirectionalControl secondary href="https://docs.temporal.io/blog/tags/case-study">
-          See Case Studies
-        </DirectionalControl>
-      </div>
     </section>
   );
 };
