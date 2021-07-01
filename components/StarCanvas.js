@@ -5,7 +5,7 @@ const PROXIMITY_RATIO = 0.1;
 const DENSITY_RATIO = 0.5;
 const SCALE_LIMIT = 2;
 const ALPHA_LIMIT = 0.2;
-const SIZE_LIMIT = 2;
+const SIZE_LIMIT = 3;
 const LIGHT_START = 85;
 const PHRASE = 'temporal';
 
