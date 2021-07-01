@@ -2,86 +2,11 @@ import '../styles/index.css';
 import 'react-image-lightbox/style.css';
 
 import Head from 'next/head';
-import gsap from 'gsap';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as gtag from '../lib/gtag';
 
-const PROXIMITY_RATIO = 0.1;
-
-const StarCanvas = () => {
-  const canvasRef = useRef(null);
-  const contextRef = useRef(null);
-  const starsRef = useRef(null);
-  const scaleRangerRef = useRef(null);
-  const alphaRangerRef = useRef(null);
-  useEffect(() => {
-    contextRef.current = canvasRef.current.getContext('2d');
-    const LOAD = () => {
-      const VMIN = Math.min(window.innerWidth, window.innerHeight);
-      scaleRangerRef.current = gsap.utils.mapRange(0, VMIN * PROXIMITY_RATIO, 4, 1);
-      alphaRangerRef.current = gsap.utils.mapRange(0, VMIN * PROXIMITY_RATIO, 1, 0.25);
-      canvasRef.current.width = window.innerWidth;
-      canvasRef.current.height = window.innerHeight;
-      const STAR_COUNT = Math.abs(Math.sqrt(Math.pow(VMIN, 2)));
-      starsRef.current = new Array(STAR_COUNT).fill().map(() => ({
-        x: gsap.utils.random(0, window.innerWidth),
-        y: gsap.utils.random(0, window.innerHeight),
-        size: gsap.utils.random(1, 3),
-        scale: 1,
-        alpha: 0.3
-      }));
-    };
-
-    LOAD();
-
-    const UPDATE = ({ x, y }) => {
-      for (const STAR of starsRef.current) {
-        const DISTANCE = Math.sqrt(Math.pow(STAR.x - x, 2) + Math.pow(STAR.y - y, 2));
-        gsap.to(STAR, {
-          scale: scaleRangerRef.current(
-            Math.min(DISTANCE, Math.min(window.innerWidth, window.innerHeight) * PROXIMITY_RATIO)
-          ),
-          alpha: alphaRangerRef.current(
-            Math.min(DISTANCE, Math.min(window.innerWidth, window.innerHeight) * PROXIMITY_RATIO)
-          )
-        });
-      }
-    };
-
-    const EXIT = () => {
-      gsap.to(starsRef.current, {
-        scale: 1,
-        alpha: 0.3
-      });
-    };
-
-    const RENDER = () => {
-      contextRef.current.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
-      for (const STAR of starsRef.current) {
-        contextRef.current.fillStyle = `hsla(0, 0%, 100%, ${STAR.alpha})`;
-        contextRef.current.beginPath();
-        contextRef.current.arc(STAR.x, STAR.y, STAR.size * STAR.scale, 0, 2 * Math.PI);
-        contextRef.current.fill();
-      }
-    };
-
-    document.addEventListener('pointermove', UPDATE);
-    document.addEventListener('pointerleave', EXIT);
-    window.addEventListener('resize', LOAD);
-
-    gsap.ticker.add(RENDER);
-    gsap.ticker.fps(24);
-
-    return () => {
-      document.removeEventListener('pointermove', UPDATE);
-      document.removeEventListener('pointerleave', EXIT);
-      gsap.ticker.remove(RENDER);
-    };
-  }, []);
-
-  return <canvas ref={canvasRef} className="h-full w-full fixed inset-0 bg-spaceblack -z-1" />;
-};
+import StarCanvas from '../components/StarCanvas';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
