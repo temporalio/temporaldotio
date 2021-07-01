@@ -48,9 +48,8 @@ const QUOTES = [
       <span>
         Trying to model complex SAGAS using{' '}
         <span className="text-temporalblue">a plain execution graph</span> such as Zeebe and Step
-        Functions <span className="text-temporalblue">makes things unnecessarily complex</span>,
-        plus we want a solution which we could explore for more use cases that don't necessarily use
-        SAGAS. So I think this is where Temporal really shined.
+        Functions <span className="text-temporalblue">makes things unnecessarily complex</span>.
+        This is where Temporal really shines.
       </span>
     ),
     name: 'Anthony Dmitriyev',

@@ -3,9 +3,10 @@ import { useEffect, useRef } from 'react';
 
 const PROXIMITY_RATIO = 0.1;
 const DENSITY_RATIO = 0.5;
-const SCALE_LIMIT = 4;
+const SCALE_LIMIT = 2;
 const ALPHA_LIMIT = 0.2;
-const SIZE_LIMIT = 4;
+const SIZE_LIMIT = 2;
+const LIGHT_START = 85;
 const PHRASE = 'temporal';
 
 const StarCanvas = () => {
@@ -17,7 +18,7 @@ const StarCanvas = () => {
   const keysRef = useRef([]);
   const partyRef = useRef(null);
   const satRef = useRef(0);
-  const lightRef = useRef(100);
+  const lightRef = useRef(LIGHT_START);
 
   useEffect(() => {
     contextRef.current = canvasRef.current.getContext('2d');
@@ -108,7 +109,7 @@ const StarCanvas = () => {
               gsap
                 .timeline()
                 .to(lightRef, {
-                  current: 100
+                  current: LIGHT_START
                 })
                 .to(
                   satRef,
