@@ -46,7 +46,7 @@ export default function Hero() {
               {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
               The Open Source Runtime for
               <select
-                className="md:border md:border-temporalblue bg-gray-800 active:bg-gray-500 mx-2"
+                className="md:border md:border-temporalblue text-md md:text-2xl bg-gray-800 active:bg-gray-500 mx-2"
                 value={lang}
                 onChange={(e) => setLang(e.target.value)}>
                 <option value="Go">Go</option>
