@@ -38,7 +38,7 @@ export default function Hero() {
         <Nav />
         <div className="flex flex-col">
           <div className="flex-auto">
-            <h1 className="hidden md:block text-60 leading-60 mb-8 lg:text-8xl lg:leading-8xl uppercase">
+            <h1 className="text-60 leading-60 mb-8 lg:text-8xl lg:leading-8xl uppercase">
               Build Invincible Apps
             </h1>
             <p className="text-2xl mb-8">
@@ -60,7 +60,7 @@ export default function Hero() {
               scale.
             </p>
           </div>
-          {dynamicCodeSample}
+          <div className="hidden md:block">{dynamicCodeSample}</div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between mb-8 sm:mb-8 items-center">
           <div className="flex flex-col gap-4 lg:flex-row lg:text-xl">
