@@ -44,9 +44,9 @@ export default function Hero() {
             <p className="text-2xl mb-8">
               {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
               {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
-              The Open Source Runtime for
+              <span className="mr-2">The Open Source Runtime for</span>
               <select
-                className="md:border md:border-temporalblue text-md md:text-2xl bg-gray-800 active:bg-gray-500 mx-2"
+                className="md:border md:border-temporalblue text-md md:text-2xl bg-gray-800 active:bg-gray-500 mr-2"
                 value={lang}
                 onChange={(e) => setLang(e.target.value)}>
                 <option value="Go">Go</option>
