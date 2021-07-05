@@ -46,9 +46,9 @@ export default function Hero() {
               {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
               The Open Source Runtime for
               <select
-                className="bg-gray-800 active:bg-gray-500 mx-2"
+                className="border border-temporalblue bg-gray-800 active:bg-gray-500 mx-2"
                 value={lang}
-                onBlur={(e) => setLang(e.target.value)}>
+                onChange={(e) => setLang(e.target.value)}>
                 <option value="Go">Go</option>
                 <option value="Java">Java</option>
                 <option value="PHP">PHP</option>
