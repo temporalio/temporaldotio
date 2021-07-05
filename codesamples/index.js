@@ -2,7 +2,7 @@ const shiki = require('shiki');
 const fs = require('fs');
 const path = require('path');
 
-const arr = ['js', 'go', 'java'];
+const arr = ['js', 'go', 'java', 'php'];
 
 for (const lang of arr) {
   shiki
