@@ -15,11 +15,18 @@ export default function Hero() {
   }[lang] || (
     <div className="text-lg">
       Python, Ruby, dotNet, and other SDKs are planned for next year.{' '}
-      <a className="text-blue-500 no-underline hover:underline" href="/careers">
+      <a className="text-blue-300 no-underline hover:underline" href="/careers">
         Join us!
       </a>
     </div>
   );
+  const helloWorldURL =
+    {
+      Go: 'https://docs.temporal.io/docs/go/hello-world-tutorial',
+      Java: 'https://docs.temporal.io/docs/java/hello-world-tutorial',
+      PHP: 'https://docs.temporal.io/docs/samples-library/#beginner-samples',
+      Node: 'https://docs.temporal.io/docs/node/hello-world'
+    }[lang] || 'https://docs.temporal.io/application-development/';
   return (
     <div className=" border-b border-white">
       {/* <Banner /> */}
@@ -31,7 +38,7 @@ export default function Hero() {
         <Nav />
         <div className="flex flex-col">
           <div className="flex-auto">
-            <h1 className="text-60 leading-60 mb-8 lg:text-8xl lg:leading-8xl uppercase lg:w-800">
+            <h1 className="hidden md:block text-60 leading-60 mb-8 lg:text-8xl lg:leading-8xl uppercase">
               Build Invincible Apps
             </h1>
             <p className="text-2xl mb-8">
@@ -41,7 +48,7 @@ export default function Hero() {
               <select
                 className="bg-gray-800 active:bg-gray-500 mx-2"
                 value={lang}
-                onChange={(e) => setLang(e.target.value)}>
+                onBlur={(e) => setLang(e.target.value)}>
                 <option value="Go">Go</option>
                 <option value="Java">Java</option>
                 <option value="PHP">PHP</option>
@@ -58,7 +65,7 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row justify-between mb-8 sm:mb-8 items-center">
           <div className="flex flex-col gap-4 lg:flex-row lg:text-xl">
             <DirectionalControl href="#explain-temporal">2 Minute Intro</DirectionalControl>
-            <DirectionalControl secondary href="https://docs.temporal.io/application-development">
+            <DirectionalControl secondary href={helloWorldURL}>
               Run Hello World
             </DirectionalControl>
           </div>
