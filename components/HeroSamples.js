@@ -1,5 +1,5 @@
 export const Node = (
-  <pre className="p-4 overflow-hidden font-mono mb-4" style="background-color: #292D3E">
+  <pre className="p-4 overflow-x-auto font-mono mb-4" style="background-color: #292D3E">
 <code><span style="display:block"><span style="color: #676E95; font-style: italic">//</span><span style="color: #90EE90; font-style: italic"> define interactionSignal handler in Express, Next.js, Hapi, Koa, Fastify, etc...</span></span>
 <span style="display:block"><span style="color: #89DDFF; font-style: italic">export</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">async</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">function</span><span style="color: #A6ACCD"> </span><span style="color: #82AAFF">mainWorkflow</span><span style="color: #89DDFF">(</span><span style="color: #A6ACCD">userId</span><span style="color: #89DDFF">)</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">{"{"}</span></span>
 <span style="display:block"><span style="color: #F07178">  </span><span style="color: #C792EA">const</span><span style="color: #F07178"> </span><span style="color: #A6ACCD">userInteracted</span><span style="color: #F07178"> </span><span style="color: #89DDFF">=</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">await</span><span style="color: #F07178"> </span><span style="color: #FFCB6B">Promise</span><span style="color: #89DDFF">.</span><span style="color: #82AAFF">race</span><span style="color: #F07178">([</span></span>
@@ -15,7 +15,7 @@ export const Node = (
 );
 
 export const Go = (
-  <pre className="p-4 overflow-hidden font-mono mb-4" style="background-color: #292D3E">
+  <pre className="p-4 overflow-x-auto font-mono mb-4" style="background-color: #292D3E">
 <code><span style="display:block"><span style="color: #89DDFF">func</span><span style="color: #A6ACCD"> </span><span style="color: #82AAFF">mainWorkflow</span><span style="color: #89DDFF">(</span><span style="color: #A6ACCD">ctx workflow</span><span style="color: #89DDFF">.</span><span style="color: #A6ACCD">Context</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> userId</span><span style="color: #89DDFF">)</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">error</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">{"{"}</span></span>
 <span style="display:block"><span style="color: #A6ACCD">		</span><span style="color: #676E95; font-style: italic">//</span><span style="color: #90EE90; font-style: italic"> ...</span></span>
 <span style="display:block"><span style="color: #A6ACCD">		selector</span><span style="color: #89DDFF">.</span><span style="color: #82AAFF">AddReceive</span><span style="color: #89DDFF">(</span><span style="color: #A6ACCD">signalChannel</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">func(</span><span style="color: #A6ACCD">c workflow</span><span style="color: #89DDFF">.</span><span style="color: #A6ACCD">ReceiveChannel</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> more </span><span style="color: #C792EA">bool</span><span style="color: #89DDFF">)</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">{"{"}</span></span>
@@ -30,7 +30,7 @@ export const Go = (
   </pre>
 );
 export const Java = (
-  <pre className="p-4 overflow-hidden " style="background-color: #292D3E">
+  <pre className="p-4 overflow-x-auto " style="background-color: #292D3E">
 <code><span style="display:block"><span style="color: #C792EA">public</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">class</span><span style="color: #A6ACCD"> </span><span style="color: #FFCB6B">SampleWorkflow</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">{"{"}</span></span>
 <span style="display:block"><span style="color: #A6ACCD">  </span><span style="color: #C792EA">public</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">static</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">void</span><span style="color: #A6ACCD"> </span><span style="color: #82AAFF">main</span><span style="color: #89DDFF">(</span><span style="color: #C792EA">String</span><span style="color: #89DDFF">[]</span><span style="color: #A6ACCD"> args</span><span style="color: #89DDFF">)</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">{"{"}</span></span>
 <span style="display:block"><span style="color: #89DDFF">{"    "}</span><span style="color: #676E95; font-style: italic">//</span><span style="color: #90EE90; font-style: italic"> ...</span></span>
@@ -44,7 +44,7 @@ export const Java = (
   </pre>
 );
 export const PHP = (
-  <pre className="p-4 overflow-hidden " style="background-color: #292D3E">
+  <pre className="p-4 overflow-x-auto " style="background-color: #292D3E">
    <code><span style="display:block"><span style="color: #C792EA">class</span><span style="color: #A6ACCD"> </span><span style="color: #FFCB6B">MainWorkflow</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">implements</span><span style="color: #A6ACCD"> </span><span style="color: #FFCB6B">MainWorkflowInterface</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">{"{"}</span></span>
 <span style="display:block"><span style="color: #A6ACCD">{"    "}</span><span style="color: #C792EA">private</span><span style="color: #A6ACCD"> </span><span style="color: #F78C6C">bool</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">value </span><span style="color: #89DDFF">=</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">false;</span></span>
 <span style="display:block"><span style="color: #A6ACCD">{"    "}</span><span style="color: #C792EA">public</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">function</span><span style="color: #A6ACCD"> </span><span style="color: #82AAFF">main</span><span style="color: #89DDFF">(</span><span style="color: #F78C6C">string</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">userID</span><span style="color: #89DDFF">)</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">{"{"}</span></span>
