@@ -8,7 +8,6 @@ function ResponsivePlayer({ url }) {
         border: '1px solid #E0E0E0'
       }}
       url={url}
-      light
       controls
       width="800px"
       height="500px"
