@@ -1,13 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import gsap from 'gsap';
 
 import DirectionalControl from './DirectionalControl';
-
-const mapRange = (inputLower, inputUpper, outputLower, outputUpper) => {
-  const INPUT_RANGE = inputUpper - inputLower;
-  const OUTPUT_RANGE = outputUpper - outputLower;
-  return (value) => outputLower + (((value - inputLower) / INPUT_RANGE) * OUTPUT_RANGE || 0);
-};
 
 const QUOTES = [
   {
@@ -77,41 +72,10 @@ const QUOTES = [
 const CaseStudies = () => {
   const tabsRef = useRef(null);
 
-  // // Todo: figure out if we can make deviceorientation work on iOS
-  // useEffect(() => {
-  //   const update = ({ beta, gamma }) => {
-  //     const newX = mapRange(-180, 180, -10, 10)(beta);
-  //     const newY = mapRange(-90, 90, -10, 10)(gamma);
-  //     tabsRef.current.style.setProperty('--x', newX);
-  //     tabsRef.current.style.setProperty('--y', newY);
-  //   };
-
-  //   if (tabsRef.current) {
-  //     if (
-  //       typeof DeviceOrientationEvent !== 'undefined' &&
-  //       typeof DeviceOrientationEvent.requestPermission === 'function'
-  //     ) {
-  //       // ios
-  //       DeviceOrientationEvent.requestPermission()
-  //         .then((response) => {
-  //           if (response == 'granted') {
-  //             window.addEventListener('deviceorientation', update);
-  //           }
-  //         })
-  //         .catch(console.error);
-  //     } else {
-  //       window.addEventListener('deviceorientation', update);
-  //     }
-  //   }
-
-  //   return () => {
-  //     document.removeEventListener('deviceorientation', update);
-  //   };
-  // }, []);
   useEffect(() => {
     const update = ({ x, y }) => {
-      const newX = mapRange(0, window.innerWidth, -10, 10)(x);
-      const newY = mapRange(0, window.innerHeight, -10, 10)(y);
+      const newX = gsap.utils.mapRange(0, window.innerWidth, -10, 10)(x);
+      const newY = gsap.utils.mapRange(0, window.innerHeight, -10, 10)(y);
       tabsRef.current.style.setProperty('--x', newX);
       tabsRef.current.style.setProperty('--y', newY);
     };

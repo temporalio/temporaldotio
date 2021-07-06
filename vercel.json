@@ -1,5 +1,8 @@
 {
   "github": {
     "silent": true
-  }
+  },
+  "redirects": [
+    { "source": "/slack", "destination": "https://join.slack.com/t/temporalio/shared_invite/zt-onhti57l-J0bl~Tr7MqSUnIc1upjRkw", "permanent": false }
+  ]
 }

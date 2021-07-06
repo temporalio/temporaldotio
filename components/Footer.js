@@ -1,4 +1,5 @@
 import DirectionalControl from './DirectionalControl';
+import MoonScape from './MoonScape';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
     flex flex-col-reverse sm:flex-row sm:mt-16
     `}>
       <div className="flex-1 border-r border-lightgray relative">
-        <img className="absolute bottom-0 left-0" src="/FooterMoon.png" alt="footer moon" />
+        <MoonScape />
       </div>
       <div className="flex-1 flex flex-col ">
         <div className="p-8 sm:p-16 sm:border-b border-lightgray">
