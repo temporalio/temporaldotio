@@ -2,9 +2,11 @@ public class SampleWorkflow {
   public static void main(String[] args) {
     // ...
     WorkflowClient.start(workflow::initWorkflow);
-    Workflow.sleep(Duration.ofDays(30)); // sleep for 30 days!
-    workflow.waitForName("UserInteraction"); // block on signals from users!
-    workflow.sendEmail(userId) // timeouts + retries!
+    int intervals[] = { 1, 7, 30 };
+    for (int i : intervals) {   
+      Workflow.sleep(Duration.ofDays(i)); // sleep for days!
+      workflow.sendEmail(userId) // automatic timeouts + retries!
+    }
+    // we can also signal or cancel the workflow as needed
   }
-  // Scale to Millions + Write Tests + Encrypt Data + Migrate Versions + ... 
 }

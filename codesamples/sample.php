@@ -1,13 +1,8 @@
-class MainWorkflow implements MainWorkflowInterface {
-    private bool $value = false;
-    public function main(string $userID) {
-        yield Workflow::await(fn()=> $this->value); // wait for $value to become true
-        yield Workflow::timer(2592000); // sleep for 30 days!
+public function main(string $userID) {
+    $intervals = array(1, 7, 30);
+    foreach ($intervals as &$interval) {
+        yield Workflow::timer($interval * DAYS); // sleep for days!
         yield $this->user->sendEmail($userID); // timeouts + retries!
     }
-
-    public function userSignal(bool $value) {
-        $this->value = $value; // receive signals from users!
-    }
-<!-- Scale to Millions + Write Tests + Encrypt Data + Migrate Versions + ...  -->
+    // we can also signal or cancel the workflow as needed
 }

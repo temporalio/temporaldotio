@@ -1,11 +1,8 @@
-// define interactionSignal handler in Express, Next.js, Hapi, Koa, Fastify, etc...
-export async function mainWorkflow(userId) {
-  const userInteracted = await Promise.race([
-    interactionSignal, // receive signals from users!
-    sleep(30 * DAY) // sleep for 30 days!
-  ]);
-  if (!userInteracted) {
-    await sendEmailActivity(userId); // timeouts + retries!
+async function main(userId) {
+  const intervals = [1, 7, 30]; // Nag user until giving up
+  for (const interval of intervals) {
+    await sleep(interval * DAYS);
+    await sendEmailActivity(interval, userId); // automatic timeouts + retries
   }
+  // we can also signal or cancel the workflow as needed
 }
-// Scale to Millions + Write Tests + Encrypt Data + Migrate Versions + ...
