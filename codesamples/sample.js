@@ -4,5 +4,5 @@ async function main(userId) {
     await sleep(interval * DAYS);
     await activities.sendUserRetentionEmail(interval, userId); // automatic timeouts + retries
   }
-  // we can also signal or cancel the workflow as needed
+  // we can signal or cancel the workflow if the user does an action
 }
