@@ -5,6 +5,6 @@
           Workflow.sleep(Duration.ofDays(interval)); // Sleep for days!
           activities.sendEmail(interval, userId)     // Activities retried by default!
         }
-        // easily modifiable to cancel if the user does an action
+        // easily modifiable to cancel if the user performs an action
       }
   }

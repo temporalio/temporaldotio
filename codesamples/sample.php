@@ -5,6 +5,6 @@
             Workflow::timer($interval * DAYS);                  // Sleep for days!
             $this->userActivity->sendEmail($interval, $userID); // Activities retried by default!
         }
-        // easily modifiable to cancel if the user does an action
+        // easily modifiable to cancel if the user performs an action
     }
   }
