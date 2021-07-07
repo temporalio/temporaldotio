@@ -1,33 +1,33 @@
 import { Nav } from './Nav';
 // import { Banner } from './Banner'; // company announcements - not needed for now
 import DirectionalControl from './DirectionalControl';
-import OrbitalCases from './OrbitalCases';
+// import OrbitalCases from './OrbitalCases';
+import HeroLogos from './HeroLogos';
 import React from 'react';
-
-const allSites = [
-  {
-    src: '/logos/logo-Box2.png',
-    label: 'Box logo',
-    url: 'https://docs.temporal.io/blog/Temporal-a-central-brain-for-Box'
-  },
-  {
-    src: '/logos/logo-Checkr.png',
-    label: 'Checkr logo',
-    url: 'https://docs.temporal.io/blog/how-temporal-simplified-checkr-workflows'
-  },
-  {
-    src: '/logos/logo-Coinbase.svg',
-    label: 'Coinbase logo',
-    url: 'https://docs.temporal.io/blog/reliable-crypto-transactions-at-coinbase'
-  },
-  {
-    src: '/logos/logo-Descript.png',
-    label: 'Descript logo',
-    url: 'https://docs.temporal.io/blog/descript-case-study'
-  }
-];
+import * as HeroSamples from './HeroSamples';
 
 export default function Hero() {
+  const [lang, setLang] = useLocalStorage('langpref', 'Go');
+  const dynamicCodeSample = {
+    Go: HeroSamples.Go,
+    Java: HeroSamples.Java,
+    PHP: HeroSamples.PHP,
+    Node: HeroSamples.Node
+  }[lang] || (
+    <div className="text-lg">
+      Python, Ruby, dotNet, and other SDKs are planned for next year.{' '}
+      <a className="text-blue-300 no-underline hover:underline" href="/careers">
+        Join us!
+      </a>
+    </div>
+  );
+  const helloWorldURL =
+    {
+      Go: 'https://docs.temporal.io/docs/go/hello-world-tutorial',
+      Java: 'https://docs.temporal.io/docs/java/hello-world-tutorial',
+      PHP: 'https://docs.temporal.io/docs/samples-library/#beginner-samples',
+      Node: 'https://docs.temporal.io/docs/node/hello-world'
+    }[lang] || 'https://docs.temporal.io/application-development/';
   return (
     <div className=" border-b border-white">
       {/* <Banner /> */}
@@ -37,23 +37,38 @@ export default function Hero() {
     min-h-screen max-h-[1080px] container mx-auto flex flex-col justify-between p-4 sm:p-4
     `}>
         <Nav />
-        <div>
-          <h1 className="text-60 leading-60 mb-8 lg:text-144 lg:leading-144 uppercase lg:w-800">
-            Build Invincible Apps
-          </h1>
-          <p className="text-2xl lg:w-700 mb-8">
-            {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
-            {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
-            The platform for running mission critical code at&nbsp;
-            <OrbitalCases />
-            scale.
-          </p>
+        <div className="flex flex-col">
+          <div className="flex-auto">
+            <h1 className="text-60 leading-60 mb-8 lg:text-8xl lg:leading-8xl uppercase">
+              Build Invincible Apps
+            </h1>
+            <p className="text-2xl mb-8">
+              {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
+              {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
+              <span className="mr-2">The Open Source Runtime for</span>
+              <select
+                className="md:border md:border-temporalblue text-md md:text-2xl bg-gray-800 active:bg-gray-500 mr-2"
+                value={lang}
+                onChange={(e) => setLang(e.target.value)}>
+                <option value="Go">Go</option>
+                <option value="Java">Java</option>
+                <option value="PHP">PHP</option>
+                <option value="Node">Node.js</option>
+                <option value="Other">any</option>
+              </select>
+              service orchestration at&nbsp;
+              <HeroLogos />
+              {/* <OrbitalCases /> temporailly disabled until we can figure out where to put this */}
+              scale.
+            </p>
+          </div>
+          <div className="hidden md:block">{dynamicCodeSample}</div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between mb-8 sm:mb-8 items-center">
           <div className="flex flex-col gap-4 lg:flex-row lg:text-xl">
             <DirectionalControl href="#explain-temporal">2 Minute Intro</DirectionalControl>
-            <DirectionalControl secondary href="https://docs.temporal.io/application-development">
-              Get Started
+            <DirectionalControl secondary href={helloWorldURL}>
+              Run Hello World
             </DirectionalControl>
           </div>
           <iframe
@@ -68,4 +83,21 @@ export default function Hero() {
       </section>
     </div>
   );
+}
+
+function useLocalStorage(key, initialValue) {
+  const [storedValue, setStoredValue] = React.useState(initialValue);
+  React.useEffect(() => {
+    // Get from local storage by key
+    const item = typeof window !== 'undefined' ? window.localStorage.getItem(key) : false;
+    // Parse stored json or if none return initialValue
+    if (item) setStoredValue(JSON.parse(item));
+  }, [setStoredValue]);
+  // Return a wrapped version of useState's setter function that ...
+  // ... persists the new value to localStorage.
+  const setValue = (value) => {
+    setStoredValue(value);
+    window.localStorage.setItem(key, JSON.stringify(value));
+  };
+  return [storedValue, setValue];
 }

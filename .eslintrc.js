@@ -26,6 +26,7 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     // https://dev.to/onygami/eslint-and-prettier-for-react-apps-bonus-next-js-and-typescript-3e46
+    'jsx-a11y/no-onchange': 'off',
     'jsx-a11y/anchor-is-valid': [
       'error',
       {

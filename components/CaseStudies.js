@@ -6,28 +6,13 @@ import DirectionalControl from './DirectionalControl';
 
 const QUOTES = [
   {
-    url: 'https://docs.temporal.io/blog/temporal-a-central-brain-for-box/',
-    img: 'https://temporal.io/logos/photo-steven.png',
-    quote: (
-      <span>
-        One thing that the API does really well is give you this illusion of single threaded
-        execution <span className="text-temporalblue">without having to orchestrate</span> multiple
-        things. It's pretty amazing.
-      </span>
-    ),
-    name: 'Steven Cipolla',
-    title: 'Senior Staff Software Engineer, Box',
-    logo: 'https://temporal.io/logos/logo-Box2.png',
-    logoAlt: 'Box Logo'
-  },
-  {
     url: 'https://docs.temporal.io/blog/how-temporal-simplified-checkr-workflows/',
     img: 'https://avatars1.githubusercontent.com/u/114386',
     quote: (
       <span>
-        <span className="text-temporalblue">Developer happiness has increased</span>. Thinking about
-        our problems in terms of workflows and activities has{' '}
-        <span className="text-temporalblue">clarified our product</span> and now allow us to{' '}
+        <span className="text-temporalblue">Developer happiness has increased</span>. Thinking in
+        terms of workflows and activities has{' '}
+        <span className="text-temporalblue">clarified our product</span> and allowed us to{' '}
         <span className="text-temporalblue">share workflow components</span> with different teams.
       </span>
     ),
@@ -59,14 +44,28 @@ const QUOTES = [
       <span>
         It was a game changing revelation - Temporal gave us{' '}
         <span className="text-temporalblue">the ability to test our workflows</span> with unit
-        tests, basically just writing code instead of writing JSON or YAML, which are completely
-        untestable.
+        tests. Write code instead of writing JSON or YAML, which are completely untestable!
       </span>
     ),
     name: 'Nicolas Gere',
     title: 'Software Engineer, Descript',
     logo: 'https://temporal.io/logos/logo-Descript.png',
     logoAlt: 'Descript Logo'
+  },
+  {
+    url: 'https://docs.temporal.io/blog/temporal-a-central-brain-for-box/',
+    img: 'https://temporal.io/logos/photo-steven.png',
+    quote: (
+      <span>
+        One thing that the API does really well is give you this{' '}
+        <span className="text-temporalblue">illusion of single threaded execution</span> without
+        manually orchestrating multiple things. It's pretty amazing.
+      </span>
+    ),
+    name: 'Steven Cipolla',
+    title: 'Senior Staff Software Engineer, Box',
+    logo: 'https://temporal.io/logos/logo-Box2.png',
+    logoAlt: 'Box Logo'
   }
 ];
 
