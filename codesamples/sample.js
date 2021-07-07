@@ -1,4 +1,5 @@
-async function remindUserWorkflow(userId, intervals) {
+// workflows/remind-user.js
+async function main(userId, intervals) {
   // Send reminder emails, e.g. after 1, 7, and 30 days
   for (const interval of intervals) {
     await sleep(interval * DAYS); // Sleep for days!
