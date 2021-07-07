@@ -1,11 +1,10 @@
-
-public static class MainWorkflowImpl implements MainWorkflow {
-    public void PollUser(String[] args) {
-      int intervals[] = { 1, 7, 30 };
+public static class RemindUserWorkflowImpl implements RemindUserWorkflow {
+    public void EmailUser(string userId, int[] intervals) {
+      // send reminder emails, e.g. after 1, 7, and 30 days
       for (int interval: intervals) {   
-        Workflow.sleep(Duration.ofDays(interval)); // sleep for days!
-        activities.sendUserRetentionEmail(interval, userId) // automatic timeouts + retries!
+        Workflow.sleep(Duration.ofDays(interval)); // Sleep for days!
+        activities.sendEmail(interval, userId)     // Activities retried by default!
       }
-      // we can signal or cancel the workflow if the user does an action
+      // easily modifiable to cancel if the user does an action
     }
 }

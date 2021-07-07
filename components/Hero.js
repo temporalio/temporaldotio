@@ -1,7 +1,8 @@
 import { Nav } from './Nav';
 // import { Banner } from './Banner'; // company announcements - not needed for now
 import DirectionalControl from './DirectionalControl';
-import OrbitalCases from './OrbitalCases';
+// import OrbitalCases from './OrbitalCases';
+import HeroLogos from './HeroLogos';
 import React from 'react';
 import * as HeroSamples from './HeroSamples';
 
@@ -56,7 +57,8 @@ export default function Hero() {
                 <option value="Other">any</option>
               </select>
               service orchestration at&nbsp;
-              <OrbitalCases />
+              <HeroLogos />
+              {/* <OrbitalCases /> temporailly disabled until we can figure out where to put this */}
               scale.
             </p>
           </div>
