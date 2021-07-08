@@ -35,9 +35,8 @@ export default function Hero() {
       <section
         id="hero"
         className={`
-    min-h-screen max-h-[1080px] container mx-auto flex flex-col p-4 sm:p-4
-        `}
-        style={{ justifyContent: 'flex-start' }}>
+    min-h-screen max-h-[1080px] container mx-auto flex flex-col p-4 sm:p-4 justify-start
+    `}>
         <Nav />
         <div className="flex flex-col">
           <div className="flex-auto">
