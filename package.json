@@ -16,6 +16,7 @@
     "start": "next dev",
     "build": "next build",
     "serve": "next start",
+    "samples": "node codesamples/index.js",
     "lint": "eslint --fix . --ignore-path ./.gitignore",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,html,css,md,json}' --config ./.prettierrc"
   },

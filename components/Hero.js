@@ -8,6 +8,7 @@ import * as HeroSamples from './HeroSamples';
 
 export default function Hero() {
   const [lang, setLang] = useLocalStorage('langpref', 'Go');
+  const isMobile = useMediaQuery('(max-width: 768px)', true, false);
   const dynamicCodeSample = {
     Go: HeroSamples.Go,
     Java: HeroSamples.Java,
@@ -46,23 +47,27 @@ export default function Hero() {
               {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
               {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
               <span className="mr-2">The Open Source Runtime for</span>
-              <select
-                className="md:border md:border-temporalblue text-md md:text-2xl bg-gray-800 active:bg-gray-500 mr-2"
-                value={lang}
-                onChange={(e) => setLang(e.target.value)}>
-                <option value="Go">Go</option>
-                <option value="Java">Java</option>
-                <option value="PHP">PHP</option>
-                <option value="Node">Node.js</option>
-                <option value="Other">any</option>
-              </select>
+              {isMobile ? (
+                ''
+              ) : (
+                <select
+                  className="md:border md:border-temporalblue text-md md:text-2xl bg-gray-800 active:bg-gray-500 mr-2"
+                  value={lang}
+                  onChange={(e) => setLang(e.target.value)}>
+                  <option value="Go">Go</option>
+                  <option value="Java">Java</option>
+                  <option value="PHP">PHP</option>
+                  <option value="Node">Node.js</option>
+                  <option value="Other">any</option>
+                </select>
+              )}
               service orchestration at&nbsp;
               <HeroLogos />
               {/* <OrbitalCases /> temporailly disabled until we can figure out where to put this */}
               scale.
             </p>
           </div>
-          <div className="hidden md:block">{dynamicCodeSample}</div>
+          <div className="block mb-4">{dynamicCodeSample}</div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between mb-8 sm:mb-8 items-center">
           <div className="flex flex-col gap-4 lg:flex-row lg:text-xl">
@@ -100,4 +105,20 @@ function useLocalStorage(key, initialValue) {
     window.localStorage.setItem(key, JSON.stringify(value));
   };
   return [storedValue, setValue];
+}
+
+// https://www.30secondsofcode.org/react/s/use-media-query
+function useMediaQuery(query, whenTrue, whenFalse) {
+  if (typeof window === 'undefined' || typeof window.matchMedia === 'undefined') return whenFalse;
+
+  const mediaQuery = window.matchMedia(query);
+  const [match, setMatch] = React.useState(!!mediaQuery.matches);
+
+  React.useEffect(() => {
+    const handler = () => setMatch(!!mediaQuery.matches);
+    mediaQuery.addListener(handler);
+    return () => mediaQuery.removeListener(handler);
+  }, []);
+
+  return match ? whenTrue : whenFalse;
 }
