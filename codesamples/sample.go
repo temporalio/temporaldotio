@@ -4,5 +4,5 @@ func RemindUserWorkflow(ctx workflow.Context, userId string, intervals []int) er
     _ = workflow.Sleep(interval * time.Day)                            // Sleep for days!
     _ = workflow.ExecuteActivity(ctx, SendEmail, userId).Get(ctx, nil) // Activities are retried by default!
   }
-  // Easily modifiable to cancel if the user unsubscribes
+  // Easily cancelled when user unsubscribes
 }

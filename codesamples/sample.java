@@ -5,6 +5,6 @@ public static class RemindUserWorkflowImpl implements RemindUserWorkflow {
       Workflow.sleep(Duration.ofDays(interval)); // Sleep for days!
       activities.sendEmail(interval, userId);    // Activities retried by default!
     }
-    // Easily modifiable to cancel if the user unsubscribes
+    // Easily cancelled when user unsubscribes
   }
 }

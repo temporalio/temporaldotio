@@ -5,5 +5,5 @@ async function main(userId, intervals) {
     await sleep(interval * DAYS); // Sleep for days!
     await activities.sendEmail(interval, userId); // Activities retried by default!
   }
-  // Easily modifiable to cancel if the user unsubscribes
+  // Easily cancelled when user unsubscribes
 }
