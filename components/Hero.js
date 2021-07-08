@@ -63,7 +63,7 @@ export default function Hero() {
               scale.
             </p>
           </div>
-          <div className="block mb-4">{dynamicCodeSample}</div>
+          <div className="block mb-4 overflow-x-auto">{dynamicCodeSample}</div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between mb-2 sm:mb-4 items-center">
           <div className="flex flex-col gap-4 lg:flex-row lg:text-xl">
