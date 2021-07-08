@@ -58,10 +58,22 @@ export default function Footer() {
                 </a>
               </li>
               <li className="mb-2 font-light">
+                <a className="hover:text-blue-200 hover:underline" href="https://lu.ma/temporal">
+                  Signup for Office Hours
+                </a>
+              </li>
+              <li className="mb-2 font-light">
                 <a
                   className="hover:text-blue-200 hover:underline"
                   href="https://twitter.com/temporalio">
                   Twitter
+                </a>
+              </li>
+              <li className="mb-2 font-light">
+                <a
+                  className="hover:text-blue-200 hover:underline"
+                  href="https://www.youtube.com/channel/UCGovZyy8OfFPNlNV0i1fI1g">
+                  YouTube
                 </a>
               </li>
               <li className="mb-2 font-light">
