@@ -35,11 +35,11 @@ export default function Hero() {
       <section
         id="hero"
         className={`
-    min-h-screen max-h-[1080px] container mx-auto flex flex-col justify-between p-4 sm:p-4
+    min-h-screen max-h-[1080px] container mx-auto flex flex-col p-4 sm:p-4 justify-between
     `}>
         <Nav />
-        <div className="flex flex-col">
-          <div className="flex-auto">
+        <div className="flex flex-1 flex-col">
+          <div className="mt-8">
             <h1 className="text-60 leading-60 mb-8 lg:text-8xl lg:leading-8xl uppercase">
               Build Invincible Apps
             </h1>
@@ -47,20 +47,16 @@ export default function Hero() {
               {/* Temporal is the <Bold>open source</Bold> runtime for running <Bold>mission critical</Bold> code atop <Bold>unreliable, distributed</Bold> services at any scale. */}
               {/* Highly reliable, globally scalable microservice orchestration for mission-critical applications */}
               <span className="mr-2">The Open Source Runtime for</span>
-              {isMobile ? (
-                ''
-              ) : (
-                <select
-                  className="md:border md:border-temporalblue text-md md:text-2xl bg-gray-800 active:bg-gray-500 mr-2"
-                  value={lang}
-                  onChange={(e) => setLang(e.target.value)}>
-                  <option value="Go">Go</option>
-                  <option value="Java">Java</option>
-                  <option value="PHP">PHP</option>
-                  <option value="Node">Node.js</option>
-                  <option value="Other">any</option>
-                </select>
-              )}
+              <select
+                className="md:border md:border-temporalblue text-lg md:text-xl bg-gray-800 active:bg-gray-500 mr-2"
+                value={lang}
+                onChange={(e) => setLang(e.target.value)}>
+                <option value="Go">Go</option>
+                <option value="Java">Java</option>
+                <option value="PHP">PHP</option>
+                <option value="Node">Node.js</option>
+                <option value="Other">any</option>
+              </select>
               service orchestration at&nbsp;
               <HeroLogos />
               {/* <OrbitalCases /> temporailly disabled until we can figure out where to put this */}
@@ -69,7 +65,7 @@ export default function Hero() {
           </div>
           <div className="block mb-4">{dynamicCodeSample}</div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between mb-8 sm:mb-8 items-center">
+        <div className="flex flex-col lg:flex-row justify-between mb-2 sm:mb-4 items-center">
           <div className="flex flex-col gap-4 lg:flex-row lg:text-xl">
             <DirectionalControl href="#explain-temporal">2 Minute Intro</DirectionalControl>
             <DirectionalControl secondary href={helloWorldURL}>
