@@ -18,7 +18,7 @@ let data = {};
           .replaceAll('>{<', '>{"{"}<')
           .replaceAll('    ', '{"    "}')
           .replaceAll('class="line"', 'style="display:block"')
-          .replaceAll('class="shiki"', 'className="p-4 overflow-x-auto inline-block"');
+          .replaceAll('class="shiki"', 'className="p-4 overflow-x-auto"');
         data[lang] = text;
       });
   }
